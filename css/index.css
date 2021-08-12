@@ -1,14 +1,23 @@
 body
 {
-	font-family: monospace;
 	margin: 0; padding: 0;
-	background: #F0F8FF;
+	background: #101010;
+	font-family: monospace;
 }
 
 body header
 {
-	height: 80px; width: 100%;
-	text-align: center;
+	height: 50px; width: 100%;
+	position: fixed;
+}
+
+/* "Anton Koetzler-Faust's Website" */
+body header > h1
+{
+	color: white;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 h1
