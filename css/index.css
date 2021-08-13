@@ -44,8 +44,7 @@ header span:hover
 	color: #101010;
 }
 
-#home { border-right: 1px solid white; }
-#about, #contact, #resume { float: right; border-left: 1px solid white; }
+#resume { float: right; border-left: 1px solid white; }
 
 main
 {
@@ -117,19 +116,7 @@ a
 	text-decoration: none;
 }
 
-@media only screen and (max-width: 1050px)
+@media only screen and (max-width: 620px)
 {
 	#resume { display: none; }
-}
-@media only screen and (max-width: 875px)
-{
-	#contact { display: none; }
-}
-@media only screen and (max-width: 695px)
-{
-	#about { display: none; }
-}
-@media only screen and (max-width: 595px)
-{
-	#home { display: none; }
 }
