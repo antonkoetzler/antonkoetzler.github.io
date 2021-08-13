@@ -1,122 +1,123 @@
 body
 {
-	background: #101010;
 	margin: 0; padding: 0;
+	background: #080808;
 	font-family: Helvetica, sans-serif;
 }
+
+
 
 header
 {
 	height: 40px; width: 100%;
-	border-bottom: 1px solid white;
 	position: fixed;
+	border-bottom: 1px solid white;
 }
 
 header h1
 {
-	font-size: 28px;
-	color: white;
-	position: absolute;
-	left: 50%; top: 50%;
-	transform: translate(-50%, -50%);
+	margin: 0; padding: 0;
+
+	white-space: nowrap;
 	user-select: none;
+	color: white;
+
+	font-size: 28px;
+
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/* Buttons in the top bar */
 header span
 {
 	display: inline-block;
-	height: 40px;
+	height: 40px; width: auto;
 
-	text-align: center;
-	line-height: 40px;
+	padding: 0px 10px;
 
 	font-size: 20px;
+	line-height: 40px;
 	color: white;
-
-	padding: 0px 7px;
-
 	user-select: none;
+
+	border-left: 1px solid white;
+
+	float: right;
 }
 header span:hover
 {
 	background: white;
-	color: #101010;
+	color: #080808;
 }
 
-#resume { float: right; border-left: 1px solid white; }
+
 
 main
 {
-	height: calc(100vh - 41px); width: 100%;
+	height: calc(100% - 41px); width: 100%;
+
 	position: fixed;
-	bottom: 0; left: 0;
+	left: 0; bottom: 0;
+
 	text-align: center;
+
 	overflow-y: auto;
 }
 
-/* "Hello, this is my portfolio!" */
-main > span
+main img
+{
+	width: 400px; height: auto;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+main span
 {
 	display: block;
-
-	margin: 0 auto;
-	padding: 0px 5px;
-	margin-top: 5px;
-
 	font-size: 18px;
 	color: white;
 }
 
-/* "Personal Projects" */
-main > h2
+main h2
 {
+	margin: 0; padding: 0;
 	color: white;
+	margin-top: 15px;
 	margin-bottom: 5px;
-	font-size: 22px;
-}
-/* "(My Github)" */
-main > h2 > a
-{
-	color: lightblue;
 }
 
-/* Container for personal projects for examples */
 main section
 {
 	text-align: left;
-	padding-left: 5px;
+	padding: 0px 10px;
 }
-main section > span
-{
-	color: white;
-	display: block;
-	font-size: 20px;
-}
-main section > ul
-{
-	font-size: 18px;
-	color: white;
-	list-style-type: upper-roman;
-	margin: 0; padding: 5px;
-	padding-left: 40px;
-}
-main section > ul a
-{
-	color: lightblue;
-}
-
-h1
+main section span
 {
 	margin: 0; padding: 0;
-	white-space: nowrap;
+	font-size: 20px;
 }
+main section ul
+{
+	list-style-type: upper-roman;
+	margin: 0; padding: 0;
+	padding: 0px 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	color: white;
+	font-size: 18px;
+}
+
+
+
 a
 {
 	text-decoration: none;
+	color: lightblue;
 }
 
-@media only screen and (max-width: 620px)
+@media only screen and (max-width: 650px)
 {
-	#resume { display: none; }
+	header span { display: none; }
 }
