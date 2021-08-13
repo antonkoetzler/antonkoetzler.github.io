@@ -1,26 +1,135 @@
 body
 {
-	margin: 0; padding: 0;
 	background: #101010;
-	font-family: monospace;
+	margin: 0; padding: 0;
+	font-family: Helvetica, sans-serif;
 }
 
-body header
+header
 {
-	height: 50px; width: 100%;
+	height: 40px; width: 100%;
+	border-bottom: 1px solid white;
 	position: fixed;
 }
 
-/* "Anton Koetzler-Faust's Website" */
-body header > h1
+header h1
 {
+	font-size: 28px;
 	color: white;
 	position: absolute;
-	top: 50%; left: 50%;
+	left: 50%; top: 50%;
 	transform: translate(-50%, -50%);
+	user-select: none;
+}
+
+/* Buttons in the top bar */
+header span
+{
+	display: inline-block;
+	height: 40px;
+
+	text-align: center;
+	line-height: 40px;
+
+	font-size: 20px;
+	color: white;
+
+	padding: 0px 7px;
+
+	user-select: none;
+}
+header span:hover
+{
+	background: white;
+	color: #101010;
+}
+
+#home { border-right: 1px solid white; }
+#about, #contact, #resume { float: right; border-left: 1px solid white; }
+
+main
+{
+	height: calc(100vh - 41px); width: 100%;
+	position: fixed;
+	bottom: 0; left: 0;
+	text-align: center;
+	overflow-y: auto;
+}
+
+/* "Hello, this is my portfolio!" */
+main > span
+{
+	display: block;
+
+	margin: 0 auto;
+	padding: 0px 5px;
+	margin-top: 5px;
+
+	font-size: 18px;
+	color: white;
+}
+
+/* "Personal Projects" */
+main > h2
+{
+	color: white;
+	margin-bottom: 5px;
+	font-size: 22px;
+}
+/* "(My Github)" */
+main > h2 > a
+{
+	color: lightblue;
+}
+
+/* Container for personal projects for examples */
+main section
+{
+	text-align: left;
+	padding-left: 5px;
+}
+main section > span
+{
+	color: white;
+	display: block;
+	font-size: 20px;
+}
+main section > ul
+{
+	font-size: 18px;
+	color: white;
+	list-style-type: upper-roman;
+	margin: 0; padding: 5px;
+	padding-left: 40px;
+}
+main section > ul a
+{
+	color: lightblue;
 }
 
 h1
 {
 	margin: 0; padding: 0;
+	white-space: nowrap;
+}
+a
+{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1050px)
+{
+	#resume { display: none; }
+}
+@media only screen and (max-width: 875px)
+{
+	#contact { display: none; }
+}
+@media only screen and (max-width: 695px)
+{
+	#about { display: none; }
+}
+@media only screen and (max-width: 595px)
+{
+	#home { display: none; }
 }
