@@ -1,123 +1,128 @@
 body
 {
-	margin: 0; padding: 0;
-	background: #080808;
-	font-family: Helvetica, sans-serif;
+  margin: 0; padding: 0;
+  background: #202020;
+  font-family: "Ubuntu Regular";
 }
 
-
+a { text-decoration: none; }
 
 header
 {
-	height: 40px; width: 100%;
-	position: fixed;
-	border-bottom: 1px solid white;
+  height: 50px; width: 100%;
+  border-bottom: 2px solid #EDE6D6;
+  position: fixed;
+  top: 0; left: 0;
 }
 
-header h1
+#title
 {
-	margin: 0; padding: 0;
-
-	white-space: nowrap;
-	user-select: none;
-	color: white;
-
-	font-size: 28px;
-
-	position: absolute;
-	top: 50%; left: 50%;
-	transform: translate(-50%, -50%);
+  white-space: nowrap;
+  margin: 0; padding: 0;
+  font-size: 30px; color: #EDE6D6;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
 }
 
-header span
+header > a
 {
-	display: inline-block;
-	height: 40px; width: auto;
+  display: inline-block;
+  height: 50px;
+  padding: 0px 5px;
 
-	padding: 0px 10px;
+  font-size: 20px; line-height: 48px;
+  color: #EDE6D6;
 
-	font-size: 20px;
-	line-height: 40px;
-	color: white;
-	user-select: none;
-
-	border-left: 1px solid white;
-
-	float: right;
+  user-select: none;
 }
-header span:hover
+header > a:hover
 {
-	background: white;
-	color: #080808;
+  background: #EDE6D6;
+  color: #202020;
 }
-
-
 
 main
 {
-	height: calc(100% - 41px); width: 100%;
-
-	position: fixed;
-	left: 0; bottom: 0;
-
-	text-align: center;
-
-	overflow-y: auto;
+  height: calc(100% - 52px); width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0; bottom: 0;
+  overflow-y: auto;
 }
 
-main img
+main > img
 {
-	width: 400px; height: auto;
-	border-radius: 5px;
-	margin: 10px;
+  width: 400px; height: auto;
+  border-radius: 5px;
+  margin: 10px 0px;
 }
 
-main span
+#pictureHeader
 {
-	display: block;
-	font-size: 18px;
-	color: white;
+  font-family: "Ubuntu Italic";
+  font-size: 20px; color: #EDE6D6;
+  margin: 0;
 }
 
-main h2
+#aboutMe
 {
-	margin: 0; padding: 0;
-	color: white;
-	margin-top: 15px;
-	margin-bottom: 5px;
+  font-family: "Ubuntu Regular";
+  font-size: 18px; color: #EDE6D6;
+  text-align: left;
+  padding: 0px 5px 5px 10px;
 }
 
-main section
+.contactInformation
 {
-	text-align: left;
-	padding: 0px 10px;
+  font-family: "Ubuntu Regular";
+  font-size: 18px; color: #EDE6D6;
+  margin: 5px;
 }
-main section span
+
+main > h1
 {
-	margin: 0; padding: 0;
-	font-size: 20px;
+  white-space: nowrap;
+  margin: 10px 0px; padding: 0;
+  font-size: 30px; color: #EDE6D6;
 }
-main section ul
+
+main > section
 {
-	list-style-type: upper-roman;
-	margin: 0; padding: 0;
-	padding: 0px 30px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-
-	color: white;
-	font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
 }
 
-
-
-a
+main > section > h2 
 {
-	text-decoration: none;
-	color: lightblue;
+  font-size: 25px;
+  color: #EDE6D6;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 650px)
+main > section ul
 {
-	header span { display: none; }
+  list-style-type: upper-roman;
+  margin: 0; padding: 0;
+  margin-left: 30px;
+  font-size: 20px; color: #EDE6D6;
 }
+
+main > section ul li { padding-top: 5px; }
+
+@font-face
+{
+  font-family: "Ubuntu Regular";
+  src: url("fonts/Ubuntu-R.ttf") format("truetype");
+}
+@font-face
+{
+  font-family: "Ubuntu Italic";
+  src: url("fonts/Ubuntu-RI.ttf") format("truetype");
+}
+
+@media only screen and (max-width: 625px) { #title { font-size: 18px; } }
+@media only screen and (max-width: 450px) { #title { left: 220px; } }
+
