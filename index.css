@@ -84,7 +84,7 @@ main > img
 main > h1
 {
   white-space: nowrap;
-  margin: 10px 0px; padding: 0;
+  margin: 20px 0px; padding: 0;
   font-size: 30px; color: #EDE6D6;
 }
 
@@ -98,7 +98,7 @@ main > section > h2
 {
   font-size: 25px;
   color: #EDE6D6;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 5px;
 }
 
