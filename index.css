@@ -36,6 +36,9 @@ a {
 a:link {
   color: lightblue;
 }
+a:visited {
+  color: #CBC3E3;
+}
 
 header {
   display: flex;
