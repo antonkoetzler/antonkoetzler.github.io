@@ -3,74 +3,81 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="index.css">
+  <title>Anton K-F</title>
+  <meta chartset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
   <header>
-    <a href="https://www.github.com/antonkoetzler/" style="border-right: 2px solid #EDE6D6; float: left;"><span>Github</span></a>
-    <h1 id="title">Anton Koetzler-Faust's Portfolio</h1>
-    <a href="https://drive.google.com/uc?export=download&id=1jjBKxdivLk-83HJEpQIHpg6-eS8lFKUh" style="border-left: 2px solid #EDE6D6; float: right"><span>Resume</span></a>
+    <button
+      style="border-right: 3px solid #FFF5EE"
+      onclick="window.location.href = 'https://www.github.com/antonkoetzler'"
+    >Github</button>
+
+    <div><h1>Anton Koetzler-Faust</h1></div>
+    <button
+      style="border-left: 3px solid #FFF5EE"
+      onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=1jjBKxdivLk-83HJEpQIHpg6-eS8lFKUh'"
+    >Resume</button>
   </header>
 
   <main>
-    <img src="img/me.jpg">
-    <p id="pictureHeader">Hello, this is my portfolio! This page contains my personal projects as well as information about me and who I am.</p>
+    <!-- About me -->
+    <section id="aboutMe">
+      <img src="./me.jpg" />
+      <p>Hello, I'm Anton Koetzler-Faust. I'm a 20-year-old university student attending the University of Lethbridge for computer science. I'm from Calgary, however I'm half Brazilian. Ever since my university enrollment, I've learned lots about C++ and web development on my own time. Always having a fascination for coding since I was a child, I've grown to love it mainly due to the creativity and endless innovation it offers. More specifically, I find that my drive/motivation for programming comes from creating technologies that dogmatically follow software minimalism, and strive to have the user actually understand the piece of technology intricately or to an intermediate level. Fortunately, I think this is the future of programming due to a rapidly smarter population, and the essentiality of computing in general.</p>
+    </section>
 
-    <h1>Personal Projects</h1>
-    <section>
+    <p id="disclaimer">Below are my projects/repositories</p>
+
+    <section id="projects">
       <h2>Web Development</h2>
       <ul>
-        <li>MyoroPlayer ~ <a href="https://www.github.com/antonkoetzler/MyoroPlayer">https://www.github.com/antonkoetzler/MyoroPlayer</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/MyoroPlayer">MyoroPlayer</a></li>
           <ul>
-            <li>A libre MP3 player made with Electron that has YouTube to MP3 functionality</li>
+            <li>An MP3 player made with Electron with Youtube to MP3 functionality</li>
           </ul>
-        <li>MyoroEditor ~ <a href="https://www.github.com/antonkoetzler/MyoroEditor">https://www.github.com/antonkoetzler/MyoroEditor</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/MyoroEditor">MyoroEditor</a></li>
           <ul>
             <li>A text editor made with the JavaScript framework NeutralinoJS</li>
           </ul>
-        <li>XAMPP Network ~ <a href="https://www.github.com/antonkoetzler/XAMPP_Network">https://www.github.com/antonkoetzler/XAMPP_Network</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/XAMPP_Network">XAMPP_Network</a></li>
           <ul>
             <li>A mock social media website</li>
-            <li>Combination of google drive and instagram (roughly)</li>
           </ul>
       </ul>
 
       <h2>App Development</h2>
       <ul>
-        <li>MyoroPlayerMobile ~ <a href="https://www.github.com/antonkoetzler/MyoroPlayerMobile">https://www.github.com/antonkoetzler/MyoroPlayerMobile</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/MyoroPlayerMobile">MyoroPlayerMobile</a></li>
           <ul>
-            <li>A libre MP3 player for android</li>
+            <li>An MP3 player for Android</li>
           </ul>
-        </li>
       </ul>
 
-      <h2>C++</h2>
+      <h2>C/C++</h2>
       <ul>
-        <li>wxWidgets Learning Repository ~ <a href="https://www.github.com/antonkoetzler/wxWidgets">https://www.github.com/antonkoetzler/wxWidgets</a></li>
-        <li>wxChess ~ <a href="https://www.github.com/antonkoetzler/wxChess">https://www.github.com/antonkoetzler/wxChess</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/ConsoleCppConcepts">C++ Learning Repository</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/Makefiles">Makefile Learning Repository</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/CMake">CMake Learning Repository</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/wxWidgets">wxWidgets Learning Repository</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/DataStructuresCpp">Data Structure Classes</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/wxChess">wxChess</a></li>
+        <li><a href="https://www.github.com/antonkoetzler/yt2mp3-script">yt2mp3-script</a></li>
           <ul>
-            <li>A chess application made with wxWidgets</li>
-          </ul>
-        <li>Makefile Learning Repository ~ <a href="https://www.github.com/antonkoetzler/Makefiles">https://www.github.com/antonkoetzler/Makefiles</a></li>
-        <li>CMake Learning Repository ~ <a href="https://www.github.com/antonkoetzler/CMake">https://www.github.com/antonkoetzler/CMake</a></li>
-        <li>Data Structure Classes ~ <a href="https://www.github.com/antonkoetzler/DataStructuresCpp">https://www.github.com/antonkoetzler/DataStructuresCpp</a></li>
-        <li>C++ Learning Repository ~ <a href="https://www.github.com/antonkoetzler/ConsoleCppConcepts">https://www.github.com/antonkoetzler/ConsoleCppConcepts</a></li>
-        <li>yt2mp3-script ~ <a href="https://www.github.com/antonkoetzler/yt2mp3-script">https://www.github.com/antonkoetzler/yt2mp3-script</a></li>
-          <ul>
-            <li>A cross platform C++ script that converts a YouTube link to MP3 with youtube-dl</li>
+            <li>A cross-platform C++ script that converts a YouTube to link MP3 with youtube-dl</li>
           </ul>
       </ul>
     </section>
 
-    <h1>About Me</h1>
-    <p id="aboutMe">Hello, I'm Anton Koetzler-Faust. I'm a 20-year-old university student attending the University of Lethbridge for computer science. I'm from Calgary, however I'm half Brazilian. Ever since my university enrollment, I've learned lots about C++ and web development on my own time. Always having a fascination for coding since I was a child, I've grown to love it mainly due to the creativity and endless innovation it offers. More specifically, I find that my drive/motivation for programming comes from creating technologies that dogmatically follow software minimalism, and strive to have the user actually understand the piece of technology intricately or to an intermediate level. Fortunately, I think this is the future of programming due to a rapidly smarter population, and the essentiality of computing in general.</p>
-
-    <h1>Contact Information</h1>
-    <p class="contactInformation">Email: antonkoetzler-faust@hotmail.com</p>
-    <p class="contactInformation" style="padding-bottom: 20px;">Phone: (403) 708-8087</p>
+    <section id="contactInformation">
+      <h2>Contact Information</h2>
+      <p>Email: <span>antonkoetzler-faust@hotmail.com</span></p>
+      <p>Phone Number: <span>+1 (403) 708-8087</span></p>
+    </section>
   </main>
 </body>
 
 </html>
-
