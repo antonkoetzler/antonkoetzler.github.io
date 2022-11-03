@@ -111,7 +111,7 @@ main {
 
 #contactInformation {
   display: inline-block;
-  padding-top: 20px;
+  padding: 20px 0px;
   position: relative;
   text-align: left;
   left: 50%; transform: translateX(-50%);
