@@ -95,7 +95,7 @@ main {
 
 /* Where my projects are displayed */
 #projects {
-  max-width: 850px;
+  width: 1030px;
   position: relative;
   left: 50%; transform: translateX(-50%);
 }
@@ -114,7 +114,7 @@ main {
 }
 
 #contactInformation {
-  max-width: 850px;
+  width: 1030px;
   padding: 20px 0px;
   position: relative;
   text-align: left;
