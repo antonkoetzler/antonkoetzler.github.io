@@ -95,7 +95,7 @@ main {
 
 /* Where my projects are displayed */
 #projects {
-  width: 1030px;
+  width: 930px;
   position: relative;
   left: 50%; transform: translateX(-50%);
 }
@@ -114,7 +114,7 @@ main {
 }
 
 #contactInformation {
-  width: 1030px;
+  width: 930px;
   padding: 20px 0px;
   position: relative;
   text-align: left;
