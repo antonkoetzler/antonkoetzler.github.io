@@ -1,158 +1,64 @@
-@font-face {
-  font-family: "Iosevka Regular";
-  src: url("./fonts/iosevka-regular.ttf");
-}
-@font-face {
-  font-family: "Iosevka Bold";
-  src: url("./fonts/iosevka-bold.ttf");
-}
-@font-face {
-  font-family: "Iosevka Italic";
-  src: url("./fonts/iosevka-italic.ttf");
+button                { border: none; outline: none; background: none; }
+h1, h2, p, ul         { margin: 0; padding: 0; }
+button, h1, h2, p, li { font-family: "Ubuntu"; color: #EDE6D6; }
+h2                    { font-size: 20px; }
+ul                    { list-style-type: upper-roman; color: #EDE6D6; }
+a                     { color: #95B9C7; }
+
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  background-color: #181818;
+  display: flex; flex-direction: column;
 }
 
-html, body {
-  max-height: 100vh;
-  margin: 0; padding: 0;
-  font-family: "Iosevka Regular";
-  font-size: 20px; color: #FFF5EE;
-  background: #303030;
-}
 
-h1, h2, p {
-  white-space: none;
-  margin: 0; padding: 0;
-}
-h1, h2 {
-  user-select: none;
-  font-family: "Iosevka Bold";
-}
-ul {
-  list-style-type: upper-roman;
-  margin: 0; padding: 0;
-}
-a {
-  text-decoration: none;
-}
-a:link {
-  color: lightblue;
-}
-a:visited {
-  color: #CBC3E3;
-}
 
-header {
-  display: flex;
-  flex-direction: row;
-  width: 100%; height: 60px;
-  line-height: 60px;
-  border-bottom: 3px solid #FFF5EE;
-  position: fixed;
-  top: 0; left: 0;
+nav {
+  width: 100%;
+  border-bottom: 2px solid #EDE6D6;
+  display: flex; align-items: center;
 }
-
-header > button {
-  background: none; outline: none; border: none;
-  font-family: "Iosevka Regular";
-  font-size: 20px; color: #FFF5EE;
-  padding: 0px 20px;
+nav > button {
+  font-size: 24px;
+  padding: 5px 7px;
   cursor: pointer;
 }
-header > button:hover {
-  background: #FFF5EE;
-  color: #303030;
+nav > button:hover {
+  background-color: #EDE6D6;
+  color: #181818;
 }
+#github          { border-right: 2px solid #EDE6D6; }
+#resume          { border-left: 2px solid #EDE6D6; }
+nav > h1         { flex-grow: 1; text-align: center; }
+nav > h1::before { content: "Anton Koetzler-Faust" }
 
-/* Title container */
-header > div {
-  flex: 1;
-  text-align: center;
-}
+
 
 main {
-  width: 100%; height: calc(100% - 63px);
-  position: fixed;
-  bottom: 0; left: 0;
-  overflow-y: auto;
+  flex-grow: 1; padding: 20px 10px;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 20px;
 }
-
-/* <section> with info about me */
+#aboutMe, #projects, #contactInformation { display: flex; justify-content: center; }
 #aboutMe {
-  display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap; gap: 20px;
   align-items: center;
-  justify-content: center;
 }
-#aboutMe > img {
-  width: 350px; height: 350px;
-  padding: 20px 0px;
-}
-#aboutMe > p {
-  max-width: 650px;
-  padding: 20px;
-}
+#aboutMe > img           { width: 350px; height: 350px; }
+#aboutMe > p             { font-size: 20px; max-width: 550px; }
+
+#projects                { flex-direction: column; }
+#projects > h1           { text-align: center; }
+#projects > h2           { padding-top: 20px; }
+#projects ul             { width: max-content; transform: translateX(25px); }
+#projects li             { font-size: 18px; padding: 3px 0; }
+
+#contactInformation      { flex-direction: column; }
+#contactInformation > h2 { text-align: center; }
+#contactInformation > p  { font-size: 18px; }
 
 
-/* Where my projects are displayed */
-#projects {
-  width: 1030px;
-  position: relative;
-  left: 50%; transform: translateX(-50%);
-}
-#projects ul {
-  margin-left: 50px;
-}
-#projects h2 {
-  padding: 15px 0px;
-}
-/* 'Below are my projects/repositories' */
-#projects h1 {
-  font-size: 32px;
-  text-align: center;
-  padding-top: 10px;
-  font-family: "Iosevka Italic";
-}
 
-#contactInformation {
-  width: 1030px;
-  padding: 20px 0px;
-  position: relative;
-  text-align: left;
-  left: 50%; transform: translateX(-50%);
-}
-#contactInformation > h1 {
-  text-align: center;
-  font-family: "Iosevka Italic";
-}
-#contactInformation > p {
-  font-family: "Iosevka Bold";
-  font-size: 18px;
-}
-#contactInformation > p > span {
-  font-family: "Iosevka Regular";
-  font-size: 18px;
-}
-
-@media screen and (max-width: 650px) {
-  header > div > h1 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  #projects {
-    width: 350px;
-  }
-  #contactInformation {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 1054px) and (min-width: 680px) {
-  #projects {
-    width: 650px;
-  }
-  #contactInformation {
-    width: 650px;
-  }
+@media screen and (max-width: 450px) {
+  nav > h1::before { content: "AKF"; }
 }

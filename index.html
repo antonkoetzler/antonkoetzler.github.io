@@ -1,85 +1,93 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Anton K-F</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
 
-<head>
-  <title>Anton K-F</title>
-  <meta chartset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <link rel="stylesheet" href="./index.css" />
-</head>
+    <script>
+      function matchWidths() {
+        const aboutMeWidth = document.getElementById("aboutMe").offsetWidth;
+        document.getElementById("projects").style.width           = aboutMeWidth + "px";
+        document.getElementById("contactInformation").style.width = aboutMeWidth + "px";
+        const subLists = document.getElementsByClassName("subList");
+        for(let i = 0; i < subLists.length; i++)
+          subLists[i].style.width = document.getElementById("aboutMe").offsetWidth - 50 + "px";
+      }
 
-<body>
-  <header>
-    <button
-      style="border-right: 3px solid #FFF5EE"
-      onclick="window.location.href = 'https://www.github.com/antonkoetzler'"
-    >Github</button>
+      window.onload = matchWidths;
+      window.addEventListener("resize", matchWidths);
+    </script>
+  </head>
 
-    <div><h1>Anton Koetzler-Faust</h1></div>
-    <button
-      style="border-left: 3px solid #FFF5EE"
-      onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=1jjBKxdivLk-83HJEpQIHpg6-eS8lFKUh'"
-    >Resume</button>
-  </header>
+  <body>
+    <nav>
+      <button
+        id="github"
+        onclick="window.location.href = 'https://www.github.com/antonkoetzler'"
+      >GitHub</button>
+      <h1></h1>
+      <button
+        id="resume"
+        onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=1ocOhj-H3orlv8jFlpw6-SMPGQ3wimqnw'"
+      >Resume</button>
+    </nav>
 
-  <main>
-    <!-- About me -->
-    <section id="aboutMe">
-      <img src="./me.jpg" />
-      <p>Hello, I'm Anton Koetzler-Faust. I'm a 21-year-old undergraduate from the University of Lethbridge in computer science. I'm from Calgary, however I'm half Brazilian. Ever since my university enrollment, I've learned lots about web development, C++, &amp; cybersecurity on my own time. Always having a fascination for coding since I was a child, I've grown to love it mainly due to the creativity &amp; infinite innovation it offers. More specifically, I find that my drive/motivation for programming comes from creating technologies that dogmatically follow software minimalism &amp; strive to have the user actually understand the piece of technology intricately or to an intermediate level. Fortunately, I think this is the future of programming due to a rapidly smarter population &amp; the essentiality of computing in general.</p>
-    </section>
+    <main>
+      <section id="aboutMe">
+        <img src="./me.jpg" />
+        <p>Hello, I'm Anton Koetzler-Faust. I'm a 21-year-old undergraduate from the University of Lethbridge in computer science. I'm from Calgary, however I'm half Brazilian. Ever since my university enrollment, I've learned lots about web development, C++, &amp; cybersecurity on my own time. Always having a fascination for coding since I was a child, I've grown to love it mainly due to the creativity &amp; infinite innovation it offers. More specifically, I find that my drive/motivation for programming comes from creating technologies that dogmatically follow software minimalism &amp; strive to have the user actually understand the piece of technology intricately or to an intermediate level. Fortunately, I think this is the future of programming due to a rapidly smarter population &amp; the essentiality of computing in general.</p>
+      </section>
 
+      <section id="projects">
+        <h1>Personal Projects</h1>
 
-    <section id="projects">
-      <h1>Below are my projects/repositories</h1>
-
-      <h2>Web Development</h2>
-      <ul>
-        <li><a href="https://www.github.com/Myoro/MyoroPlayerDesktop">MyoroPlayerDesktop</a></li>
-          <ul>
+        <h2>Web Development</h2>
+        <ul>
+          <li><a href="https://www.github.com/Myoro/MyoroPlayerDesktop">MyoroPlayerDesktop</a></li>
+          <ul class="subList">
             <li>An MP3 player made with Electron &amp; React</li>
-            <li>MyoroPlayer allows the user to convert YouTube links to MP3 &amp; listen to music directly from YouTube</li>
+            <li>Also listens to &amp; and converts YouTube videos to MP3</li>
           </ul>
-        <li><a href="https://www.github.com/antonkoetzler/MyoroEditor">MyoroEditor</a></li>
-          <ul>
-            <li>A text editor made with the JavaScript framework NeutralinoJS</li>
+          <li><a href="https://www.github.com/antonkoetzler/MyoroEditor">MyoroEditor</a></li>
+          <ul class="subList">
+            <li>A text editor made with NeutralinoJS</li>
           </ul>
-        <li><a href="https://www.github.com/antonkoetzler/XAMPP_Network">XAMPP_Network</a></li>
-          <ul>
-            <li>A mock social media website</li>
+          <li><a href="https://www.github.com/antonkoetzler/XAMPP_Network">XAMPP Network</a></li>
+          <ul class="subList">
+            <li>Mock social media website with a XAMPP tech stack</li>
           </ul>
-      </ul>
+        </ul>
 
-      <h2>App Development</h2>
-      <ul>
-        <li><a href="https://www.github.com/antonkoetzler/MyoroPlayerMobile">MyoroPlayerMobile</a></li>
-          <ul>
+        <h2>Mobile Development</h2>
+        <ul>
+          <li><a href="https://www.github.com/antonkoetzler/MyoroPlayerMobile">MyoroPlayerMobile</a></li>
+          <ul class="subList">
             <li>An MP3 player for Android</li>
           </ul>
-      </ul>
+        </ul>
 
-      <h2>C/C++</h2>
-      <ul>
-        <li><a href="https://www.github.com/antonkoetzler/ConsoleCppConcepts">C++ Learning Repository</a></li>
-        <li><a href="https://www.github.com/antonkoetzler/Makefiles">Makefile Learning Repository</a></li>
-        <li><a href="https://www.github.com/antonkoetzler/CMake">CMake Learning Repository</a></li>
-        <li><a href="https://www.github.com/antonkoetzler/wxWidgets">wxWidgets Learning Repository</a></li>
-        <li><a href="https://www.github.com/antonkoetzler/DataStructuresCpp">Data Structure Classes</a></li>
-        <li><a href="https://www.github.com/antonkoetzler/wxChess">wxChess</a></li>
-        <li><a href="https://www.github.com/Myoro/yt2mp3-script">yt2mp3-script</a></li>
-          <ul>
-            <li>A C++ script for Linux &amp; Windows that converts YouTube links to MP3</li>
+        <h2>C++</h2>
+        <ul>
+          <li><a href="https://www.github.com/Myoro/yt2mp3-script">YouTube to MP3 Script</a></li>
+          <ul class="subList">
+            <li>Cross platform script to convert YouTube links to MP3</li>
           </ul>
-      </ul>
-    </section>
+          <li><a href="https://www.github.com/antonkoetzler/wxChess">wxWidgets Chess</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/ConsoleCppConcepts">C++ Learning Repository</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/Makefiles">Makefile Learning Repository</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/CMake">CMake Learning Repository</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/wxWidgets">wxWidgets Learning Repository</a></li>
+        </ul>
+      </section>
 
-    <section id="contactInformation">
-      <h1>Contact Information</h1>
-      <p>Email: <span>antonkoetzler-faust@hotmail.com</span></p>
-      <p>Phone Number: <span>+1 (403) 708-8087</span></p>
-    </section>
-  </main>
-</body>
-
+      <section id="contactInformation">
+        <h2>Contact Information</h2>
+        <p><b>Email:</b> antonkoetzler-faust@hotmail.com</p>
+        <p><b>Phone:</b> +1 (403) 708-8087</p>
+      </section>
+    </main>
+  </body>
 </html>
