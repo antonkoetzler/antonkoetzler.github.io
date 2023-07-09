@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Anton K-F</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
+
+    <script>
+      function matchWidths() {
+        const aboutMeWidth = document.getElementById("aboutMe").offsetWidth;
+        document.getElementById("projects").style.width           = aboutMeWidth + "px";
+        document.getElementById("contactInformation").style.width = aboutMeWidth + "px";
+        const subLists = document.getElementsByClassName("subList");
+        for(let i = 0; i < subLists.length; i++)
+          subLists[i].style.width = document.getElementById("aboutMe").offsetWidth - 50 + "px";
+      }
+
+      window.onload = matchWidths;
+      window.addEventListener("resize", matchWidths);
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <button
+        id="github"
+        onclick="window.location.href = 'https://www.github.com/antonkoetzler'"
+      >GitHub</button>
+      <h1></h1>
+      <button
+        id="resume"
+        onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=1ocOhj-H3orlv8jFlpw6-SMPGQ3wimqnw'"
+      >Currículo</button>
+    </nav>
+
+    <main>
+      <section id="aboutMe">
+        <img src="./me.jpg" />
+        <p style="font-size: 18px">Olá, sou Anton Koetzler-Faust. Sou um estudante de graduação de 21 anos da Universidade de Lethbridge em ciência da computação. Sou de Calgary, porém sou meio brasileiro e estarei me mudando para Florianópolis em agosto (sou fluente verbalmente e intermediária literariamente). Desde que me matriculei na universidade, aprendi muito sobre desenvolvimento web, C++ e segurança cibernética em meu próprio tempo. Sempre tendo um fascínio por codificação desde criança, aprendi a amá-lo principalmente devido à criatividade e inovação infinita que ele oferece. Mais especificamente, acho que meu impulso/motivação para a programação vem da criação de tecnologias que seguem dogmaticamente o minimalismo do software e me esforço para que o usuário realmente entenda a parte da tecnologia intrincada ou em um nível intermediário. Felizmente, acho que este é o futuro da programação devido a uma população cada vez mais inteligente e à essencialidade da computação em geral.</p>
+      </section>
+
+      <section id="projects">
+        <h1>Projetos Pessoais</h1>
+
+        <h2>Desenvolvimento Web</h2>
+        <ul>
+          <li><a href="https://www.github.com/Myoro/MyoroPlayerDesktop">MyoroPlayerDesktop</a></li>
+          <ul class="subList">
+            <li>Um mp3 player feito com Electron e React</li>
+            <li>Também ouve e converte vídeos do YouTube em MP3</li>
+          </ul>
+          <li><a href="https://www.github.com/antonkoetzler/MyoroEditor">MyoroEditor</a></li>
+          <ul class="subList">
+            <li>Um editor de texto feito com NeutralinoJS</li>
+          </ul>
+          <li><a href="https://www.github.com/antonkoetzler/XAMPP_Network">XAMPP Network</a></li>
+          <ul class="subList">
+            <li>Mock site de mídia social com uma pilha de tecnologia XAMPP</li>
+          </ul>
+        </ul>
+
+        <h2>Desenvolvimento Móvel</h2>
+        <ul>
+          <li><a href="https://www.github.com/antonkoetzler/MyoroPlayerMobile">MyoroPlayerMobile</a></li>
+          <ul class="subList">
+            <li>Um reprodutor de MP3 para Android</li>
+          </ul>
+        </ul>
+
+        <h2>C++</h2>
+        <ul>
+          <li><a href="https://www.github.com/Myoro/yt2mp3-script">YouTube to MP3 Script</a></li>
+          <ul class="subList">
+            <li>Script de plataforma cruzada para converter links do YouTube em MP3</li>
+          </ul>
+          <li><a href="https://www.github.com/antonkoetzler/wxChess">wxWidgets Chess</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/ConsoleCppConcepts">Repositório de Aprendizagem C++</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/Makefiles">Repositório de Aprendizagem Makefiles</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/CMake">Repositório de Aprendizagem CMake</a></li>
+          <li><a href="https://www.github.com/antonkoetzler/wxWidgets">Repositório de Aprendizagem wxWidgets</a></li>
+        </ul>
+      </section>
+
+      <section id="contactInformation">
+        <h2>Informações de Contato</h2>
+        <p><b>Email:</b> antonkoetzler-faust@hotmail.com</p>
+        <p><b>Telefone:</b> +1 (403) 708-8087</p>
+      </section>
+    </main>
+  </body>
+</html>
