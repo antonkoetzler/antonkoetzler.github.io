@@ -2,115 +2,128 @@
 
 <html>
   <head>
-    <title>Anton K-F</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css" />
-
-    <script>
-      function matchWidths() {
-        const aboutMeWidth = document.getElementById("aboutMe").offsetWidth;
-        document.getElementById("projects").style.width           = aboutMeWidth + "px";
-        document.getElementById("contactInformation").style.width = aboutMeWidth + "px";
-        const subLists = document.getElementsByClassName("subList");
-        for(let i = 0; i < subLists.length; i++)
-          subLists[i].style.width = document.getElementById("aboutMe").offsetWidth - 50 + "px";
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+      @font-face {
+        font-family: 'Fantasque Sans Mono';
+        src: url('fonts/FantasqueSansMono-Regular.ttf');
+      }
+      @font-face {
+        font-family: 'Fantasque Sans Mono Italic';
+        src: url('fonts/FantasqueSansMono-Italic.ttf');
       }
 
-      window.onload = matchWidths;
-      window.addEventListener("resize", matchWidths);
-    </script>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #181818;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 10px;
+      }
+
+      p, h1, h2, button, a {
+        font-family: 'Fantasque Sans Mono';
+        font-weight: normal;
+        color: #EDE6D6;
+        user-select: none;
+        margin: 0;
+        padding: 5px;
+      }
+
+      a {
+        color: lightblue;
+        text-decoration: none;
+      }
+      a:visited { color: #CBC3E3; }
+
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        height: 40px;
+      }
+      button:hover {
+        background: #EDE6D6;
+        color: #181818;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      header > h1 {
+        flex: 1;
+        text-align: center;
+      }
+      header > h1::before { content: 'Anton Louis Koetzler-Faust'; }
+
+      h2 { margin-top: 20px; }
+
+      main > p { font-family: 'Fantasque Sans Mono Italic'; }
+
+      @media screen and (max-width: 650px) { header > h1::before { content: 'Anton Koetzler-Faust'; } }
+      @media screen and (max-width: 550px) { header > h1::before { content: 'Anton K-F'; } }
+      @media screen and (max-width: 350px) { header > h1::before { content: 'AFK'; } }
+    </style>
   </head>
 
   <body>
-    <nav>
+    <header>
       <button
-        id="github"
         onclick="window.location.href = 'https://www.github.com/antonkoetzler'"
-      >GitHub</button>
+      >Github</button>
       <h1></h1>
       <button
-        id="resume"
         onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI'"
       >Resume</button>
-    </nav>
+    </header>
 
     <main>
-      <section id="aboutMe">
-        <img src="./me.jpg" />
-        <p>Hello, I'm Anton Koetzler-Faust. I'm a 22-year-old undergraduate from the University of Lethbridge in computer science. I'm from Calgary, however I'm half Brazilian. Ever since my university enrollment, I've continuously grown as a programmer and mastered web development, mobile development, &amp; lower level programming (i.e. C++ &amp; Java) on my own time. Always having a fascination for coding since I was a child, I've grown to love it mainly due to the creativity &amp; infinite innovation it offers. More specifically, I find that my drive/motivation for programming comes from creating technologies that dogmatically follow software minimalism &amp; strive to have the user actually understand the piece of technology intricately or to an intermediate level. Fortunately, I think this is the future of programming due to a rapidly smarter population &amp; the essentiality of computing in general.</p>
-      </section>
+      <img src='me.jpg' />
+      <p>Front-end software engineer specializing in Flutter &amp; React</p>
+      <p>BSc in Computer Science from the University of Lethbridge</p>
+      <p>Contact: antonkoetzler-faust@hotmail.com</p>
 
-      <section id="projects">
-        <h1>Personal Projects</h1>
+      <h2>Flutter</h2>
+      <a href='https://www.github.com/Myoro/MyoroFitness'>MyoroFitness</a>
+      <a href='https://www.github.com/Myoro/MyoroBetTracker'>MyoroBetTracker</a>
 
-        <h2>Flutter</h2>
-        <ul>
-          <li><a href="https://www.github.com/Myoro/MyoroFitness">MyoroFitness</a></li>
-          <ul class="subList">
-            <li>Remake of <a href="https://www.github.com/antonkoetzler/MyoroFitness">MyoroFitness</a> in Flutter</li>
-          </ul>
-          <li><a href="https://www.github.com/Myoro/MyoroBetTracker">MyoroBetTracker</a></li>
-          <ul class="subList">
-            <li>Simple bet tracker/calculator</li>
-          </ul>
-        </ul>
+      <h2>Web Development</h2>
+      <a href='https://www.github.com/Myoro/MyoroPlayer'>MyoroPlayer (MP3 Player)</a>
+      <a href='https://www.github.com/antonkoetzler/MyoroEditor'>MyoroEditor (Text Editor)</a>
+      <a href='https://www.github.com/antonkoetzler/XAMPP_Network'>XAMPP Social Media Site</a>
 
-        <h2>Web Development</h2>
-        <ul>
-          <li><a href="https://www.github.com/Myoro/MyoroPlayerDesktop">MyoroPlayerDesktop</a></li>
-          <ul class="subList">
-            <li>An MP3 player made with Electron &amp; React</li>
-            <li>Also listens to &amp; and converts YouTube videos to MP3</li>
-          </ul>
-          <li><a href="https://www.github.com/antonkoetzler/MyoroEditor">MyoroEditor</a></li>
-          <ul class="subList">
-            <li>A text editor made with NeutralinoJS</li>
-          </ul>
-          <li><a href="https://www.github.com/antonkoetzler/XAMPP_Network">XAMPP Network</a></li>
-          <ul class="subList">
-            <li>Mock social media website with a XAMPP tech stack</li>
-          </ul>
-        </ul>
+      <h2>Mobile Development (React Native)</h2>
+      <a href='https://www.github.com/antonkoetzler/MyoroFitness'>MyoroFitness</a>
+      <a href='https://www.github.com/antonkoetzler/MyoroPlayerMobile'>MyoroPlayerMobile (Android MP3 Player)</a>
 
-        <h2>Mobile Development</h2>
-        <ul>
-          <li><a href="https://www.github.com/antonkoetzler/MyoroFitness">MyoroFitness</a></li>
-          <ul class="subList">
-            <li>Made with Expo + React Native</li>
-            <li>Tracks fitness progression</li>
-            <li>Meal tracker (uses the USDA API to search for foods)</li>
-            <li>Creates and saves workouts in the application</li>
-            <li>A "streak" where you log your weight everyday to stay motivated</li>
-          </ul>
-          <li><a href="https://www.github.com/antonkoetzler/MyoroPlayerMobile">MyoroPlayerMobile</a></li>
-          <ul class="subList">
-            <li>An MP3 player for Android</li>
-          </ul>
-        </ul>
+      <h2>C++ &amp; Python</h2>
+      <a href='https://www.github.com/antonkoetzler/wxChess'>wxWidgets Chess</a>
+      <a href='https://www.github.com/antonkoetzler/wxWidgets'>wxWidgets Learning Repository</a>
+      <a href='https://www.github.com/Myoro/scyt2mp3'>SoundCloud &amp; YouTube to MP3</a>
 
-        <h2>C++</h2>
-        <ul>
-          <li><a href="https://www.github.com/antonkoetzler/wxChess">wxWidgets Chess</a></li>
-          <li><a href="https://www.github.com/antonkoetzler/wxWidgets">wxWidgets Learning Repository</a></li>
-        </ul>
-
-	<h2>Scripting / Python</h2>
-	<ul>
-	  <li><a href="https://www.github.com/Myoro/scyt2mp3">scyt2mp3 (SoundCloud & YouTube to MP3)</a></li>
-	</ul>
-
-        <h2>Git / Version Control</h2>
-        <ul>
-          <li><a href="https://www.github.com/antonkoetzler/git_improvement">Git Improvement</a></li>
-        </ul>
-      </section>
-
-      <section id="contactInformation">
-        <h2>Contact Information</h2>
-        <p><b>Email:</b> antonkoetzler-faust@hotmail.com</p>
-        <p><b>Phone:</b> +55 (48) 98818-9095</p>
-      </section>
+      <h2>Git / Version Control</h2>
+      <a
+        href='https://www.github.com/antonkoetzler/git_improvement'
+        style='margin-bottom: 20px;'
+      >Git Improvement Repository</a>
     </main>
   </body>
 </html>
