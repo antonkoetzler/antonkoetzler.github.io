@@ -9,8 +9,8 @@
         src: url('fonts/FantasqueSansMono-Regular.ttf');
       }
       @font-face {
-        font-family: 'Fantasque Sans Mono Italic';
-        src: url('fonts/FantasqueSansMono-Italic.ttf');
+        font-family: 'Fantasque Sans Mono Bold';
+        src: url('fonts/FantasqueSansMono-Bold.ttf');
       }
 
       body {
@@ -77,7 +77,8 @@
 
       h2 { margin-top: 20px; }
 
-      main > p { font-family: 'Fantasque Sans Mono Italic'; }
+      main > p { font-family: 'Fantasque Sans Mono'; }
+      main > p > span { font-family: 'Fantasque Sans Mono Bold'; }
 
       @media screen and (max-width: 650px) { header > h1::before { content: 'Anton Koetzler-Faust'; } }
       @media screen and (max-width: 550px) { header > h1::before { content: 'Anton K-F'; } }
@@ -98,14 +99,15 @@
 
     <main>
       <img src='me.jpg' />
+      <h2>About Me</h2>
       <p>Front-end software engineer specializing in Flutter &amp; React</p>
       <p>BSc in Computer Science from the University of Lethbridge</p>
+      <p>Working at the wonderful company <span class='bold'>DoutorIE</span></p>
       <p>Contact: antonkoetzler-faust@hotmail.com</p>
 
       <h2>Flutter</h2>
       <a href='https://www.github.com/Myoro/MyoroFitness'>MyoroFitness</a>
       <a href='https://www.github.com/Myoro/MyoroBetTracker'>MyoroBetTracker</a>
-      <a href='https://www.github.com/antonkoetzler/fps_practice_tool'>FPS Practice Tool</a>
 
       <h2>Web Development</h2>
       <a href='https://www.github.com/Myoro/MyoroPlayer'>MyoroPlayer (MP3 Player)</a>
