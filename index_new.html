@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <style>
+      @font-face {
+        font-family: 'Fantasque Sans Mono Regular';
+        src: url('./fonts/FantasqueSansMono-Regular.ttf');
+      }
+      @font-face {
+        font-family: 'Fantasque Sans Mono Bold';
+        src: url('./fonts/FantasqueSansMono-Bold.ttf');
+      }
+
+      :root {
+        --border-radius: 20px;
+        --large-font-size: 24px;
+        --medium-font-size: 20px;
+        --small-font-size: 16px;
+      }
+
+      .bold {
+        font-family: 'Fantasque Sans Mono Bold';
+      }
+
+      h1, button, h2, li {
+        color: #EDE6D6;
+        font-family: 'Fantasque Sans Mono Regular';
+        margin: 0;
+        padding: 0;
+      }
+
+      h1, h2 {
+        text-align: center;
+      }
+      h1 {
+        font-size: var(--large-font-size);
+        flex: 1;
+      }
+      h2 {
+        font-size: var(--medium-font-size);
+      }
+
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: var(--large-font-size);
+      }
+      button:hover {
+        background: #EDE6D6;
+        color: #181818;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: var(--border-radius);
+      }
+
+      ul {
+        list-style-type: upper-roman;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      body {
+        margin: 0 10px;
+        padding: 0;
+        background: #181818;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <button>Resume</button>
+      <h1>Anton Louis Koetzler-Faust</h1>
+      <button>GitHub(s)</button>
+    </header>
+
+    <main>
+      <img src='./me.jpg' />
+
+      <section>
+        <h2>About me</h2>
+        <ul>
+          <li>Frontend software engineering specializing in React &amp; Flutter</li>
+          <li>BSc in Computer Science from the University of Lethbridge</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+        <p><span class='bold'>Doutor-IE</span> | November 2023 - Present</p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <h3>Flutter</h3>
+        <a href='https://www.github.com/Myoro/MyoroFitness'>MyoroFitness</a>
+        <a href='https://www.github.com/Myoro/MyoroBetTracker'>MyoroBetTracker</a>
+        <a href='https://www.github.com/Myoro/MyoroFinanceTracker'>MyoroFinanceTracker</a>
+        <a href='https://www.github.com/Myoro/MyoroStreaks'>MyoroStreaks</a>
+
+        <h3>Web Develoament</h3>
+        <a href='https://www.github.com/Myoro/MyoroPlayer'>MyoroPlayer</a>
+        <a href='https://www.github.com/Myoro/MyoroEditor'>MyoroEditor</a>
+        <a href='https://github.com/antonkoetzler/XAMPP_Network'>XAMPP Social Media Site</a>
+
+        <h3>C++ &amp; Python</h3>
+        <a>SoundCloud &amp; YouTube to MP3</a>
+        <a>wxWidgets Learning Reaository</a>
+        <a>wxWidgets Chess</a>
+
+        <h3>Text Editor Config</h3>
+        <a>NeoVim Config</a>
+      </section>
+
+      <section>
+        <h2>Contact Info</h2>
+        <p><span class='bold'>E-Mail:</span> antonkoetzler-faust@hotmail.com</p>
+        <p><span class='bold'>Phone:</span> +55 (48) 98818-9095</p>
+      </section>
+    </main>
+  </body>
+</html>
