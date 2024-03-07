@@ -2,129 +2,379 @@
 
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+
     <style>
       @font-face {
-        font-family: 'Fantasque Sans Mono';
-        src: url('fonts/FantasqueSansMono-Regular.ttf');
+        font-family: 'Fantasque Sans Mono Regular';
+        src: url('./fonts/FantasqueSansMono-Regular.ttf');
       }
       @font-face {
         font-family: 'Fantasque Sans Mono Bold';
-        src: url('fonts/FantasqueSansMono-Bold.ttf');
+        src: url('./fonts/FantasqueSansMono-Bold.ttf');
+      }
+
+      header > h1::before { content: 'Anton Louis Koetzler-Faust' }
+      @media screen and (max-width: 700px) { header > h1::before { content: 'Anton Koetzler-Faust'; }}
+      @media screen and (max-width: 600px) { header > h1::before { content: 'Anton K-F'; }}
+      @media screen and (max-width: 425px) { header > h1::before { content: 'AKF'; }}
+
+      :root {
+        --border-radius: 20px;
+        --large-font-size: 28px;
+        --medium-font-size: 24px;
+        --small-font-size: 20px;
+        --main-width: 75%;
       }
 
       body {
-        margin: 0;
+        margin: 5px 10px;
         padding: 0;
         background: #181818;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
 
       main {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
-	padding-bottom: 15px;
       }
 
-      header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0 10px;
+      .bold {
+        font-family: 'Fantasque Sans Mono Bold';
       }
 
-      p, h1, h2, button, a {
-        font-family: 'Fantasque Sans Mono';
-        font-weight: normal;
+      h1, h2, h3, button, p, ul, a {
         color: #EDE6D6;
+        font-family: 'Fantasque Sans Mono Regular';
         margin: 0;
-        padding: 5px;
+        padding: 0;
+      }
+
+      p {
+        font-size: var(--small-font-size);
+      }
+
+      h1, h2, h3 {
         text-align: center;
+      }
+      h1 {
+        user-select: none;
+        font-size: var(--large-font-size);
+        flex: 1;
+      }
+      h2 {
+        font-size: var(--medium-font-size);
+      }
+      h3 {
+        font-size: var(--small-font-size);
       }
 
       a {
+        font-family: 'Fantasque Sans Mono Bold';
         color: lightblue;
-        text-decoration: none;
+        font-size: var(--small-font-size);
       }
-      a:visited { color: #CBC3E3; }
+      a:visited {
+        color: #D8BFD8;
+      }
 
       button {
         background: none;
         border: none;
         outline: none;
-        font-size: 20px;
+        border-radius: var(--border-radius);
         cursor: pointer;
-        border-radius: 10px;
-        height: 40px;
+        padding: 5px 10px;
+        font-size: var(--medium-font-size);
       }
       button:hover {
         background: #EDE6D6;
         color: #181818;
       }
 
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: '- ';
+        gap: 3px;
+        margin: 0 0 10px 14px;
+        padding-left: 5px;
+      }
+      li {
+        font-size: var(--small-font-size);
+      }
+
       img {
+        user-select: none;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      #projectsContainer {
+        width: var(--main-width);
+      }
+
+      #projects {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+        width: 100%;
+      }
+
+      .project {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      #toolbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: var(--main-width);
+        gap: 15px;
+        max-width: 400px;
+      }
+
+      #me {
         width: 300px;
         height: 300px;
-        border-radius: 10px;
-        padding: 5px;
+        border-radius: var(--border-radius);
       }
 
-      header > h1 {
-        flex: 1;
-        text-align: center;
+      #categories {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
       }
-      header > h1::before { content: 'Anton Louis Koetzler-Faust'; }
 
-      h2 { margin-top: 20px; }
+      #aboutMe {
+        width: var(--main-width);
+      }
 
-      main > p { font-family: 'Fantasque Sans Mono'; }
-      main > p > span { font-family: 'Fantasque Sans Mono Bold'; }
+      #githubButtonContainer {
+        display: flex;
+        align-items: right;
+      }
+      #githubDropdown {
+        display: none; /* flex */
+        background: #181818;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        flex-direction: column;
+        border: 2px solid #EDE6D6;
+        border-radius: var(--border-radius);
+      }
+      #githubDropdown > button {
+        padding: 10px 15px;
+      }
+      #githubDropdown > button:first-child {
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      #githubDropdown > button:nth-child(2) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+      }
 
-      @media screen and (max-width: 650px) { header > h1::before { content: 'Anton Koetzler-Faust'; } }
-      @media screen and (max-width: 550px) { header > h1::before { content: 'Anton K-F'; } }
-      @media screen and (max-width: 350px) { header > h1::before { content: 'AFK'; } }
+      .programmingLanguageIcon {
+        width: 50px;
+      }
     </style>
   </head>
 
   <body>
     <header>
       <button
-        onclick="window.location.href = 'https://www.github.com/antonkoetzler'"
-      >Github</button>
+        onclick="window.location.href= 'https://drive.google.com/uc?export=download&id=1FupfLoFd-2Fbp_vbF6YJ8aC9eKrJv8zS'"
+      >Resumé</button>
       <h1></h1>
-      <button
-        onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI'"
-      >Resume</button>
+      <div id='githubButtonContainer'>
+        <button
+          id='github'
+        >GitHub(s)</button>
+        <div id='githubDropdown'>
+          <button
+            onclick="window.location.href= 'https://www.github.com/antonkoetzler'"
+          >antonkoetzler</button>
+          <button
+            onclick="window.location.href= 'https://www.github.com/Myoro'"
+          >Myoro</button>
+        </div>
+      </div>
     </header>
 
     <main>
-      <img src='me.jpg' />
-      <h2>About Me</h2>
-      <p>Front-end software engineer specializing in Flutter &amp; React</p>
-      <p>BSc in Computer Science from the University of Lethbridge</p>
-      <p>Contact: antonkoetzler-faust@hotmail.com</p>
+      <img id='me' alt='me' src='./img/me.jpg' />
 
-      <h2>Experience</h2>
-      <p><span class='bold'>Doutor-IE</span> | November 2023 - Present</p>
+      <section id='categories'>
+        <section>
+          <h2>About me</h2>
+          <ul id='aboutMe'>
+            <li>Frontend software engineering specializing in React &amp; Flutter</li>
+            <li>BSc in Computer Science from the University of Lethbridge</li>
+            <li style='margin-top: -4px;'>Living in Florianópolis, Brasil 🌴</li>
+            <li style='margin-top: -4px;'>Born in Canada, half-Canadian 🍁 &amp; half-Brazilian 🏖️</li>
+            <li>My passion for programming comes from it's infinite creativity and ability to create something out of nothing that can help people</li>
+            <li>Huge supporter of the Free Software Movement (FSM) and libre/transparent software</li>
+            <li>Terry Davis is my programming idol ~ "An idiot admires complexity, a genius admires simplicity"</li>
+          </ul>
+        </section>
 
-      <h2>Flutter</h2>
-      <a href='https://www.github.com/Myoro/MyoroFitness'>MyoroFitness</a>
-      <a href='https://www.github.com/Myoro/MyoroBetTracker'>MyoroBetTracker</a>
-      <a href='https://www.github.com/Myoro/MyoroFinanceTracker'>MyoroFinanceTracker</a>
-      <a href='https://www.github.com/Myoro/MyoroStreaks'>MyoroStreaks</a>
+        <section>
+          <h2>Professional Experience</h2>
+          <p style='text-align: center;'><span class='bold'>Doutor-IE</span> | November 2023 - Present</p>
+        </section>
 
-      <h2>Web Development</h2>
-      <a href='https://www.github.com/Myoro/MyoroPlayer'>MyoroPlayer (MP3 Player & Downloader)</a>
-      <a href='https://www.github.com/antonkoetzler/MyoroEditor'>MyoroEditor (Text Editor)</a>
-      <a href='https://www.github.com/antonkoetzler/XAMPP_Network'>XAMPP Social Media Site</a>
+        <section>
+          <h2>Contact Info</h2>
+          <div>
+            <p><span class='bold'>E-Mail:</span> antonkoetzler-faust@hotmail.com</p>
+            <p><span class='bold'>Phone:</span> +55 (48) 98818-9095</p>
+          </div>
+        </section>
 
-      <h2>C++ &amp; Python</h2>
-      <a href='https://www.github.com/antonkoetzler/wxWidgets'>wxWidgets Learning Repository</a>
-      <a href='https://www.github.com/Myoro/scyt2mp3'>SoundCloud &amp; YouTube to MP3</a>
-      <a href='https://www.github.com/antonkoetzler/wxChess'>wxWidgets Chess</a>
+        <section>
+          <h2>My Toolbox</h2>
+          <section id='toolbox'>
+            <img src='./img/html.svg' alt='html' class='programmingLanguageIcon' />
+            <img src='./img/css.svg' alt='css' class='programmingLanguageIcon' />
+            <img src='./img/javascript.svg' alt='javascript' class='programmingLanguageIcon' />
+            <img src='./img/react.svg' alt='react' class='programmingLanguageIcon' />
+            <img src='./img/electron.svg' alt='electron' class='programmingLanguageIcon' />
+            <img src='./img/flutter.svg' alt='flutter' class='programmingLanguageIcon' />
+            <img src='./img/c.svg' alt='c' class='programmingLanguageIcon' />
+            <img src='./img/python.svg' alt='python' class='programmingLanguageIcon' />
+            <img src='./img/sqlite.svg' alt='sqlite' class='programmingLanguageIcon' />
+            <img src='./img/vim.svg' alt='vim' class='programmingLanguageIcon' />
+            <img src='./img/neovim.svg' alt='neovim' class='programmingLanguageIcon' />
+            <img src='./img/linux.svg' alt='linux' class='programmingLanguageIcon' />
+          </section>
+        </section>
 
-      <h2>Text Editor Configuration</h2>
-      <a href='https://www.github.com/antonkoetzler/nvim-config'>NeoVim Configuration Files</a>
+        <section id='projectsContainer'>
+          <h2>Projects</h2>
+
+          <div id='projects'>
+            <h3>Flutter</h3>
+            <div class='project'>
+              <a href='https://www.github.com/Myoro/MyoroFitness'>MyoroFitness</a>
+              <ul>
+                <li>Tracks calories, weight, & exercise</li>
+                <li>Keeps the user motivated by having a streak functionality</li>
+                <li>Using the USDA food API to get information about foods</li>
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/Myoro/MyoroBetTracker'>MyoroBetTracker</a>
+              <ul>
+                <li>Simple bet tracker</li>
+                <li>Displays a summary of the user's betting results</li>
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/Myoro/MyoroFinanceTracker'>MyoroFinanceTracker</a>
+              <ul>
+                <li>Tracks expenses, automates itself by adding your income, and sets goals</li>
+                <li>Also a data analysis application of your finances and habits</li>
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/Myoro/MyoroStreaks'>MyoroStreaks</a>
+              <ul>
+                <li>Add habits you want to beat</li>
+                <li>User may view time since they placed the streak, times resetted, &amp; add observations</li>
+              </ul>
+            </div>
+
+            <h3>Web Development &amp; JavaScript</h3>
+            <div class='project'>
+              <a href='https://www.github.com/Myoro/MyoroPlayer'>MyoroPlayer</a>
+              <ul>
+                <li>Cross-platform desktop application to listen and stream music from YouTube and SoundCloud</li>
+                <li>Can download songs from YouTube and SoundCloud</li>
+                <li>Techstack: React, Electron, &amp; SQLite</li>
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/antonkoetzler/MyoroEditor'>MyoroEditor</a>
+              <ul>
+                <li>A simple text editor</li>
+                <li>Made with NeutralinoJS</li>
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/antonkoetzler/XAMPP_Network'>XAMPP Social Media Site</a>
+              <ul>
+                <li>The classic XAMPP social media mock application</li>
+                <li>Tech stack: HTML/CSS/JS, PHP, SQL, &amp; Apache</li>
+              </ul>
+            </div>
+
+            <h3>C++ &amp; Python</h3>
+            <div class='project'>
+              <a href='https://www.github.com/Myoro/scyt2mp3'>SoundCloud &amp; YouTube to MP3</a>
+              <ul>
+                <li>Python script to download song(s) from YouTube or SoundCloud
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/antonkoetzler/wxWidgets'>wxWidgets Learning Repository</a>
+              <ul>
+                <li>A guide with many PDF tutorials to learn about wxWidgets</li>
+              </ul>
+            </div>
+            <div class='project'>
+              <a href='https://www.github.com/antonkoetzler/wxChess'>wxChess</a>
+              <ul>
+                <li>A chess app made with wxWidgets</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
+
+    <script>
+      document.addEventListener('click', (event) => {
+        if(event.target.id != 'github') {
+          document.getElementById('githubDropdown').style.display = 'none';
+        }
+      });
+
+      document.getElementById('github').addEventListener('click', (event) => {
+        const githubDropdown = document.getElementById('githubDropdown');
+
+        if(window.getComputedStyle(githubDropdown).display == 'none') {
+          githubDropdown.style.display = 'flex';
+        } else {
+          githubDropdown.style.display = 'none';
+        }
+      });
+    </script>
   </body>
 </html>
