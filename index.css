@@ -1,0 +1,226 @@
+/* Fonts */
+@font-face {
+  font-family: 'Iosevka Regular';
+  src: url('fonts/Iosevka-Extended.ttf');
+}
+
+@font-face {
+  font-family: 'Iosevka Bold';
+  src: url('fonts/Iosevka-ExtendedBold.ttf');
+}
+
+@font-face {
+  font-family: 'Iosevka Italic';
+  src: url('fonts/Iosevka-ExtendedItalic.ttf');
+}
+
+
+
+/* Variables */
+:root {
+  /* Fonts faces */
+  --iosevka-regular: 'Iosevka Regular';
+  --iosevka-bold: 'Iosevka Bold';
+  --iosevka-italic: 'Iosevka Italic';
+
+  /* Font sizes */
+  --small-font-size: 20px;
+  --medium-font-size: 28px;
+  --large-font-size: 36px;
+
+  /* Colors */
+  --primary-color: rgb(24, 24, 24);
+  --secondary-color: rgb(237, 230, 214);
+
+  /* Other styling */
+  --border-radius: 5px;
+  --animation: background-color 0.3s ease-in-out;
+}
+
+
+
+/* Base elements */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 5px 10px 20px 10px;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: var(--iosevka-regular);
+  font-size: var(--medium-font-size);
+  color: var(--secondary-color);
+}
+
+/*
+  Used for principle sections of the portfolio
+
+  i.e. About Me, Professional Experience, Contact Information, & Projects
+*/
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 75%;
+  align-self: center;
+  background: var(--translucent-secondary-color);
+}
+
+/*
+  Used for small pieces of information
+  
+  i.e. Form of contact information or a job (in professional experience)
+*/
+figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 25px;
+  list-style-type: '- ';
+}
+
+li {
+  font-size: var(--small-font-size);
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--iosevka-regular);
+  font-size: var(--medium-font-size);
+  color: var(--secondary-color);
+  transition: var(--animation);
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--large-font-size);
+  user-select: none;
+}
+
+h2 {
+  font-size: var(--medium-font-size);
+}
+
+h3 {
+  font-size: var(--small-font-size);
+}
+
+p {
+  font-size: var(--small-font-size);
+}
+
+a {
+  font-family: var(--iosevka-regular);
+  color: lightblue;
+  font-size: var(--small-font-size);
+}
+
+a:visited {
+  color: #D8BFD8;
+}
+
+
+
+/* Classes */
+.bold {
+  font-family: var(--iosevka-bold);
+}
+
+.italic {
+  font-family: var(--iosevka-italic);
+}
+
+
+
+/* IDs */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header>h1:before {
+  content: 'Anton Louis Koetzler-Faust';
+}
+
+#me {
+  width: 300px;
+  align-self: center;
+}
+
+#toolbox {
+  align-items: center;
+}
+
+#toolbox>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 580px;
+}
+
+#toolbox>div>img {
+  width: 80px;
+}
+
+#projects>div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#projects>div>p {
+  text-decoration: underline;
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 850px) {
+  #header>h1:before {
+    content: 'Anton Koetzler-Faust';
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #header>h1:before {
+    content: 'Anton K-F';
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #header>h1:before {
+    content: 'AKF';
+  }
+}
