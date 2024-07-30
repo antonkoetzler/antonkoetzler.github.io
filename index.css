@@ -142,6 +142,7 @@ a {
   font-family: var(--iosevka-regular);
   color: lightblue;
   font-size: var(--small-font-size);
+  text-decoration: none;
 }
 
 a:visited {
