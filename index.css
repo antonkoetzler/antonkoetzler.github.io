@@ -24,9 +24,9 @@
   --iosevka-italic: 'Iosevka Italic';
 
   /* Font sizes */
-  --small-font-size: 20px;
-  --medium-font-size: 28px;
-  --large-font-size: 36px;
+  --small-font-size: 16px;
+  --medium-font-size: 24px;
+  --large-font-size: 30px;
 
   /* Colors */
   --primary-color: rgb(24, 24, 24);
@@ -61,7 +61,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 75%;
+  /* width: 75%; */
   max-width: 800px;
   align-self: center;
   background: var(--translucent-secondary-color);
@@ -189,11 +189,11 @@ a:visited {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 580px;
+  max-width: 460px;
 }
 
 #toolbox>div>img {
-  width: 80px;
+  width: 60px;
 }
 
 #projects>div {
