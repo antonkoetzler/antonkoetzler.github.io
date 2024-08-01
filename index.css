@@ -61,7 +61,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* width: 75%; */
+  width: 95%;
   max-width: 800px;
   align-self: center;
   background: var(--translucent-secondary-color);
