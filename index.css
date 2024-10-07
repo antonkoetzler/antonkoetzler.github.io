@@ -189,11 +189,12 @@ a:visited {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 460px;
+  max-width: 350px;
 }
 
 #toolbox>div>img {
   width: 60px;
+  height: 60px;
 }
 
 #projects>div {
