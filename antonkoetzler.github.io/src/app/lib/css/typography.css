@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Hack';
+  src: url('../../../assets/fonts/Hack-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('../../../assets/fonts/Hack-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('../../../assets/fonts/Hack-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('../../../assets/fonts/Hack-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.small-font-size {
+  font-size: var(--small-font-size);
+}
+
+.medium-font-size {
+  font-size: var(--medium-font-size);
+}
+
+.large-font-size {
+  font-size: var(--large-font-size);
+}
+
+.regular {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.ellipsize-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

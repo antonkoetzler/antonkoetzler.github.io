@@ -1,0 +1,38 @@
+/* Global CSS variables. */
+:root {
+  /* Decoration constants. */
+  --border-radius: 15px;
+
+  /* Colors. */
+  --primary-color: rgb(24, 24, 24);
+  --on-primary-color: rgb(237, 230, 214);
+  --primary-translucent-color: rgba(24, 24, 24, 0.1);
+  --on-primary-translucent-color: rgba(237, 230, 214, 0.1);
+
+  /* Fonts. */
+  --small-font-size: 16px;
+  --medium-font-size: 20px;
+  --large-font-size: 24px;
+}
+
+/* Base DOM initialization. */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hack';
+  color: var(--on-primary-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Default elements initialization. */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 25px;
+  list-style-type: '- ';
+}
