@@ -3,109 +3,42 @@
 <html>
 
 <head>
+  <!-- Tab title -->
   <title>Anton Louis Koetzler-Faust</title>
+
+  <!-- Better scaling on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel='stylesheet' href='index.css' />
+
+  <!-- JavaScript to display text in english or portuguese -->
   <script src='language_control.js' defer></script>
+
+  <!-- Ubuntu Mono Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- App bar -->
   <header>
     <div>
-      <button id='header-resume-button'>Resumé</button>
+      <button>Résumé</button>
       <div></div>
     </div>
     <h1></h1>
     <div>
       <div></div>
-      <button onclick="window.location.href= 'https://www.github.com/antonkoetzler'">GitHub</button>
+      <button>GitHub</button>
     </div>
   </header>
 
+  <!-- Body -->
   <main>
-    <!-- About me -->
-    <section>
-      <img id='me' src='img/me.jpg' />
-
-      <h2 id='about-me-title'></h2>
-
-      <ul>
-        <li id='about-me-fact-1'></li>
-        <li id='about-me-fact-2'></li>
-        <li id='about-me-fact-3'></li>
-        <li id='about-me-fact-4'></li>
-        <li id='about-me-fact-5'></li>
-      </ul>
-    </section>
-
-    <div class='horizontal-divider'></div>
-
-    <!-- My toolbox -->
-    <section id='toolbox'>
-      <h2 id='my-toolbox-title'></h2>
-      <div>
-        <img src='img/dart.svg' alt='dart' />
-        <img src='img/flutter.svg' alt='flutter' />
-        <img src='img/typescript.svg' alt='typescript' />
-        <img src='img/node.png' alt='node' />
-        <img src='img/vue.svg' alt='vue' />
-        <img src='img/electron.svg' alt='electron' />
-        <img src='img/go.svg' alt='go' />
-        <img src='img/sqlite.svg' alt='sqlite' />
-      </div>
-    </section>
-
-    <div class='horizontal-divider'></div>
-
-    <!-- Professional experience -->
-    <section>
-      <h2 id='professional-experience-title'></h2>
-      <figure>
-        <h3>Doutor-IE</h3>
-        <p class='italic' id='professional-experience-doutor-ie-dates'></p>
-        <p id='professional-experience-doutor-ie-job-title'></p>
-      </figure>
-    </section>
-
-    <div class='horizontal-divider'></div>
-
-    <!-- Contact information -->
-    <section>
-      <h2 id='contact-information-title'></h2>
-      <figure>
-        <p><span class='bold'>Email:</span> antonkoetzler-faust@hotmail.com</p>
-        <p><span class='bold' id='contact-information-phone-number-title'></span> +55 (48) 98818-9095</p>
-      </figure>
-    </section>
-
-    <div class='horizontal-divider'></div>
-
-    <!-- Projects -->
-    <section id='projects'>
-      <h2 id='projects-title'></h2>
-
-      <!-- Flutter -->
-      <div>
-        <a href='https://github.com/antonkoetzler/myoro_flutter_library'>Myoro Flutter Library</a>
-        <ul>
-          <li id='projects-myoro-flutter-library-fact-1'></li>
-          <li id='projects-myoro-flutter-library-fact-2'></li>
-          <li id='projects-myoro-flutter-library-fact-3'></li>
-          <li id='projects-myoro-flutter-library-fact-4'></li>
-        </ul>
-      </div>
-      <div>
-        <a href=''>MyoroFitness (COMING SOON)</a>
-        <ul>
-          <li id='projects-myoro-fitness-fact-1'></li>
-          <li id='projects-myoro-fitness-fact-2'></li>
-          <li id='projects-myoro-fitness-fact-3'></li>
-          <li id='projects-myoro-fitness-fact-4'></li>
-          <li>Tech stack: Flutter frontend & Go backend.</li>
-        </ul>
-      </div>
-    </section>
   </main>
 </body>
 

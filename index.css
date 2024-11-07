@@ -1,69 +1,43 @@
-/* Fonts */
-@font-face {
-  font-family: 'Iosevka Regular';
-  src: url('fonts/Iosevka-Extended.ttf');
-}
-
-@font-face {
-  font-family: 'Iosevka Bold';
-  src: url('fonts/Iosevka-ExtendedBold.ttf');
-}
-
-@font-face {
-  font-family: 'Iosevka Italic';
-  src: url('fonts/Iosevka-ExtendedItalic.ttf');
-}
-
-/* Variables */
+/* Constants */
 :root {
-  /* Fonts faces */
-  --iosevka-regular: 'Iosevka Regular';
-  --iosevka-bold: 'Iosevka Bold';
-  --iosevka-italic: 'Iosevka Italic';
+  /* Colors */
+  --primary-color: #181818;
+  --on-primary-color: #EDE6D6;
 
   /* Font sizes */
-  --small-font-size: 16px;
+  --small-font-size: 20px;
   --medium-font-size: 24px;
-  --large-font-size: 30px;
-
-  /* Colors */
-  --primary-color: rgb(24, 24, 24);
-  --secondary-color: rgb(237, 230, 214);
+  --large-font-size: 28px;
 }
 
 /* Base elements */
 body {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
-  font-family: var(--iosevka-regular);
-  font-size: var(--medium-font-size);
-  color: var(--secondary-color);
   width: 100%;
-  overflow-x: scroll;
-  margin-bottom: 10px;
-}
-
-main {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  font-family: 'Ubuntu Mono';
+  color: var(--on-primary-color);
+  font-size: var(--medium-font-size);
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  min-width: 300px;
-  max-width: 600px;
-  align-self: center;
 }
 
-/* App bar */
 header {
+  height: 45px;
+  border-bottom: 2px solid var(--on-primary-color);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--secondary-color);
-  height: 50px;
+  justify-content: space-between;
+}
+
+header>h1 {
+  flex: 1;
 }
 
 header>h1:before {
@@ -79,172 +53,61 @@ header>div {
 header>div>div {
   width: 2px;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--on-primary-color);
 }
 
-/*
-  Used for principle sections of the portfolio
-
-  i.e. About Me, Professional Experience, Contact Information, & Projects
-*/
-section {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 95%;
-  max-width: 800px;
-  align-self: center;
-  background: var(--translucent-secondary-color);
+main {
+  flex: 1;
 }
 
-/*
-  Used for small pieces of information
-  
-  i.e. Form of contact information or a job (in professional experience)
-*/
-figure {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-/* Lists */
-ul {
-  margin: 0;
-  padding-left: 25px;
-  list-style-type: '- ';
-}
-
-/* List items */
-li {
-  font-size: var(--small-font-size);
-}
-
-/* Buttons */
 button {
   background: none;
   outline: none;
   border: none;
-  font-family: var(--iosevka-regular);
+  font-family: 'Ubuntu Mono';
   font-size: var(--medium-font-size);
-  color: var(--secondary-color);
+  color: var(--on-primary-color);
+  padding: 0 10px;
+  height: 100%;
   cursor: pointer;
-  padding: 5px 10px;
 }
 
 button:hover {
-  background: var(--secondary-color);
+  background-color: var(--on-primary-color);
   color: var(--primary-color);
 }
 
-img {
-  pointer-events: none;
-  user-select: none;
-}
-
-/* Text */
 h1,
-h2,
-h3,
 p {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 h1 {
+  text-align: center;
   font-size: var(--large-font-size);
-  user-select: none;
 }
 
-h2 {
-  font-size: var(--medium-font-size);
-}
-
-h3 {
-  font-size: var(--small-font-size);
-}
-
-p {
-  font-size: var(--small-font-size);
-}
-
-a {
-  font-family: var(--iosevka-regular);
-  color: lightblue;
-  font-size: var(--small-font-size);
-  text-decoration: none;
-}
-
-a:visited {
-  color: #D8BFD8;
-}
-
-/* Classes */
-.bold {
-  font-family: var(--iosevka-bold);
-}
-
-.italic {
-  font-family: var(--iosevka-italic);
-}
-
-.horizontal-divider {
-  width: 100%;
-  height: 1px;
-  background-color: var(--secondary-color);
-  align-self: center;
-}
-
-/* IDs */
-#me {
-  width: 300px;
-  align-self: center;
-  border-radius: 15px;
-  border: 2px solid var(--secondary-color);
-}
-
-#toolbox {
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-#toolbox>div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 350px;
-}
-
-#toolbox>div>img {
-  width: 60px;
-  height: 60px;
-}
-
-/* Media queries */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 550px) {
   header>h1:before {
     content: 'Anton Koetzler-Faust';
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 450px) {
   header>h1:before {
     content: 'Anton K-F';
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 300px) {
   header>h1:before {
     content: 'AKF';
   }
 }
 
-@media screen and (max-width: 300px) {
-  header>h1:before {
-    content: '';
+@media screen and (max-width: 200px) {
+  header>h1 {
+    visibility: hidden;
   }
 }
