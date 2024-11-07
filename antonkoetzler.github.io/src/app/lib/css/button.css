@@ -1,9 +1,0 @@
-.button {
-  cursor: pointer;
-  padding: 10px;
-}
-
-.button:hover {
-  background-color: var(--on-primary-color);
-  color: var(--primary-color);
-}
