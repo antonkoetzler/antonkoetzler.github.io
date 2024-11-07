@@ -41,7 +41,7 @@ myToolboxTitle.textContent = isPortuguese ? 'Minhas Ferramentas' : 'My Toolbox';
 const professionalExperienceTitle = document.getElementById('professional-experience-title');
 const professionalExperienceDoutorIeDates = document.getElementById('professional-experience-doutor-ie-dates');
 const professionalExperienceDoutorIeJobTitle = document.getElementById('professional-experience-doutor-ie-job-title');
-professionalExperienceTitle.textContent = isPortuguese ? 'Professional Experience' : 'Experiência Profissional';
+professionalExperienceTitle.textContent = isPortuguese ? 'Experiência Profissional' : 'Professional Experience';
 professionalExperienceDoutorIeDates.textContent = isPortuguese ? 'Novembro 2023 - Presente' : 'November 2023 - Present';
 professionalExperienceDoutorIeJobTitle.textContent = isPortuguese ? 'Desenvolvedor Flutter junior' : 'Junior Flutter developer';
 
