@@ -48,7 +48,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 
 /* App bar */
@@ -85,7 +85,7 @@ header>div>div {
 section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   width: 95%;
   max-width: 800px;
   align-self: center;
@@ -187,15 +187,18 @@ a:visited {
 }
 
 .horizontal-divider {
-  width: 100%;
-  height: 2px;
+  width: 40%;
+  height: 1px;
   background-color: var(--secondary-color);
+  align-self: center;
 }
 
 /* IDs */
 #me {
   width: 300px;
   align-self: center;
+  border-radius: 15px;
+  border: 2px solid var(--secondary-color);
 }
 
 #toolbox {
