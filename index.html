@@ -27,18 +27,98 @@
   <!-- App bar -->
   <header>
     <div>
-      <button>Résumé</button>
+      <button id='header-resume-button'>Résumé</button>
       <div></div>
     </div>
     <h1></h1>
     <div>
       <div></div>
-      <button>GitHub</button>
+      <button onclick='window.location.href="https://github.com/antonkoetzler"'>GitHub</button>
     </div>
   </header>
 
   <!-- Body -->
   <main>
+    <!-- About me -->
+    <section id='about-me'>
+      <img src='assets/img/me.jpg' />
+      <h2 id='about-me-title'></h2>
+      <ul>
+        <li id='about-me-fact-1'></li>
+        <li id='about-me-fact-2'></li>
+        <li id='about-me-fact-3'></li>
+        <li id='about-me-fact-4'></li>
+        <li id='about-me-fact-5'></li>
+      </ul>
+    </section>
+
+    <div></div>
+
+    <!-- My toolbox -->
+    <section id='my-toolbox'>
+      <h2 id='my-toolbox-title'></h2>
+      <div>
+        <img src='assets/img/dart.svg' alt='dart' />
+        <img src='assets/img/flutter.svg' alt='flutter' />
+        <img src='assets/img/typescript.svg' alt='typescript' />
+        <img src='assets/img/node.png' alt='node' />
+        <img src='assets/img/vue.svg' alt='vue' />
+        <img src='assets/img/electron.svg' alt='electron' />
+        <img src='assets/img/go.svg' alt='go' />
+        <img src='assets/img/sqlite.svg' alt='sqlite' />
+      </div>
+    </section>
+
+    <div></div>
+
+    <!-- Professional experience -->
+    <section id='professional-experience'>
+      <h2 id='professional-experience-title'></h2>
+      <figure>
+        <h3>Doutor-IE</h3>
+        <p class='italic' id='professional-experience-doutor-ie-dates'></p>
+        <p id='professional-experience-doutor-ie-job-title'></p>
+      </figure>
+    </section>
+
+    <div></div>
+
+    <!-- Contact information -->
+    <section id='contact-information'>
+      <h2 id='contact-information-title'></h2>
+      <figure>
+        <p><span>Email:</span> antonkoetzler-faust@hotmail.com</p>
+        <p><span id='contact-information-phone-number-title'></span> +55 (48) 98818-9095</p>
+      </figure>
+    </section>
+
+    <div></div>
+
+    <!-- Projects -->
+    <section id='projects'>
+      <h2 id='projects-title'></h2>
+
+      <!-- Flutter -->
+      <div>
+        <a href='https://github.com/antonkoetzler/myoro_flutter_library'>Myoro Flutter Library</a>
+        <ul>
+          <li id='projects-myoro-flutter-library-fact-1'></li>
+          <li id='projects-myoro-flutter-library-fact-2'></li>
+          <li id='projects-myoro-flutter-library-fact-3'></li>
+          <li id='projects-myoro-flutter-library-fact-4'></li>
+        </ul>
+      </div>
+      <div>
+        <a href=''>MyoroFitness (COMING SOON)</a>
+        <ul>
+          <li id='projects-myoro-fitness-fact-1'></li>
+          <li id='projects-myoro-fitness-fact-2'></li>
+          <li id='projects-myoro-fitness-fact-3'></li>
+          <li id='projects-myoro-fitness-fact-4'></li>
+          <li>Tech stack: Flutter frontend & Go backend.</li>
+        </ul>
+      </div>
+    </section>
   </main>
 </body>
 

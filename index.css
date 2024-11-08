@@ -1,3 +1,32 @@
+/* Font initialization */
+@font-face {
+  font-family: 'Hack';
+  src: url('assets/fonts/HackNerdFontMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('assets/fonts/HackNerdFontMono-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('assets/fonts/HackNerdFontMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('assets/fonts/HackNerdFontMono-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Constants */
 :root {
   /* Colors */
@@ -5,9 +34,13 @@
   --on-primary-color: #EDE6D6;
 
   /* Font sizes */
-  --small-font-size: 20px;
-  --medium-font-size: 24px;
-  --large-font-size: 28px;
+  --tiny-font-size: 14px;
+  --small-font-size: 16px;
+  --medium-font-size: 20px;
+  --large-font-size: 24px;
+
+  /* Borders */
+  --border-radius: 15px;
 }
 
 /* Base elements */
@@ -16,18 +49,19 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   background-color: var(--primary-color);
-  font-family: 'Ubuntu Mono';
+  font-family: 'Hack';
   color: var(--on-primary-color);
   font-size: var(--medium-font-size);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 header {
+  width: 100%;
   height: 45px;
   border-bottom: 2px solid var(--on-primary-color);
   display: flex;
@@ -58,16 +92,45 @@ header>div>div {
 
 main {
   flex: 1;
+  margin: 20px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+
+main>div {
+  width: 90%;
+  height: 0.5px;
+  background-color: var(--on-primary-color);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 button {
   background: none;
   outline: none;
   border: none;
-  font-family: 'Ubuntu Mono';
+  font-family: 'Hack';
   font-size: var(--medium-font-size);
   color: var(--on-primary-color);
-  padding: 0 10px;
+  padding: 10px;
   height: 100%;
   cursor: pointer;
 }
@@ -77,36 +140,111 @@ button:hover {
   color: var(--primary-color);
 }
 
+ul {
+  margin: 0 40px;
+  padding: 0;
+  list-style-type: '- ';
+}
+
 h1,
-p {
+h2,
+h3,
+p,
+li {
   margin: 0;
   padding: 0;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
+}
+
+p,
+a,
+li,
+h3 {
+  font-size: var(--small-font-size);
+}
+
+h2 {
+  font-size: var(--medium-font-size);
+}
+
+h1 {
   font-size: var(--large-font-size);
 }
 
-@media screen and (max-width: 550px) {
+a:visited {
+  color: lightpink;
+}
+
+#about-me>img {
+  width: 300px;
+  height: 300px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--on-primary-color);
+}
+
+#my-toolbox>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 300px;
+}
+
+#my-toolbox>div>img {
+  width: 60px;
+  height: 60px;
+}
+
+#professional-experience>figure>p:nth-child(2) {
+  font-style: italic;
+}
+
+#professional-experience p {
+  font-size: var(--tiny-font-size);
+}
+
+#contact-information p,
+span {
+  font-size: var(--tiny-font-size);
+}
+
+#projects>div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#projects a {
+  padding-left: 20px;
+}
+
+#contact-information span {
+  font-style: bold;
+}
+
+@media screen and (max-width: 625px) {
   header>h1:before {
     content: 'Anton Koetzler-Faust';
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 525px) {
   header>h1:before {
     content: 'Anton K-F';
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   header>h1:before {
-    content: 'AKF';
+    content: 'Anton';
   }
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 275px) {
   header>h1 {
     visibility: hidden;
   }
