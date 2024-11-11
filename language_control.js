@@ -70,7 +70,7 @@ projectsMyoroFlutterLibraryFact2.textContent = isPortuguese
   : 'Handles all of the boilerplate creating a new Flutter project;';
 projectsMyoroFlutterLibraryFact3.textContent = isPortuguese
   ? 'Esquema de design incluído com cores, tipografia, e widgets;'
-  : 'Included design scheme with colors, typography, &amp widgets;';
+  : 'Included design scheme with colors, typography, &amp; widgets;';
 projectsMyoroFlutterLibraryFact4.textContent = isPortuguese
   ? 'Contém: Widgets, arquivos commons (abstracts, enums, extensions, helpers, etc), & inicialização de um banco de dados em SQLite local.'
   : 'Takes care of: Widgets, common files (abstracts, enums, extensions, helpers, etc), & local SQLite initialization.';
