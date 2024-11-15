@@ -28,7 +28,7 @@ aboutMeFact3.textContent = isPortuguese
   : 'Living in Florianópolis, Brazil 🌴;';
 aboutMeFact4.textContent = isPortuguese
   ? 'Nascido no Canadá, meio-Canadiano 🍁 e meio-Brasileiro 🏖️;'
-  : 'Born in Canada, half-Canadian 🍁 &amp half-Brazilian 🏖️;';
+  : 'Born in Canada, half-Canadian 🍁 & half-Brazilian 🏖️;';
 aboutMeFact5.textContent = isPortuguese
   ? '"Um idiota admira a complexidade, um génio admira a simplicidade".'
   : '"An idiot admires complexity, a genius admires simplicity.".';
