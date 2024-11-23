@@ -32,6 +32,8 @@
   /* Colors */
   --primary-color: #181818;
   --on-primary-color: #EDE6D6;
+  --unvisited-link: #03B1FC;
+  --visited-link: lightpink;
 
   /* Font sizes */
   --tiny-font-size: 14px;
@@ -175,8 +177,12 @@ h1 {
   font-size: var(--large-font-size);
 }
 
+a:link {
+  color: var(--unvisited-link);
+}
+
 a:visited {
-  color: lightpink;
+  color: var(--visited-link);
 }
 
 #about-me>img {
