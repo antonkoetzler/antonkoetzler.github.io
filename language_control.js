@@ -82,7 +82,7 @@ projectsMyoroFitnessFact2.textContent = isPortuguese
   : 'A gamified fitness tracking application;';
 projectsMyoroFitnessFact3.textContent = isPortuguese
   ? 'Rastreia alimentação e exercícios;'
-  : 'Tracks food &amp exercise;';
+  : 'Tracks food &amp; exercise;';
 projectsMyoroFitnessFact4.textContent = isPortuguese
   ? 'Uma funcionalidade de sequência para que o usuário fique motivado para continuar rastreando;'
   : 'A streak functionality so the user stays motivated to keep tracking;';
