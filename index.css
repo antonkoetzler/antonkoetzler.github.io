@@ -196,8 +196,10 @@ a:visited {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  max-width: 300px;
+  max-width: 460px;
 }
 
 #my-toolbox>div>img {
