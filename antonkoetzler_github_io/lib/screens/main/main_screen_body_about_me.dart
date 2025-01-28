@@ -10,47 +10,43 @@ final class MainScreenBodyAboutMe extends StatelessWidget {
     return const Column(
       spacing: 10,
       mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _Image(),
-        _Text(),
+        _Title(),
+        _Facts(),
       ],
     );
   }
 }
 
-final class _Image extends StatelessWidget {
-  const _Image();
+final class _Title extends StatelessWidget {
+  const _Title();
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        border: MyoroDecorationHelper.border(context),
-        borderRadius: MyoroDecorationHelper.borderRadius,
-      ),
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(
-          maxWidth: 300,
-        ),
-        child: ClipRRect(
-          borderRadius: MyoroDecorationHelper.borderRadius,
-          child: Image.asset(
-            'assets/images/me.jpg',
-            width: double.infinity,
-          ),
-        ),
-      ),
+    return Text(
+      context.localizations.aboutMeTitle,
+      style: MyoroTypographyTheme.instance.boldLarge,
     );
   }
 }
 
-final class _Text extends StatelessWidget {
-  const _Text();
+final class _Facts extends StatelessWidget {
+  const _Facts();
 
   @override
   Widget build(BuildContext context) {
-    final language = context.resolveBloc<LanguageCubit>().state;
+    final localizations = context.localizations;
+    final stringBuffer = StringBuffer()
+      ..writeln(localizations.aboutMeFact1)
+      ..writeln(localizations.aboutMeFact2)
+      ..writeln(localizations.aboutMeFact3)
+      ..writeln(localizations.aboutMeFact4)
+      ..writeln(localizations.aboutMeFact5);
 
-    return const SizedBox.shrink();
+    return Text(
+      stringBuffer.toString(),
+      style: MyoroTypographyTheme.instance.regularMedium,
+    );
   }
 }

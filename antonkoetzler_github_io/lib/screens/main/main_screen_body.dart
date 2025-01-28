@@ -7,17 +7,24 @@ final class MainScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MyoroScrollable(
-      scrollableType: MyoroScrollableEnum.customScrollView,
-      constraints: BoxConstraints(maxWidth: 500),
-      children: [
-        MainScreenBodyAboutMe(),
-        // _TechStack(),
-        // _DevStack(),
-        // _ProfessionalExperience(),
-        // _ContactInformation(),
-        // _Projects(),
-      ],
+    const espacamento = SizedBox(height: 30);
+
+    return Container(
+      color: Colors.cyan,
+      child: const MyoroScrollable(
+        scrollableType: MyoroScrollableEnum.customScrollView,
+        constraints: BoxConstraints(maxWidth: 500),
+        children: [
+          MainScreenBodyMe(),
+          // espacamento,
+          // MainScreenBodyAboutMe(),
+          // _TechStack(),
+          // _DevStack(),
+          // _ProfessionalExperience(),
+          // _ContactInformation(),
+          // _Projects(),
+        ],
+      ),
     );
   }
 }

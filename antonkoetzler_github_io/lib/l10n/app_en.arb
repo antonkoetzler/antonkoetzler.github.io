@@ -1,0 +1,26 @@
+{
+  "aboutMeTitle": "About Me",
+  "@aboutMeTitle": {
+    "description": "[MainScreenBodyAboutMe._Title]"
+  },
+  "aboutMeFact1": "Frontend software engineer specializing in Flutter & React",
+  "@aboutMeFact1": {
+    "description": "[MainScreenBodyAboutMe._Facts]"
+  },
+  "aboutMeFact2": "BSc in Computer Science from the University of Lethbridge",
+  "@aboutMeFact2": {
+    "description": "[MainScreenBodyAboutMe._Facts]"
+  },
+  "aboutMeFact3": "Living in Florianópolis, Brazil 🌴",
+  "@aboutMeFact3": {
+    "description": "[MainScreenBodyAboutMe._Facts]"
+  },
+  "aboutMeFact4": "Nascido no Canadá, meio-Canadiano 🍁 e meio-Brasileiro 🏖️",
+  "@aboutMeFact4": {
+    "description": "[MainScreenBodyAboutMe._Facts]"
+  },
+  "aboutMeFact5": "\"An idiot admires complexity, a genius admires simplicity.\".",
+  "@aboutMeFact5": {
+    "description": "[MainScreenBodyAboutMe._Facts]"
+  }
+}

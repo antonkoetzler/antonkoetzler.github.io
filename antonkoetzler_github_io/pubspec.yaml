@@ -9,16 +9,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   myoro_flutter_library:
     # git:
     #   url: git@github.com:antonkoetzler/myoro_flutter_library
     path: ../../myoro_flutter_library
-  device_info_plus: ^11.2.1
-  flutter_bloc: ^9.0.0
-  # Conflicts with flutter
-  faker: ^2.1.0
-  # Conflict with flutter-test
-  collection: 1.19.0
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +24,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
     - assets/images/
