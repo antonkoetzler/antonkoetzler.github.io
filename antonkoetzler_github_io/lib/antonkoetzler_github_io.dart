@@ -1,3 +1,3 @@
 export 'cubits/exports.dart';
 export 'enums/exports.dart';
-export 'main.dart';
+export 'screens/exports.dart';
