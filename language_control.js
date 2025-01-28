@@ -33,10 +33,6 @@ aboutMeFact5.textContent = isPortuguese
   ? '"Um idiota admira a complexidade, um génio admira a simplicidade".'
   : '"An idiot admires complexity, a genius admires simplicity.".';
 
-// My Toolbox
-const myToolboxTitle = document.getElementById('my-toolbox-title');
-myToolboxTitle.textContent = isPortuguese ? 'Minhas Ferramentas' : 'My Toolbox';
-
 // Professional Experience
 const professionalExperienceTitle = document.getElementById('professional-experience-title');
 const professionalExperienceDoutorIeDates = document.getElementById('professional-experience-doutor-ie-dates');
