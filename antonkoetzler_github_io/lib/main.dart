@@ -35,29 +35,18 @@ final class _AppBar extends StatelessWidget implements PreferredSizeWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // _Button(
-          //   text: 'Résumé',
-          //   onPressed: () => throw UnimplementedError(),
-          // ),
-          Container(
-            width: 20,
-            height: 20,
-            color: Colors.red,
+          _Button(
+            text: 'Résumé',
+            onPressed: () => throw UnimplementedError(),
           ),
           Text(
             'Anton Louis Koetzler-Faust',
             style: MyoroTypographyTheme.instance.boldLarge,
           ),
-          Container(
-            width: 20,
-            height: 20,
-            color: Colors.red,
+          _Button(
+            text: 'GitHub',
+            onPressed: () => throw UnimplementedError(),
           ),
-
-          // _Button(
-          //   text: 'GitHub',
-          //   onPressed: () => throw UnimplementedError(),
-          // ),
         ],
       ),
     );
