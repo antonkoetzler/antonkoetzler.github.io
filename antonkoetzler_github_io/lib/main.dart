@@ -39,16 +39,46 @@ final class _AppBar extends StatelessWidget implements PreferredSizeWidget {
             text: 'Résumé',
             onPressed: () => throw UnimplementedError(),
           ),
-          Text(
-            'Anton Louis Koetzler-Faust',
-            style: MyoroTypographyTheme.instance.boldLarge,
-          ),
+          const Expanded(child: _Title()),
           _Button(
             text: 'GitHub',
             onPressed: () => throw UnimplementedError(),
           ),
         ],
       ),
+    );
+  }
+}
+
+final class _Title extends StatelessWidget {
+  const _Title();
+
+  @override
+  Widget build(BuildContext context) {
+    return MyoroLayoutBuilder(
+      builder: (_, BoxConstraints constraints) {
+        final maxWidth = constraints.maxWidth;
+
+        late final String text;
+
+        if (maxWidth >= 280) {
+          text = 'Anton Louis Koetzler-Faust';
+        } else if (maxWidth >= 220) {
+          text = 'Anton Koetzler-Faust';
+        } else if (maxWidth >= 140) {
+          text = 'Anton K-F';
+        } else if (maxWidth >= 50) {
+          text = 'AKF';
+        } else {
+          text = '';
+        }
+
+        return Text(
+          text,
+          textAlign: TextAlign.center,
+          style: MyoroTypographyTheme.instance.boldLarge,
+        );
+      },
     );
   }
 }
@@ -73,9 +103,14 @@ final class _Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeExtension = context.resolveThemeExtension<MyoroHoverButtonThemeExtension>();
+
     return IntrinsicWidth(
       child: MyoroIconTextHoverButton(
-        configuration: const MyoroHoverButtonConfiguration(bordered: true),
+        configuration: MyoroHoverButtonConfiguration(
+          primaryColor: themeExtension.onPrimaryColor,
+          onPrimaryColor: themeExtension.primaryColor,
+        ),
         text: text,
         onPressed: onPressed,
       ),
