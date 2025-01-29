@@ -19,7 +19,7 @@
   "@aboutMeFact4": {
     "description": "[MainScreenBodyAboutMe._Facts]"
   },
-  "aboutMeFact5": "\"An idiot admires complexity, a genius admires simplicity.\".",
+  "aboutMeFact5": "\"An idiot admires complexity, a genius admires simplicity.\"",
   "@aboutMeFact5": {
     "description": "[MainScreenBodyAboutMe._Facts]"
   }

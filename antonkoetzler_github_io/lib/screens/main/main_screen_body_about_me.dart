@@ -10,7 +10,6 @@ final class MainScreenBodyAboutMe extends StatelessWidget {
     return const Column(
       spacing: 10,
       mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _Title(),
         _Facts(),
@@ -38,11 +37,11 @@ final class _Facts extends StatelessWidget {
   Widget build(BuildContext context) {
     final localizations = context.localizations;
     final stringBuffer = StringBuffer()
-      ..writeln(localizations.aboutMeFact1)
-      ..writeln(localizations.aboutMeFact2)
-      ..writeln(localizations.aboutMeFact3)
-      ..writeln(localizations.aboutMeFact4)
-      ..writeln(localizations.aboutMeFact5);
+      ..writeln('- ${localizations.aboutMeFact1};')
+      ..writeln('- ${localizations.aboutMeFact2};')
+      ..writeln('- ${localizations.aboutMeFact3};')
+      ..writeln('- ${localizations.aboutMeFact4};')
+      ..writeln('- ${localizations.aboutMeFact5}.');
 
     return Text(
       stringBuffer.toString(),
