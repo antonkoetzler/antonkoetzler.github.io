@@ -72,8 +72,6 @@ final class _Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themeExtension = context.resolveThemeExtension<MyoroHoverButtonThemeExtension>();
-
     return IntrinsicWidth(
       child: MyoroIconTextHoverButton(
         configuration: const MyoroHoverButtonConfiguration(

@@ -4,5 +4,18 @@
   "aboutMeFact2": "Curso superior em Ciências Informáticas pela Universidade de Lethbridge",
   "aboutMeFact3": "Morando em Florianópolis, Santa Catarina, Brasil 🌴",
   "aboutMeFact4": "Nascido no Canadá, meio-Canadiano 🍁 e meio-Brasileiro 🏖️",
-  "aboutMeFact5": "\"Um idiota admira a complexidade, um génio admira a simplicidade\"."
+  "aboutMeFact5": "\"Um idiota admira a complexidade, um génio admira a simplicidade\"",
+
+  "professionalExperienceTitle": "Experiência Profissional",
+  "professionalExperienceDoutorIeJobTitle": "",
+  "professionalExperienceDoutorIeDates": "Novembro 2023 - Presente",
+
+  "contactInformationTitle": "Informações de Contato",
+  "contactInformationPhoneNumberTitle": "Telefone",
+
+  "projectsTitle": "Projetos",
+  "projectsMyoroFlutterLibraryFact1": "Meu launchpad para Flutter",
+  "projectsMyoroFlutterLibraryFact2": "com todo o boilerplate de criar de um novo projeto em Flutter",
+  "projectsMyoroFlutterLibraryFact3": "Esquema de design incluído com cores, tipografia, e widgets",
+  "projectsMyoroFlutterLibraryFact4": "Contém: Widgets, arquivos commons (abstracts, enums, extensions, helpers, etc), & inicialização de um banco de dados em SQLite local"
 }

@@ -14,6 +14,7 @@ final class App extends StatelessWidget {
       title: 'Anton Louis Koetzler-Faust',
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
+      themeExtensionsBuilder: createThemeExtensions,
       home: Scaffold(body: MainScreen()),
     );
   }
