@@ -1,6 +1,5 @@
 import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
 import 'package:flutter/material.dart';
-import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBody extends StatelessWidget {
   const MainScreenBody({super.key});
@@ -9,21 +8,27 @@ final class MainScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     const espacamento = SizedBox(height: 30);
 
-    return Container(
-      color: Colors.cyan,
-      child: const MyoroScrollable(
-        scrollableType: MyoroScrollableEnum.customScrollView,
-        constraints: BoxConstraints(maxWidth: 500),
-        children: [
-          MainScreenBodyMe(),
-          // espacamento,
-          // MainScreenBodyAboutMe(),
-          // _TechStack(),
-          // _DevStack(),
-          // _ProfessionalExperience(),
-          // _ContactInformation(),
-          // _Projects(),
-        ],
+    return SizedBox(
+      width: double.infinity,
+      child: SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 400),
+          child: const Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                MainScreenBodyMe(),
+                // espacamento,
+                // MainScreenBodyAboutMe(),
+                // _TechStack(),
+                // _DevStack(),
+                // _ProfessionalExperience(),
+                // _ContactInformation(),
+                // _Projects(),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

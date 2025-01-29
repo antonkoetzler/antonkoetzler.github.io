@@ -76,9 +76,8 @@ final class _Button extends StatelessWidget {
 
     return IntrinsicWidth(
       child: MyoroIconTextHoverButton(
-        configuration: MyoroHoverButtonConfiguration(
-          primaryColor: themeExtension.onPrimaryColor,
-          onPrimaryColor: themeExtension.primaryColor,
+        configuration: const MyoroHoverButtonConfiguration(
+          isHovered: true,
         ),
         text: text,
         onPressed: onPressed,
