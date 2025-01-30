@@ -16,12 +16,12 @@ final class MainScreenAppBar extends StatelessWidget implements PreferredSizeWid
         children: [
           _Button(
             text: 'Résumé',
-            onPressed: () => throw UnimplementedError(),
+            onPressed: () => myoroLaunchUrl(context.localizations.resumeLink),
           ),
           const Expanded(child: _Title()),
           _Button(
             text: 'GitHub',
-            onPressed: () => throw UnimplementedError(),
+            onPressed: () => myoroLaunchUrl('https://github.com/antonkoetzler'),
           ),
         ],
       ),
