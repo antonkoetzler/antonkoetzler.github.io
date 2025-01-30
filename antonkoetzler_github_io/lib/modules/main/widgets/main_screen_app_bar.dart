@@ -1,3 +1,4 @@
+import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
 import 'package:flutter/material.dart';
 import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
@@ -54,9 +55,7 @@ final class _Title extends StatelessWidget {
         return Text(
           text,
           textAlign: TextAlign.center,
-          style: MyoroTypographyTheme.instance.boldLarge.copyWith(
-            fontSize: 32,
-          ),
+          style: context.resolveThemeExtension<MainScreenAppBarThemeExtension>().titleTextStyle,
         );
       },
     );
@@ -74,13 +73,13 @@ final class _Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeExtension = context.resolveThemeExtension<MainScreenAppBarThemeExtension>();
+
     return IntrinsicWidth(
       child: MyoroIconTextHoverButton(
-        configuration: const MyoroHoverButtonConfiguration(
-          isHovered: true,
-        ),
+        configuration: themeExtension.buttonConfiguration,
         text: text,
-        textStyle: MyoroTypographyTheme.instance.regularLarge.copyWith(height: 1),
+        textStyle: themeExtension.buttonTextStyle,
         onPressed: onPressed,
       ),
     );

@@ -1,7 +1,7 @@
 export 'main_screen_app_bar.dart';
 export 'main_screen_body_about_me_section.dart';
 export 'main_screen_body_contact_information_section.dart';
-export 'main_screen_body_dev_stack.dart';
+export 'main_screen_body_dev_stack_section.dart';
 export 'main_screen_body_icon.dart';
 export 'main_screen_body_me_section.dart';
 export 'main_screen_body_professional_experience_section.dart';

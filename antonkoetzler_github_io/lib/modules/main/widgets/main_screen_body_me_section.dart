@@ -7,16 +7,22 @@ final class MainScreenBodyMeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final borderRadius = context.resolveThemeExtension<MyoroCardThemeExtension>().borderRadius;
+    final themeExtension = context.resolveThemeExtension<MainScreenBodyMeSectionThemeExtension>();
+    final clipRRectRadius = Radius.circular(themeExtension.borderRadius.topLeft.x - 4);
 
     return MainScreenBodySection(
       child: Container(
         decoration: BoxDecoration(
-          border: MyoroDecorationHelper.border(context),
-          borderRadius: borderRadius,
+          border: themeExtension.border,
+          borderRadius: themeExtension.borderRadius,
         ),
         child: ClipRRect(
-          borderRadius: borderRadius,
+          borderRadius: themeExtension.borderRadius.copyWith(
+            topLeft: clipRRectRadius,
+            topRight: clipRRectRadius,
+            bottomLeft: clipRRectRadius,
+            bottomRight: clipRRectRadius,
+          ),
           child: Image.asset(
             ImagesStore.me,
           ),

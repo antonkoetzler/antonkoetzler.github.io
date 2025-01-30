@@ -37,20 +37,13 @@ final class _Project extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final stringBuffer = StringBuffer();
-    for (final fact in facts) {
-      final isLastFact = facts.indexOf(fact) == facts.length - 1;
-      final formattedFact = '- $fact${isLastFact ? '.' : ';'}';
-      isLastFact ? stringBuffer.write(formattedFact) : stringBuffer.writeln(formattedFact);
-    }
-
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           name,
-          style: MyoroTypographyTheme.instance.boldMedium,
+          style: context.resolveThemeExtension<MainScreenBodyProjectsSectionThemeExtension>().projectTextStyle,
         ),
         BulletList(facts),
       ],

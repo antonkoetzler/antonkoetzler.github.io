@@ -36,18 +36,18 @@ final class _FormOfContact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final typographyInstance = MyoroTypographyTheme.instance;
+    final themeExtension = context.resolveThemeExtension<MainScreenBodyContactInformationSectionThemeExtension>();
 
     return Text.rich(
       TextSpan(
         children: [
           TextSpan(
             text: '$_formOfCommunication: ',
-            style: typographyInstance.semiBoldMedium,
+            style: themeExtension.formOfCommunicationTextStyle,
           ),
           TextSpan(
             text: _contactInformation,
-            style: typographyInstance.regularMedium,
+            style: themeExtension.contactInformationTextStyle,
           ),
         ],
       ),

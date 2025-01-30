@@ -1,5 +1,7 @@
+import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodyIcon extends StatelessWidget {
   final String path;
@@ -8,7 +10,7 @@ final class MainScreenBodyIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const size = 60.0;
+    final size = context.resolveThemeExtension<MainScreenBodyIconThemeExtension>().size;
 
     return SizedBox(
       width: size,

@@ -38,22 +38,22 @@ final class _JobTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final typographyInstance = MyoroTypographyTheme.instance;
+    final themeExtension = context.resolveThemeExtension<MainScreenBodyProfessionalExperienceSectionThemeExtension>();
 
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
           company,
-          style: typographyInstance.boldMedium,
+          style: themeExtension.companyTextStyle,
         ),
         Text(
           jobTitle,
-          style: typographyInstance.italicMedium,
+          style: themeExtension.jobTitleTextStyle,
         ),
         Text(
           dates,
-          style: typographyInstance.regularMedium,
+          style: themeExtension.datesTextStyle,
         ),
       ],
     );

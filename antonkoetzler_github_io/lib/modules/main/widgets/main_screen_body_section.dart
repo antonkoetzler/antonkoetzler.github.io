@@ -14,20 +14,20 @@ final class MainScreenBodySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeExtension = context.resolveThemeExtension<MainScreenBodySectionThemeExtension>();
+
     return Column(
       mainAxisSize: MainAxisSize.min,
-      spacing: 10,
+      spacing: themeExtension.spacing,
       children: [
         if (title != null)
           Text(
             title!,
-            style: MyoroTypographyTheme.instance.boldLarge.copyWith(
-              fontSize: 28,
-            ),
+            style: themeExtension.titleTextStyle,
           ),
         Flexible(
           child: ConstrainedBox(
-            constraints: MainScreenBody.constraints,
+            constraints: context.resolveThemeExtension<MainScreenBodyThemeExtension>().constraints,
             child: child,
           ),
         ),

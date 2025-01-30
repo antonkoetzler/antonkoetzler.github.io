@@ -1,23 +1,22 @@
 import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodyTechStackSection extends StatelessWidget {
   const MainScreenBodyTechStackSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const spacing = 10.0;
+    final themeExtension = context.resolveThemeExtension<MainScreenBodyTechStackSectionThemeExtension>();
 
     return MainScreenBodySection(
       title: 'Tech Stack',
       child: ConstrainedBox(
-        constraints: const BoxConstraints(
-          maxWidth: 410,
-        ),
-        child: const Wrap(
-          spacing: spacing,
-          runSpacing: spacing,
-          children: [
+        constraints: themeExtension.constraints,
+        child: Wrap(
+          spacing: themeExtension.spacing,
+          runSpacing: themeExtension.spacing,
+          children: const [
             MainScreenBodyIcon(path: ImagesStore.dart),
             MainScreenBodyIcon(path: ImagesStore.flutter),
             MainScreenBodyIcon(path: ImagesStore.javascript),

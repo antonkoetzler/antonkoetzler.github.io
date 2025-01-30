@@ -1,19 +1,20 @@
 import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
-final class MainScreenBodyDevStack extends StatelessWidget {
-  const MainScreenBodyDevStack({super.key});
+final class MainScreenBodyDevStackSection extends StatelessWidget {
+  const MainScreenBodyDevStackSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const spacing = 10.0;
+    final spacing = context.resolveThemeExtension<MainScreenBodyDevStackSectionThemeExtension>().spacing;
 
-    return const MainScreenBodySection(
+    return MainScreenBodySection(
       title: 'Dev Stack',
       child: Wrap(
         spacing: spacing,
         runSpacing: spacing,
-        children: [
+        children: const [
           MainScreenBodyIcon(path: ImagesStore.arch),
           MainScreenBodyIcon(path: ImagesStore.hyprland),
           MainScreenBodyIcon(path: ImagesStore.neovim),
