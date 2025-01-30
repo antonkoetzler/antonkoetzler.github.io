@@ -1,4 +1,3 @@
 export 'extensions/exports.dart';
-export 'functions/exports.dart';
-export 'stores/exports.dart';
+export 'theme_extensions/exports.dart';
 export 'widgets/exports.dart';

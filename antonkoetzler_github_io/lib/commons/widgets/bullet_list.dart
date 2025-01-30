@@ -1,3 +1,4 @@
+import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
 import 'package:flutter/material.dart';
 import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
@@ -21,7 +22,7 @@ final class BulletList extends StatelessWidget {
 
     return Text(
       stringBuffer.toString(),
-      style: MyoroTypographyTheme.instance.regularMedium.copyWith(height: 1.75),
+      style: context.resolveThemeExtension<BulletListThemeExtension>().textStyle,
     );
   }
 }
