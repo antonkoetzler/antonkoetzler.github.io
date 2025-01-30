@@ -54,7 +54,9 @@ final class _Title extends StatelessWidget {
         return Text(
           text,
           textAlign: TextAlign.center,
-          style: MyoroTypographyTheme.instance.boldLarge,
+          style: MyoroTypographyTheme.instance.boldLarge.copyWith(
+            fontSize: 32,
+          ),
         );
       },
     );
