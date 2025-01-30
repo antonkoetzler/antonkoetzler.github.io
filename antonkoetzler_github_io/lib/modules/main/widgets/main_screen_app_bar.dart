@@ -39,13 +39,13 @@ final class _Title extends StatelessWidget {
 
         late final String text;
 
-        if (maxWidth >= 280) {
+        if (maxWidth >= 420) {
           text = 'Anton Louis Koetzler-Faust';
-        } else if (maxWidth >= 220) {
+        } else if (maxWidth >= 360) {
           text = 'Anton Koetzler-Faust';
-        } else if (maxWidth >= 140) {
+        } else if (maxWidth >= 300) {
           text = 'Anton K-F';
-        } else if (maxWidth >= 50) {
+        } else if (maxWidth >= 190) {
           text = 'AKF';
         } else {
           text = '';
@@ -80,6 +80,7 @@ final class _Button extends StatelessWidget {
           isHovered: true,
         ),
         text: text,
+        textStyle: MyoroTypographyTheme.instance.regularLarge.copyWith(height: 1),
         onPressed: onPressed,
       ),
     );

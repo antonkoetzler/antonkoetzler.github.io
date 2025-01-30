@@ -2,10 +2,11 @@
 
 1. Dark mode;
 1. Tests + code coverage;
-1. Theme extension or generic components.
+1. Theme extension and/or generic components.
+1. build: <https://medium.com/@aravinthc18/hosting-a-flutter-web-project-on-github-pages-473474bd0c6f>
 1. This:
 
-```
+``` arb
 /* {
   "aboutMe": {
     "title": "About Me",
