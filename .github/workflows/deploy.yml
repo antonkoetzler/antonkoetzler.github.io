@@ -11,7 +11,7 @@ jobs:
     steps:
       # Get code.
       - name: Install actions checkout
-        uses: actions/checkbox@v3
+        uses: actions/checkout@v3
 
       # Install Flutter (stable channel).
       - name: Install flutter using stable channel
