@@ -31,7 +31,8 @@ jobs:
           git init
           git config --global user.email "antonkoetzler-faust@hotmail.com"
           git config --global user.name "Anton Koetzler-Faust"
-          git remote add origin https://${{secrets.token}}@github.com/toshiossada/toshiossada.github.io.git
+          git remote get-url origin || git remote add origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
+          git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
 
       # Build the website.
       - name: Build and deploy
