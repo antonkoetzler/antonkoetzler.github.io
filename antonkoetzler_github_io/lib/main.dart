@@ -15,7 +15,7 @@ final class App extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       themeExtensionsBuilder: createThemeExtensions,
-      home: Scaffold(body: MainScreen()),
+      home: MainScreen(),
     );
   }
 }

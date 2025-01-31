@@ -1,4 +1,6 @@
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodyMeSectionThemeExtension extends ThemeExtension<MainScreenBodyMeSectionThemeExtension> {
   /// Border of the [Container].
@@ -11,6 +13,13 @@ final class MainScreenBodyMeSectionThemeExtension extends ThemeExtension<MainScr
     required this.border,
     required this.borderRadius,
   });
+
+  MainScreenBodyMeSectionThemeExtension.fake()
+      : border = Border.all(
+          width: faker.randomGenerator.decimal(scale: 10),
+          color: kMyoroTestColors[faker.randomGenerator.integer(kMyoroTestColors.length)],
+        ),
+        borderRadius = BorderRadius.circular(faker.randomGenerator.decimal());
 
   @override
   MainScreenBodyMeSectionThemeExtension copyWith({

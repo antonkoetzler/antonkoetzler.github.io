@@ -21,7 +21,7 @@ final class MainScreenBodySection extends StatelessWidget {
       spacing: themeExtension.spacing,
       children: [
         if (title != null)
-          Text(
+          SelectableText(
             title!,
             style: themeExtension.titleTextStyle,
           ),

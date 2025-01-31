@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class BulletListThemeExtension extends ThemeExtension<BulletListThemeExtension> {
   final TextStyle textStyle;
@@ -6,6 +7,8 @@ final class BulletListThemeExtension extends ThemeExtension<BulletListThemeExten
   const BulletListThemeExtension({
     required this.textStyle,
   });
+
+  BulletListThemeExtension.fake() : textStyle = MyoroTypographyTheme.instance.randomTextStyle;
 
   @override
   BulletListThemeExtension copyWith({

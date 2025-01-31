@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodyContactInformationSectionThemeExtension extends ThemeExtension<MainScreenBodyContactInformationSectionThemeExtension> {
   /// [TextStyle] of the form of communication in [_FormOfContact].
@@ -11,6 +12,10 @@ final class MainScreenBodyContactInformationSectionThemeExtension extends ThemeE
     required this.formOfCommunicationTextStyle,
     required this.contactInformationTextStyle,
   });
+
+  MainScreenBodyContactInformationSectionThemeExtension.fake()
+      : formOfCommunicationTextStyle = MyoroTypographyTheme.instance.randomTextStyle,
+        contactInformationTextStyle = MyoroTypographyTheme.instance.randomTextStyle;
 
   @override
   MainScreenBodyContactInformationSectionThemeExtension copyWith({

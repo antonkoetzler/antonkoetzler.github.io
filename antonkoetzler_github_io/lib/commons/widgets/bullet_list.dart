@@ -20,7 +20,7 @@ final class BulletList extends StatelessWidget {
       isLastFact ? stringBuffer.write(formattedFact) : stringBuffer.writeln(formattedFact);
     }
 
-    return Text(
+    return SelectableText(
       stringBuffer.toString(),
       style: context.resolveThemeExtension<BulletListThemeExtension>().textStyle,
     );

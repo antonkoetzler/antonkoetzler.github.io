@@ -41,7 +41,7 @@ final class _Project extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        SelectableText(
           name,
           style: context.resolveThemeExtension<MainScreenBodyProjectsSectionThemeExtension>().projectTextStyle,
         ),

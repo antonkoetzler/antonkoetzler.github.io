@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodySectionThemeExtension extends ThemeExtension<MainScreenBodySectionThemeExtension> {
   final double spacing;
@@ -10,6 +12,10 @@ final class MainScreenBodySectionThemeExtension extends ThemeExtension<MainScree
     required this.spacing,
     required this.titleTextStyle,
   });
+
+  MainScreenBodySectionThemeExtension.fake()
+      : spacing = faker.randomGenerator.decimal(),
+        titleTextStyle = MyoroTypographyTheme.instance.randomTextStyle;
 
   @override
   MainScreenBodySectionThemeExtension copyWith({

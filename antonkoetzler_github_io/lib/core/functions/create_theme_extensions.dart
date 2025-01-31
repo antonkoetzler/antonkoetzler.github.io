@@ -25,6 +25,7 @@ List<ThemeExtension> _createModulesThemeExtensions(ColorScheme colorScheme, Text
 
 List<ThemeExtension> _createMainModuleThemeExtensions(ColorScheme colorScheme, TextTheme textTheme) {
   return [
+    const MainScreenThemeExtension(),
     MainScreenAppBarThemeExtension(
       titleTextStyle: textTheme.titleLarge!.copyWith(fontSize: 32),
       buttonConfiguration: MyoroHoverButtonConfiguration(
