@@ -8,24 +8,13 @@ final class MainScreenBodyMeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeExtension = context.resolveThemeExtension<MainScreenBodyMeSectionThemeExtension>();
-    final clipRRectRadius = Radius.circular(themeExtension.borderRadius.topLeft.x - 4);
 
     return MainScreenBodySection(
       child: Container(
-        decoration: BoxDecoration(
-          border: themeExtension.border,
-          borderRadius: themeExtension.borderRadius,
-        ),
-        child: ClipRRect(
-          borderRadius: themeExtension.borderRadius.copyWith(
-            topLeft: clipRRectRadius,
-            topRight: clipRRectRadius,
-            bottomLeft: clipRRectRadius,
-            bottomRight: clipRRectRadius,
-          ),
-          child: Image.asset(
-            ImagesStore.me,
-          ),
+        constraints: themeExtension.constraints,
+        decoration: themeExtension.decoration,
+        child: Image.asset(
+          ImagesStore.me,
         ),
       ),
     );

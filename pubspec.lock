@@ -275,7 +275,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: e142a9d368ba28074ba2fd774da5a76dc76d348c
-      url: "git@github.com:antonkoetzler/myoro_flutter_library"
+      url: "https://github.com/antonkoetzler/myoro_flutter_library"
     source: git
     version: "0.1.0"
   nested:

@@ -1,0 +1,36 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Get code.
+      - name: Install actions checkout
+        uses: actions/checkbox@v3
+
+      # Install Flutter (stable channel).
+      - name: Install flutter using stable channel
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      # Download dependencies.
+      - name: Download project dependencies
+        run: flutter pub get
+
+      # Build the website.
+      - name: Build for web
+        run: |
+          bash tools/build.sh
+          rm -rf docs/*
+          mv build/web/* docs/
+          mv build/web/.* docs/
+          git add .
+          git commit -m 'Deploy'
+          git push origin main
