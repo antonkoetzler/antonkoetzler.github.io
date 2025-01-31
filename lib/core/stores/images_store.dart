@@ -10,7 +10,7 @@ final class ImagesStore {
   static const javascript = '$_path/javascript.png';
   static const kitty = '$_path/kitty.png';
   static const laravel = '$_path/laravel.svg';
-  static const me = '$_path/me.jpg';
+  static const me = '$_path/me.png';
   static const neovim = '$_path/neovim.svg';
   static const node = '$_path/node.png';
   static const php = '$_path/php.svg';

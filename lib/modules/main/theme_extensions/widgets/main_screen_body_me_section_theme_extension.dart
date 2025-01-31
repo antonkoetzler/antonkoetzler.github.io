@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 
 final class MainScreenBodyMeSectionThemeExtension extends ThemeExtension<MainScreenBodyMeSectionThemeExtension> {
-  /// Border of the [Container].
-  final Border border;
+  /// [BoxConstraints] of [Container].
+  final BoxConstraints constraints;
 
-  /// Border radius.
-  final BorderRadius borderRadius;
+  /// [BoxDecoration] of [Container].
+  final BoxDecoration decoration;
 
   const MainScreenBodyMeSectionThemeExtension({
-    required this.border,
-    required this.borderRadius,
+    required this.constraints,
+    required this.decoration,
   });
 
   @override
   MainScreenBodyMeSectionThemeExtension copyWith({
-    Border? border,
-    BorderRadius? borderRadius,
+    BoxConstraints? constraints,
+    BoxDecoration? decoration,
   }) {
     return MainScreenBodyMeSectionThemeExtension(
-      border: border ?? this.border,
-      borderRadius: borderRadius ?? this.borderRadius,
+      constraints: constraints ?? this.constraints,
+      decoration: decoration ?? this.decoration,
     );
   }
 
@@ -27,8 +27,8 @@ final class MainScreenBodyMeSectionThemeExtension extends ThemeExtension<MainScr
   MainScreenBodyMeSectionThemeExtension lerp(covariant ThemeExtension<MainScreenBodyMeSectionThemeExtension>? other, double t) {
     if (other is! MainScreenBodyMeSectionThemeExtension) return this;
     return copyWith(
-      border: Border.lerp(border, other.border, t),
-      borderRadius: BorderRadius.lerp(borderRadius, other.borderRadius, t),
+      constraints: BoxConstraints.lerp(constraints, other.constraints, t),
+      decoration: BoxDecoration.lerp(decoration, other.decoration, t),
     );
   }
 }
