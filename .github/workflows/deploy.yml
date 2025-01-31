@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.actor != 'github-actions'
     steps:
       # Get code.
       - name: Install actions checkout
@@ -24,13 +25,21 @@ jobs:
       - name: Download project dependencies
         run: flutter pub get
 
+      # Initialize git so the action may push the deployment.
+      - name: Initial git for action
+        run: |
+          git init
+          git config --global user.email "antonkoetzler-faust@hotmail.com"
+          git config --global user.name "Anton Koetzler-Faust"
+          git remote add origin https://${{secrets.token}}@github.com/toshiossada/toshiossada.github.io.git
+
       # Build the website.
-      - name: Build for web
+      - name: Build and deploy
         run: |
           bash tools/build.sh
           rm -rf docs/*
           mv build/web/* docs/
           mv build/web/.* docs/
           git add .
-          git commit -m 'Deploy'
+          git commit -m 'deploy.yml: Deploy'
           git push origin main
