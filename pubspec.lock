@@ -73,6 +73,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.6"
+  cupertino_icons:
+    dependency: "direct main"
+    description:
+      name: cupertino_icons
+      sha256: ba631d1c7f7bef6b729a622b7b752645a2d076dba9976925b8f25725a30e1ee6
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
   equatable:
     dependency: transitive
     description:
@@ -264,9 +272,11 @@ packages:
   myoro_flutter_library:
     dependency: "direct main"
     description:
-      path: "../../myoro_flutter_library"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: e142a9d368ba28074ba2fd774da5a76dc76d348c
+      url: "git@github.com:antonkoetzler/myoro_flutter_library"
+    source: git
     version: "0.1.0"
   nested:
     dependency: transitive

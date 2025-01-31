@@ -12,12 +12,13 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   myoro_flutter_library:
-    # git:
-    #   url: git@github.com:antonkoetzler/myoro_flutter_library
-    path: ../../myoro_flutter_library
+    git:
+      url: git@github.com:antonkoetzler/myoro_flutter_library
+    # path: ../../myoro_flutter_library
   intl: any
   flutter_emoji: ^2.5.1
   flutter_svg: ^2.0.17
+  cupertino_icons: any
 
 dev_dependencies:
   flutter_test:
