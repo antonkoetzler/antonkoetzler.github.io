@@ -19,6 +19,7 @@ dependencies:
   flutter_emoji: ^2.5.1
   flutter_svg: ^2.0.17
   cupertino_icons: any
+  faker: 2.1.0
 
 dev_dependencies:
   flutter_test:

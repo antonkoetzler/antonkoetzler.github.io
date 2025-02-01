@@ -59,13 +59,11 @@ List<ThemeExtension> _createMainModuleThemeExtensions(ColorScheme colorScheme, T
       constraints: const BoxConstraints(
         maxWidth: 300,
       ),
-      decoration: BoxDecoration(
-        border: Border.all(
-          width: 2,
-          color: colorScheme.onPrimary,
-        ),
-        borderRadius: BorderRadius.circular(5),
+      border: Border.all(
+        width: 2,
+        color: colorScheme.onPrimary,
       ),
+      borderRadius: BorderRadius.circular(5),
     ),
     MainScreenBodyProfessionalExperienceSectionThemeExtension(
       companyTextStyle: textTheme.titleMedium!,
