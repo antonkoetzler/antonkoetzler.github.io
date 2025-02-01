@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodyProfessionalExperienceSectionThemeExtension extends ThemeExtension<MainScreenBodyProfessionalExperienceSectionThemeExtension> {
   final TextStyle companyTextStyle;
@@ -10,6 +11,11 @@ final class MainScreenBodyProfessionalExperienceSectionThemeExtension extends Th
     required this.jobTitleTextStyle,
     required this.datesTextStyle,
   });
+
+  MainScreenBodyProfessionalExperienceSectionThemeExtension.fake()
+      : companyTextStyle = MyoroTypographyTheme.instance.randomTextStyle,
+        jobTitleTextStyle = MyoroTypographyTheme.instance.randomTextStyle,
+        datesTextStyle = MyoroTypographyTheme.instance.randomTextStyle;
 
   @override
   MainScreenBodyProfessionalExperienceSectionThemeExtension copyWith({

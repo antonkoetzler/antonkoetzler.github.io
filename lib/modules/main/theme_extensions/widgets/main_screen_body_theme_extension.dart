@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
@@ -15,6 +16,23 @@ final class MainScreenBodyThemeExtension extends ThemeExtension<MainScreenBodyTh
     required this.padding,
     required this.spacing,
   });
+
+  factory MainScreenBodyThemeExtension.fake() {
+    final maxWidth = faker.randomGenerator.decimal();
+    final maxHeight = faker.randomGenerator.decimal();
+
+    return MainScreenBodyThemeExtension(
+      constraints: BoxConstraints(
+        minWidth: faker.randomGenerator.decimal(scale: maxWidth),
+        maxWidth: maxWidth,
+        minHeight: faker.randomGenerator.decimal(scale: maxHeight),
+        maxHeight: maxHeight,
+      ),
+      dividerConfiguration: MyoroBasicDividerConfiguration.fake(),
+      padding: EdgeInsets.all(faker.randomGenerator.decimal()),
+      spacing: faker.randomGenerator.decimal(),
+    );
+  }
 
   @override
   MainScreenBodyThemeExtension copyWith({
@@ -32,7 +50,7 @@ final class MainScreenBodyThemeExtension extends ThemeExtension<MainScreenBodyTh
   }
 
   @override
-  ThemeExtension<MainScreenBodyThemeExtension> lerp(covariant ThemeExtension<MainScreenBodyThemeExtension>? other, double t) {
+  MainScreenBodyThemeExtension lerp(covariant ThemeExtension<MainScreenBodyThemeExtension>? other, double t) {
     if (other is! MainScreenBodyThemeExtension) return this;
     return copyWith(
       constraints: BoxConstraints.lerp(constraints, other.constraints, t),

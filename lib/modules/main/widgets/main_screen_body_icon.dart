@@ -15,7 +15,7 @@ final class MainScreenBodyIcon extends StatelessWidget {
     return SizedBox(
       width: size,
       height: size,
-      child: path.endsWith('svg') ? SvgPicture.asset(path) : Image.asset(path),
+      child: path.toUpperCase().endsWith('svg') ? SvgPicture.asset(path) : Image.asset(path),
     );
   }
 }

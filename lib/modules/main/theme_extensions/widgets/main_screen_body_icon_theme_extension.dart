@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 
 final class MainScreenBodyIconThemeExtension extends ThemeExtension<MainScreenBodyIconThemeExtension> {
@@ -9,6 +10,8 @@ final class MainScreenBodyIconThemeExtension extends ThemeExtension<MainScreenBo
   const MainScreenBodyIconThemeExtension({
     required this.size,
   });
+
+  MainScreenBodyIconThemeExtension.fake() : size = faker.randomGenerator.decimal();
 
   @override
   MainScreenBodyIconThemeExtension copyWith({

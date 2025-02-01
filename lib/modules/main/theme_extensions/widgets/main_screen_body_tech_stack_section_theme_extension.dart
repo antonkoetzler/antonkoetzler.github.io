@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 
 final class MainScreenBodyTechStackSectionThemeExtension extends ThemeExtension<MainScreenBodyTechStackSectionThemeExtension> {
@@ -10,6 +11,21 @@ final class MainScreenBodyTechStackSectionThemeExtension extends ThemeExtension<
     required this.constraints,
     required this.spacing,
   });
+
+  factory MainScreenBodyTechStackSectionThemeExtension.fake() {
+    final maxWidth = faker.randomGenerator.decimal();
+    final maxHeight = faker.randomGenerator.decimal();
+
+    return MainScreenBodyTechStackSectionThemeExtension(
+      constraints: BoxConstraints(
+        minWidth: faker.randomGenerator.decimal(scale: maxWidth),
+        maxWidth: maxWidth,
+        minHeight: faker.randomGenerator.decimal(scale: maxHeight),
+        maxHeight: maxHeight,
+      ),
+      spacing: faker.randomGenerator.decimal(),
+    );
+  }
 
   @override
   MainScreenBodyTechStackSectionThemeExtension copyWith({

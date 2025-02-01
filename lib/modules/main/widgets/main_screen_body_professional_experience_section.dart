@@ -43,15 +43,15 @@ final class _JobTitle extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
+        SelectableText(
           company,
           style: themeExtension.companyTextStyle,
         ),
-        Text(
+        SelectableText(
           jobTitle,
           style: themeExtension.jobTitleTextStyle,
         ),
-        Text(
+        SelectableText(
           dates,
           style: themeExtension.datesTextStyle,
         ),

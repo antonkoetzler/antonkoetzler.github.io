@@ -6,7 +6,7 @@ final class MainScreenAppBar extends StatelessWidget implements PreferredSizeWid
   const MainScreenAppBar({super.key});
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight + 10);
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ final class _Title extends StatelessWidget {
           text = '';
         }
 
-        return Text(
+        return SelectableText(
           text,
           textAlign: TextAlign.center,
           style: context.resolveThemeExtension<MainScreenAppBarThemeExtension>().titleTextStyle,

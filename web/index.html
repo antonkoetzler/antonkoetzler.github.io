@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -16,9 +17,6 @@
   -->
   <base href="$FLUTTER_BASE_HREF">
 
-  <!-- Ctrl + scroll to zoom -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
@@ -30,25 +28,27 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>antonkoetzler_github_io</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
   <script>
-    {{flutter_js}}
-    {{flutter_build_config}}
+    { { flutter_js } }
+    { { flutter_build_config } }
 
     _flutter.loader.load({
-        onEntrypointLoaded: async function(engineInitializer) {
-            const appRunner = await engineInitializer.initializeEngine({
-                useColorEmoji: true
-            });
+      onEntrypointLoaded: async function (engineInitializer) {
+        const appRunner = await engineInitializer.initializeEngine({
+          useColorEmoji: true
+        });
 
-            await appRunner.runApp();
-        }
+        await appRunner.runApp();
+      }
     });
   </script>
 </body>
+
 </html>

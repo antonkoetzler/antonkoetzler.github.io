@@ -17,6 +17,11 @@ final class MainScreenAppBarThemeExtension extends ThemeExtension<MainScreenAppB
     required this.buttonTextStyle,
   });
 
+  MainScreenAppBarThemeExtension.fake()
+      : titleTextStyle = MyoroTypographyTheme.instance.randomTextStyle,
+        buttonConfiguration = MyoroHoverButtonConfiguration.fake(),
+        buttonTextStyle = MyoroTypographyTheme.instance.randomTextStyle;
+
   @override
   MainScreenAppBarThemeExtension copyWith({
     TextStyle? titleTextStyle,

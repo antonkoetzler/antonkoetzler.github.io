@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:myoro_flutter_library/myoro_flutter_library.dart';
 
 final class MainScreenBodyProjectsSectionThemeExtension extends ThemeExtension<MainScreenBodyProjectsSectionThemeExtension> {
-  final TextStyle? projectTextStyle;
+  final TextStyle projectTextStyle;
 
   const MainScreenBodyProjectsSectionThemeExtension({
     required this.projectTextStyle,
   });
+
+  MainScreenBodyProjectsSectionThemeExtension.fake() : projectTextStyle = MyoroTypographyTheme.instance.randomTextStyle;
 
   @override
   MainScreenBodyProjectsSectionThemeExtension copyWith({

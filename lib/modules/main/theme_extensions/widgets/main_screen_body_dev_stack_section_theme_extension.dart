@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:antonkoetzler_github_io/antonkoetzler_github_io.dart';
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 
 final class MainScreenBodyDevStackSectionThemeExtension extends ThemeExtension<MainScreenBodyDevStackSectionThemeExtension> {
@@ -10,6 +11,8 @@ final class MainScreenBodyDevStackSectionThemeExtension extends ThemeExtension<M
   const MainScreenBodyDevStackSectionThemeExtension({
     required this.spacing,
   });
+
+  MainScreenBodyDevStackSectionThemeExtension.fake() : spacing = faker.randomGenerator.decimal();
 
   @override
   MainScreenBodyDevStackSectionThemeExtension copyWith({
