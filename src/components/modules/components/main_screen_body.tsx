@@ -3,7 +3,7 @@ import MainScreenBodyMeSection from './main_screen_body_me_section';
 
 function MainScreenBody() {
   return (
-    <div className='flex-1 flex flex-col items-center justify-center'>
+    <div className='flex-1 flex flex-col items-center justify-center gap-5'>
       <MainScreenBodyMeSection />
       <MainScreenBodyAboutMeSection />
     </div>

@@ -8,7 +8,7 @@ function MainScreenBodyAboutMeSection() {
     <Card>
       <CardTitle>{t('aboutMeTitle')}</CardTitle>
       <CardContent>
-        OKay now what
+        <p>Okay now what</p>
       </CardContent>
     </Card>
   );
