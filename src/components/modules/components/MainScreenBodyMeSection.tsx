@@ -20,7 +20,7 @@ function MainScreenBodyMeSection() {
       src={ImageStore.me}
       width={size}
       height={size}
-      className={'rounded-lg border-2 border-[var(--border)]'}
+      className={'rounded-sm border-2 border-[var(--background)]'}
     />
   );
 }

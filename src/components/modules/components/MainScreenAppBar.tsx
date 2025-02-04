@@ -28,7 +28,10 @@ function MainScreenAppBar({ setHeight }: { setHeight: (h: number) => void }) {
   }, [setHeight]);
 
   return (
-    <div ref={ref} className='fixed top-p w-full z-50 flex flex-row justify-between p-2 bg-background border-b border-[var(--background)]'>
+    <div
+      ref={ref}
+      className='fixed top-p w-full z-50 flex flex-row justify-between p-2 bg-background border-b-2 border-[var(--background)]'
+    >
       <Button asChild><a href={'https://github.com/antonkoetzler'}>GitHub</a></Button>
       <h1 className='font-semibold'>{name}</h1>
       <Button asChild><a href={t('resumeLink')}>Résumé</a></Button>

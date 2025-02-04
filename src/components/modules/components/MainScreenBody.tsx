@@ -3,7 +3,7 @@ import MainScreenBodyDevStackSection from './MainScreenBodyDevStackSection';
 import MainScreenBodyMeSection from './MainScreenBodyMeSection';
 import MainScreenBodyTechStackSection from './MainScreenBodyTechStackSection';
 
-export const mainScreenBodyMaxWidth: number = 525;
+export const mainScreenBodyMaxWidth: number = 552;
 
 function MainScreenBody({ appBarHeight }: { appBarHeight: number }) {
   return (
