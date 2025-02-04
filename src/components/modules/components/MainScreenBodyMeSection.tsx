@@ -1,7 +1,9 @@
+import ImageStore from '@/stores/image-store';
 import { useEffect, useState } from 'react';
+import { mainScreenBodyMaxWidth } from './MainScreenBody';
 
 function MainScreenBodyMeSection() {
-  const defaultSize = 300;
+  const defaultSize = mainScreenBodyMaxWidth - 100;
   const [size, setSize] = useState(defaultSize);
 
   useEffect(() => {
@@ -11,11 +13,11 @@ function MainScreenBodyMeSection() {
     updateSize();
     window.addEventListener('resize', updateSize);
     return () => window.removeEventListener('resize', updateSize);
-  }, []);
+  }, [defaultSize]);
 
   return (
     <img
-      src={'./assets/images/me.jpg'}
+      src={ImageStore.me}
       width={size}
       height={size}
       className={'rounded-lg border-2 border-[var(--border)]'}

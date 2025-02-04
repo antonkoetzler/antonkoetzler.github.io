@@ -1,4 +1,9 @@
-@import '@fontsource/nunito';
+@import '@fontsource/nunito/300.css';
+@import '@fontsource/nunito/300-italic.css';
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/400-italic.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/nunito/700-italic.css';
 
 @tailwind base;
 @tailwind components;
@@ -34,6 +39,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  @apply bg-gray-900 overflow-x-hidden;
+}
+
+body,html {
+  @apply bg-background overflow-x-hidden;
 }
 
 h1 {
