@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import MainScreen from './components/modules/screens/MainScreen';
+import MainScreen from './components/modules/main/screens/MainScreen';
 import './index.css';
 import './i18n';
 

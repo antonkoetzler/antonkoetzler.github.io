@@ -1,6 +1,6 @@
-import { useTranslation } from "react-i18next";
-import MainScreenBodySection from "./MainScreenBodySection";
-import CopyTextButton from "@/components/ui/buttons/CopyTextButton";
+import { useTranslation } from 'react-i18next';
+import CopyTextButton from '@/components/ui/buttons/CopyTextButton';
+import MainScreenBodySection from '@/components/modules/main/components/MainScreenBodySection';
 
 function MainScreenBodyContactInformationSection() {
   const { t } = useTranslation();

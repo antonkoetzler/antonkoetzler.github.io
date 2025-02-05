@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import List from '@/components/ui/lists/List';
-import MainScreenBodySection from './MainScreenBodySection';
+import MainScreenBodySection from '@/components/modules/main/components/MainScreenBodySection';
 
 function MainScreenBodyAboutMeSection() {
   const { t } = useTranslation();

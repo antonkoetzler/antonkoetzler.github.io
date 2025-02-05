@@ -1,7 +1,7 @@
 import ImageStore from '@/stores/image-store';
-import MainScreenBodySection from './MainScreenBodySection';
-import MainScreenBodySectionImage from './MainScreenBodySectionImage';
-import MainScreenBodySectionImageListing from './MainScreenBodySectionImageListing';
+import MainScreenBodySection from '@/components/modules/main/components/MainScreenBodySection';
+import MainScreenBodySectionImage from '@/components/modules/main/components/MainScreenBodySectionImage';
+import MainScreenBodySectionImageListing from '@/components/modules/main/components/MainScreenBodySectionImageListing';
 
 function MainScreenBodyTechStackSection() {
   return (

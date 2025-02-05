@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import MainScreenBodySection from './MainScreenBodySection';
 import ImageStore from '@/stores/image-store';
+import MainScreenBodySection from '@/components/modules/main/components/MainScreenBodySection';
 
 function MainScreenBodyProfessionalExperience() {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import MainScreenAppBar from '../components/MainScreenAppBar';
-import MainScreenBody from '../components/MainScreenBody';
+import MainScreenBody from '@/components/modules/main/components/MainScreenBody';
+import MainScreenAppBar from '@/components/modules/main/components/MainScreenAppBar';
 
 function MainScreen() {
   const [appBarHeight, setAppBarHeight] = useState(0);

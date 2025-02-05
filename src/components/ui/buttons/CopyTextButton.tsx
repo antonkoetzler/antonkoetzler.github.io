@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { Button } from '@/components/ui/buttons/Button';
 import { ClipboardIcon } from '@heroicons/react/16/solid';
 
 function CopyTextButton({ text }: { text: string }) {

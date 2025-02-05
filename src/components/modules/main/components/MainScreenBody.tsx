@@ -1,10 +1,10 @@
-import MainScreenBodyAboutMeSection from './MainScreenBodyAboutMeSection';
-import MainScreenBodyContactInformationSection from './MainScreenBodyContactInformationSection';
-import MainScreenBodyDevStackSection from './MainScreenBodyDevStackSection';
-import MainScreenBodyMeImage from './MainScreenBodyMeImage';
-import MainScreenBodyProfessionalExperience from './MainScreenBodyProfessionalExperience';
-import MainScreenBodyProjectsSection from './MainScreenBodyProjectsSection';
-import MainScreenBodyTechStackSection from './MainScreenBodyTechStackSection';
+import MainScreenBodyAboutMeSection from '@/components/modules/main/components/MainScreenBodyAboutMeSection';
+import MainScreenBodyContactInformationSection from '@/components/modules/main/components/MainScreenBodyContactInformationSection';
+import MainScreenBodyDevStackSection from '@/components/modules/main/components/MainScreenBodyDevStackSection';
+import MainScreenBodyMeImage from '@/components/modules/main/components/MainScreenBodyMeImage';
+import MainScreenBodyProfessionalExperience from '@/components/modules/main/components/MainScreenBodyProfessionalExperience';
+import MainScreenBodyProjectsSection from '@/components/modules/main/components/MainScreenBodyProjectsSection';
+import MainScreenBodyTechStackSection from '@/components/modules/main/components/MainScreenBodyTechStackSection';
 
 export const mainScreenBodyMaxWidth: number = 552;
 

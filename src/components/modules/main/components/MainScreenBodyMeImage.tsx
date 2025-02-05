@@ -1,6 +1,6 @@
+import { mainScreenBodyMaxWidth } from '@/components/modules/main/components/MainScreenBody';
 import ImageStore from '@/stores/image-store';
 import { useEffect, useState } from 'react';
-import { mainScreenBodyMaxWidth } from './MainScreenBody';
 
 function MainScreenBodyMeImage() {
   const defaultSize = mainScreenBodyMaxWidth - 160;

@@ -1,6 +1,6 @@
-import { useTranslation } from "react-i18next";
-import MainScreenBodySection from "./MainScreenBodySection";
-import List from "@/components/ui/lists/List";
+import { useTranslation } from 'react-i18next';
+import List from '@/components/ui/lists/List';
+import MainScreenBodySection from '@/components/modules/main/components/MainScreenBodySection';
 
 function MainScreenBodyProjectsSection() {
   const { t } = useTranslation();
