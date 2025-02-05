@@ -1,6 +1,5 @@
 # TODO
 
-1. Dividers;
-1. MainScreenBodyProfessionalExperienceSection;
-1. MainScreenBodyContactInformationSection;
-1. MainScreenBodyProjectsSection.
+1. Tests;
+1. CI/CD;
+1. Deployment.

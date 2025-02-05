@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import List from '@/components/ui/lists/List';
 import MainScreenBodySection from './MainScreenBodySection';
 
 function MainScreenBodyAboutMeSection() {
@@ -15,17 +16,15 @@ function AboutMe() {
   const { t } = useTranslation();
 
   return (
-    <ul className='list-none'>
-      {[
+    <List
+      items={[
         t('aboutMeFact1'),
         t('aboutMeFact2'),
         t('aboutMeFact3'),
         t('aboutMeFact4'),
         t('aboutMeFact5'),
-      ].map((fact: string, index) => (
-        <p key={index}>- {fact}</p>
-      ))}
-    </ul>
+      ]}
+    />
   );
 }
 

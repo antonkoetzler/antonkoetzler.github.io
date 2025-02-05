@@ -3,6 +3,7 @@ class ImageStore {
   static bun: string = './assets/images/bun.svg';
   static dart: string = './assets/images/dart.svg';
   static docker: string = './assets/images/docker.svg';
+  static doutorie: string = './assets/images/doutorie.svg';
   static electron: string = './assets/images/electron.svg';
   static flutter: string = './assets/images/flutter.svg';
   static hyprland: string = './assets/images/hyprland.svg';

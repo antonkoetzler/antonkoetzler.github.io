@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/buttons/Button';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -8,14 +8,16 @@ function MainScreenAppBar({ setHeight }: { setHeight: (h: number) => void }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const setup = () => {
+    function setup() {
       // Name displayed in accordance with available width.
       setName(
-        window.innerWidth >= 750
+        window.innerWidth >= 675
           ? 'Anton Louis Koetzler-Faust'
-          : window.innerWidth >= 650
+          : window.innerWidth >= 575
             ? 'Anton Koetzler-Faust'
-            : 'Anton K-F'
+            : window.innerWidth >= 375
+              ? 'Anton K-F'
+              : 'AKF',
       );
 
       // Get the height of the app bar to pass to [MainScreenBody].
@@ -30,10 +32,10 @@ function MainScreenAppBar({ setHeight }: { setHeight: (h: number) => void }) {
   return (
     <div
       ref={ref}
-      className='fixed top-p w-full z-50 flex flex-row justify-between p-2 bg-background border-b-2 border-[var(--background)]'
+      className='fixed top-p w-full z-50 flex flex-row justify-between items-center p-2 bg-background border-b-2 border-[color:var(--foreground)] important!'
     >
       <Button asChild><a href={'https://github.com/antonkoetzler'}>GitHub</a></Button>
-      <h1 className='font-semibold'>{name}</h1>
+      <p className='text-[32px] font-semibold'>{name}</p>
       <Button asChild><a href={t('resumeLink')}>Résumé</a></Button>
     </div>
   );

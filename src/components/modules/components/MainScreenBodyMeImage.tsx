@@ -2,12 +2,12 @@ import ImageStore from '@/stores/image-store';
 import { useEffect, useState } from 'react';
 import { mainScreenBodyMaxWidth } from './MainScreenBody';
 
-function MainScreenBodyMeSection() {
-  const defaultSize = mainScreenBodyMaxWidth - 100;
+function MainScreenBodyMeImage() {
+  const defaultSize = mainScreenBodyMaxWidth - 160;
   const [size, setSize] = useState(defaultSize);
 
   useEffect(() => {
-    const updateSize = () => {
+    function updateSize() {
       setSize(window.innerWidth <= defaultSize ? window.innerWidth : defaultSize);
     };
     updateSize();
@@ -20,9 +20,9 @@ function MainScreenBodyMeSection() {
       src={ImageStore.me}
       width={size}
       height={size}
-      className={'rounded-sm border-2 border-[var(--background)]'}
+      className={'rounded-sm border-2 border-[var(--foreground)]'}
     />
   );
 }
 
-export default MainScreenBodyMeSection;
+export default MainScreenBodyMeImage;
