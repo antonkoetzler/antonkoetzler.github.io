@@ -1,0 +1,32 @@
+import MainScreenBodySection from '@/app/components/modules/main/components/MainScreenBodySection';
+import List from '@/app/components/ui/lists/List';
+import { useTranslation } from 'react-i18next';
+
+function MainScreenBodyProjectsSection() {
+  const { t } = useTranslation();
+
+  return (
+    <MainScreenBodySection title={t('projectsTitle')}>
+      <Project
+        name={'Myoro Flutter Library'}
+        facts={[
+          t('projectsMyoroFlutterLibraryFact1'),
+          t('projectsMyoroFlutterLibraryFact2'),
+          t('projectsMyoroFlutterLibraryFact3'),
+          t('projectsMyoroFlutterLibraryFact4'),
+        ]}
+      />
+    </MainScreenBodySection>
+  );
+}
+
+function Project({ name, facts }: { name: string; facts: string[] }) {
+  return (
+    <div className={'flex flex-col'}>
+      <p className={'text-lg font-semibold'}>{name}</p>
+      <List items={facts} />
+    </div>
+  );
+}
+
+export default MainScreenBodyProjectsSection;

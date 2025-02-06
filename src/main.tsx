@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import MainScreen from './components/modules/main/screens/MainScreen';
-import './index.css';
+import './app/index.css';
 import './i18n';
+import MainScreen from '@/app/components/modules/main/screens/MainScreen';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <MainScreen />
-  </StrictMode>,
-)
+  </StrictMode>
+);
