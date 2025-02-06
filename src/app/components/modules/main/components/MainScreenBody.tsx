@@ -11,6 +11,7 @@ export const mainScreenBodyMaxWidth: number = 552;
 function MainScreenBody({ appBarHeight }: { appBarHeight: number }) {
   return (
     <div
+      role={'main'}
       className={
         'mx-auto flex w-full flex-1 flex-col items-center justify-center gap-5 p-4'
       }
@@ -36,7 +37,7 @@ function MainScreenBody({ appBarHeight }: { appBarHeight: number }) {
 }
 
 function Divider() {
-  return <div className={'h-[1px] w-full bg-primary'} />;
+  return <div role={'separator'} className={'h-[1px] w-full bg-primary'} />;
 }
 
 export default MainScreenBody;

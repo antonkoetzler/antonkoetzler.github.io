@@ -20,6 +20,7 @@ function MainScreenBodyMeImage() {
   return (
     <img
       src={ImageStore.me}
+      alt={'Me'}
       width={size}
       height={size}
       className={'rounded-sm border-2 border-[var(--foreground)]'}
