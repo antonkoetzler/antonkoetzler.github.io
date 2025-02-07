@@ -9,7 +9,7 @@ function MainScreenBodyMeImage() {
   useEffect(() => {
     function updateSize() {
       setSize(
-        window.innerWidth <= defaultSize ? window.innerWidth : defaultSize
+        (window.innerWidth - 10) <= defaultSize ? (window.innerWidth - 10) : defaultSize,
       );
     }
     updateSize();

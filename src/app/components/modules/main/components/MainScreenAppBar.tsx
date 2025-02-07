@@ -8,6 +8,8 @@ function MainScreenAppBar() {
 
   useEffect(() => {
     function setup() {
+      console.log('Setup running');
+
       // Name displayed in accordance with available width.
       setName(
         window.innerWidth >= 675
