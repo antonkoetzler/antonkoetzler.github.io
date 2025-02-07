@@ -2,36 +2,35 @@ import MainScreenBodyAboutMeSection from '@/app/components/modules/main/componen
 import MainScreenBodyContactInformationSection from '@/app/components/modules/main/components/MainScreenBodyContactInformationSection';
 import MainScreenBodyDevStackSection from '@/app/components/modules/main/components/MainScreenBodyDevStackSection';
 import MainScreenBodyMeImage from '@/app/components/modules/main/components/MainScreenBodyMeImage';
-import MainScreenBodyProfessionalExperience from '@/app/components/modules/main/components/MainScreenBodyProfessionalExperience';
+import MainScreenBodyProfessionalExperienceSection from '@/app/components/modules/main/components/MainScreenBodyProfessionalExperienceSection';
 import MainScreenBodyProjectsSection from '@/app/components/modules/main/components/MainScreenBodyProjectsSection';
 import MainScreenBodyTechStackSection from '@/app/components/modules/main/components/MainScreenBodyTechStackSection';
 
 export const mainScreenBodyMaxWidth: number = 552;
 
-function MainScreenBody({ appBarHeight }: { appBarHeight: number }) {
+function MainScreenBody() {
   return (
     <div
       role={'main'}
-      className={
-        'mx-auto flex w-full flex-1 flex-col items-center justify-center gap-5 p-4'
-      }
-      style={{
-        maxWidth: `${mainScreenBodyMaxWidth}px`,
-        paddingTop: `${appBarHeight + 25}px`,
-      }}
+      className={'flex flex-col p-4 overflow-y-auto w-full items-center'}
     >
-      <MainScreenBodyMeImage />
-      <MainScreenBodyAboutMeSection />
-      <Divider />
-      <MainScreenBodyTechStackSection />
-      <Divider />
-      <MainScreenBodyDevStackSection />
-      <Divider />
-      <MainScreenBodyProfessionalExperience />
-      <Divider />
-      <MainScreenBodyContactInformationSection />
-      <Divider />
-      <MainScreenBodyProjectsSection />
+      <div
+        className={'flex flex-col items-center gap-5'}
+        style={{ maxWidth: `${mainScreenBodyMaxWidth}px` }}
+      >
+        <MainScreenBodyMeImage />
+        <MainScreenBodyAboutMeSection />
+        <Divider />
+        <MainScreenBodyTechStackSection />
+        <Divider />
+        <MainScreenBodyDevStackSection />
+        <Divider />
+        <MainScreenBodyProfessionalExperienceSection />
+        <Divider />
+        <MainScreenBodyContactInformationSection />
+        <Divider />
+        <MainScreenBodyProjectsSection />
+      </div>
     </div>
   );
 }

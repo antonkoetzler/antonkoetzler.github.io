@@ -7,10 +7,10 @@ function MainScreenBodyDevStackSection() {
   return (
     <MainScreenBodySection title={'Dev Stack'}>
       <MainScreenBodySectionImageListing>
-        <MainScreenBodySectionImage path={ImageStore.arch} />
-        <MainScreenBodySectionImage path={ImageStore.hyprland} />
-        <MainScreenBodySectionImage path={ImageStore.neovim} />
-        <MainScreenBodySectionImage path={ImageStore.kitty} />
+        <MainScreenBodySectionImage src={ImageStore.arch.src} alt={ImageStore.arch.alt} />
+        <MainScreenBodySectionImage src={ImageStore.hyprland.src} alt={ImageStore.hyprland.alt} />
+        <MainScreenBodySectionImage src={ImageStore.neovim.src} alt={ImageStore.neovim.alt} />
+        <MainScreenBodySectionImage src={ImageStore.kitty.src} alt={ImageStore.kitty.alt} />
       </MainScreenBodySectionImageListing>
     </MainScreenBodySection>
   );

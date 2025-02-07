@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 
 describe('MainScreenAppBar', () => {
   it('renders correctly', () => {
-    const { unmount } = render(<MainScreenAppBar setHeight={() => {}} />);
+    const { unmount } = render(<MainScreenAppBar />);
 
     expect(screen.getByRole('presentation')).toBeInTheDocument();
 
@@ -28,7 +28,7 @@ describe('MainScreenAppBar', () => {
   it('displays all width-specific names', () => {
     function expectName(width: number, name: string) {
       global.innerWidth = width;
-      const { unmount } = render(<MainScreenAppBar setHeight={() => {}} />);
+      const { unmount } = render(<MainScreenAppBar />);
       expect(screen.getByText(name)).toBeInTheDocument();
       unmount();
     }

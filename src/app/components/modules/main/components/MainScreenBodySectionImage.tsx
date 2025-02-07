@@ -1,8 +1,20 @@
-function MainScreenBodySectionImage({ path }: { path: string }) {
-  const size = 50.0;
-
+function MainScreenBodySectionImage({
+  src,
+  alt,
+  size = 50,
+}: {
+  src: string,
+  alt: string,
+  size?: number,
+}) {
   return (
-    <img src={path} width={size} height={size} className={'object-contain'} />
+    <img
+      src={src}
+      alt={alt}
+      width={size}
+      height={size}
+      className={'object-contain'}
+    />
   );
 }
 
