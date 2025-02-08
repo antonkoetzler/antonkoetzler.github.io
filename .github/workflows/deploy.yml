@@ -33,8 +33,7 @@ jobs:
 
       - name: Deploy to pages branch
         run: |
-          git fetch origin pages
-          git checkout pages
+          git checkout origin/pages
           git add docs
           git commit -m 'Deploy'
           git push origin pages
