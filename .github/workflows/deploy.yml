@@ -33,6 +33,6 @@ jobs:
           git pull origin pages
           bun run build
           mv dist docs
-          git add .
+          git add -A
           git commit -m 'Deploy'
           git push origin pages
