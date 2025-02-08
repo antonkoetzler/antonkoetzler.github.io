@@ -11,9 +11,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: pages
-          fetch-depth: 0
 
       - name: Initialize git
         run: |
@@ -24,7 +21,10 @@ jobs:
           git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
 
       - name: Merge main into pages
-        run: git pull origin main --no-edit
+        run: |
+          git fetch
+          git checkout pages
+          git pull origin main --no-edit
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
