@@ -18,11 +18,6 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Build
-        run: |
-          bun run build
-          mv dist docs
-
       - name: Initial git so we may push
         run: |
           git init
@@ -31,11 +26,13 @@ jobs:
           git remote get-url origin || git remote add origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
           git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
 
-      - name: Deploy to pages branch
+      - name: Build and deploy to pages branch
         run: |
           git fetch origin pages
           git checkout pages
           git pull origin pages
+          bun run build
+          mv dist docs
           git add .
           git commit -m 'Deploy'
           git push origin pages
