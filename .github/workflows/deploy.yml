@@ -32,6 +32,7 @@ jobs:
           git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
 
       - name: Deploy to pages branch
+        run: |
           git checkout checkout pages
           git add docs
           git commit -m 'Deploy'
