@@ -24,7 +24,9 @@ jobs:
           git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
 
       - name: Merge main into pages
-        run: git pull origin main --no-edit
+        run: |
+          git config pull.rebase false
+          git pull origin main --no-edit
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
