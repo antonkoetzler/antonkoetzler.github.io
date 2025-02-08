@@ -1,0 +1,41 @@
+name: Deploy
+
+on:
+  workflow_run:
+    workflows: ['Tests']
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build
+        run: |
+          bun run build
+          mv dist docs
+
+      - name: Initial git so we may push
+        run: |
+          git init
+          git config --global user.email "antonkoetzler-faust@hotmail.com"
+          git config --global user.name "Anton Koetzler-Faust"
+          git remote get-url origin || git remote add origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
+          git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
+
+      - name: Deploy to pages branch
+          git checkout checkout pages
+          git add docs
+          git commit -m 'Deploy'
+          git push origin pages
