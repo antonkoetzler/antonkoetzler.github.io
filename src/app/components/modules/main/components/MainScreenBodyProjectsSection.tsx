@@ -16,6 +16,14 @@ function MainScreenBodyProjectsSection() {
           t('projectsMyoroFlutterLibraryFact4'),
         ]}
       />
+      <Project
+        name={t('projectsPortfolioTitle')}
+        facts={[
+          t('projectsPortfolioFact1'),
+          t('projectsPortfolioFact2'),
+          t('projectsPortfolioFact3'),
+        ]}
+      />
     </MainScreenBodySection>
   );
 }

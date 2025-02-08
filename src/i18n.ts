@@ -12,11 +12,11 @@ i18n
       en: {
         translation: {
           resumeLink:
-            'https://drive.google.com/uc?export=download&id=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI',
+            'https://drive.google.com/uc?export=downloadandid=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI',
 
           aboutMeTitle: 'About Me',
           aboutMeFact1:
-            'Frontend software engineer specializing in Flutter & React',
+            'Frontend software engineer specializing in Flutter and React',
           aboutMeFact2:
             'BSc in Computer Science from the University of Lethbridge',
           aboutMeFact3: 'Living in Florianópolis, Brazil 🌴',
@@ -37,15 +37,19 @@ i18n
           projectsMyoroFlutterLibraryFact2:
             'Handles all of the boilerplate when creating a new Flutter project',
           projectsMyoroFlutterLibraryFact3:
-            'Included design scheme with colors, typography, & widgets',
+            'Included design scheme with colors, typography, and widgets',
           projectsMyoroFlutterLibraryFact4:
-            'Takes care of: Widgets, common files (abstracts, enums, extensions, helpers, etc), & local SQLite initialization',
+            'Takes care of: Widgets, common files (abstracts, enums, extensions, helpers, etc), and local SQLite initialization',
+          projectsPortfolioTitle: 'My Portfolio',
+          projectsPortfolioFact1: 'This website!',
+          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, and shadcn',
+          projectsPortfolioFact3: '100% code coverage threshold, fully tested, and fully setup CI/CD',
         },
       },
       pt: {
         translation: {
           resumeLink:
-            'https://drive.google.com/uc?export=download&id=1FupfLoFd-2Fbp_vbF6YJ8aC9eKrJv8zS',
+            'https://drive.google.com/uc?export=downloadandid=1FupfLoFd-2Fbp_vbF6YJ8aC9eKrJv8zS',
 
           aboutMeTitle: 'Sobre Mim',
           aboutMeFact1:
@@ -72,7 +76,11 @@ i18n
           projectsMyoroFlutterLibraryFact3:
             'Esquema de design incluído com cores, tipografia, e widgets',
           projectsMyoroFlutterLibraryFact4:
-            'Contém: Widgets, arquivos commons (abstracts, enums, extensions, helpers, etc), & inicialização de um banco de dados em SQLite local',
+            'Contém: Widgets, arquivos commons (abstracts, enums, extensions, helpers, etc), and inicialização de um banco de dados em SQLite local',
+          projectsPortfolioTitle: 'Meu Portfólio',
+          projectsPortfolioFact1: 'Este site!',
+          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, e shadcn',
+          projectsPortfolioFact3: 'Code coverage limite de 100%, totalmente testado e CI/CD totalmente configurado',
         },
       },
     },

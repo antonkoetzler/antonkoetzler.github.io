@@ -7,10 +7,16 @@ describe('MainScreenBodyProjectsSection', () => {
   it('renders correctly', () => {
     render(<MainScreenBodyProjectsSection />);
     expect(screen.getByText(i18n.t('projectsTitle'))).toBeInTheDocument();
+
     expect(screen.getByText('Myoro Flutter Library')).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact1')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact2')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact3')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact4')}`)).toBeInTheDocument();
+
+    expect(screen.getByText(i18n.t('projectsPortfolioTitle'))).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact2')}`)).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact3')}`)).toBeInTheDocument();
   });
 });
