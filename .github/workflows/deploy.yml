@@ -35,6 +35,7 @@ jobs:
         run: |
           git fetch origin pages
           git checkout pages
+          git pull origin pages
           git add .
           git commit -m 'Deploy'
           git push origin pages
