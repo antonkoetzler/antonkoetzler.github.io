@@ -28,11 +28,13 @@ jobs:
 
       - name: Build and deploy to pages branch
         run: |
-          git fetch origin pages
+          git fetch
           git checkout pages
-          git pull origin pages
+          git merge origin/main --no-edit || git merge --abort
+
           bun run build
           mv dist docs
+
           git add -A
           git commit -m 'Deploy'
           git push origin pages
