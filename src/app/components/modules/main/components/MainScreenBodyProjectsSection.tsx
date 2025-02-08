@@ -7,23 +7,25 @@ function MainScreenBodyProjectsSection() {
 
   return (
     <MainScreenBodySection title={t('projectsTitle')}>
-      <Project
-        name={'Myoro Flutter Library'}
-        facts={[
-          t('projectsMyoroFlutterLibraryFact1'),
-          t('projectsMyoroFlutterLibraryFact2'),
-          t('projectsMyoroFlutterLibraryFact3'),
-          t('projectsMyoroFlutterLibraryFact4'),
-        ]}
-      />
-      <Project
-        name={t('projectsPortfolioTitle')}
-        facts={[
-          t('projectsPortfolioFact1'),
-          t('projectsPortfolioFact2'),
-          t('projectsPortfolioFact3'),
-        ]}
-      />
+      <div className={'flex flex-col items-start gap-3'}>
+        <Project
+          name={'Myoro Flutter Library'}
+          facts={[
+            t('projectsMyoroFlutterLibraryFact1'),
+            t('projectsMyoroFlutterLibraryFact2'),
+            t('projectsMyoroFlutterLibraryFact3'),
+            t('projectsMyoroFlutterLibraryFact4'),
+          ]}
+        />
+        <Project
+          name={t('projectsPortfolioTitle')}
+          facts={[
+            t('projectsPortfolioFact1'),
+            t('projectsPortfolioFact2'),
+            t('projectsPortfolioFact3'),
+          ]}
+        />
+      </div>
     </MainScreenBodySection>
   );
 }
