@@ -11,14 +11,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: pages
+          fetch-depth: 0
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
-
-      - name: Install dependencies
-        run: bun install
-
-      - name: Initial git so we may push
+      - name: Initialize git
         run: |
           git init
           git config --global user.email "antonkoetzler-faust@hotmail.com"
@@ -26,14 +23,20 @@ jobs:
           git remote get-url origin || git remote add origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
           git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
 
-      - name: Build and deploy to pages branch
+      - name: Merge main into pages
+        run: git pull origin main --no-edit
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Build
         run: |
+          bun install
           bun run build
+          rm -rf dist
           mv dist docs
 
-          git fetch origin pages
-          git checkout pages
-
+      - name: Deploy
           git add -A
-          git commit -m 'Deploy'
-          git push origin pages
+          git commit --amend -m 'Deploy'
+          git push --force origin pages
