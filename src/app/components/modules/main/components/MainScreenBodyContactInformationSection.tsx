@@ -32,7 +32,7 @@ function ContactInformation({
   return (
     <div className={'flex flex-row gap-2'}>
       <a
-        className={'w-full text-center text-blue-500'}
+        className={'w-full text-center text-blue-400'}
         href={onPressFormOfContactAddress}
       >
         {formOfContactAddress}
