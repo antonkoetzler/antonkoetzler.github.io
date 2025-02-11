@@ -12,7 +12,7 @@ i18n
       en: {
         translation: {
           resumeLink:
-            'https://drive.google.com/uc?export=downloadandid=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI',
+            'https://drive.google.com/uc?export=download&id=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI',
 
           aboutMeTitle: 'About Me',
           aboutMeFact1:
@@ -49,7 +49,7 @@ i18n
       pt: {
         translation: {
           resumeLink:
-            'https://drive.google.com/uc?export=downloadandid=1FupfLoFd-2Fbp_vbF6YJ8aC9eKrJv8zS',
+            'https://drive.google.com/uc?export=download&id=1FupfLoFd-2Fbp_vbF6YJ8aC9eKrJv8zS',
 
           aboutMeTitle: 'Sobre Mim',
           aboutMeFact1:
