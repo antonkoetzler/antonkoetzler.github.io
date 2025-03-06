@@ -2,6 +2,7 @@ type Image = { src: string; alt: string };
 
 class ImageStore {
   static arch: Image = { src: './assets/images/arch.svg', alt: 'Arch' };
+  static bash: Image = { src: './assets/images/bash.svg', alt: 'Bash' };
   static bun: Image = { src: './assets/images/bun.svg', alt: 'Bun' };
   static dart: Image = { src: './assets/images/dart.svg', alt: 'Dart' };
   static docker: Image = { src: './assets/images/docker.svg', alt: 'Docker' };
@@ -21,6 +22,7 @@ class ImageStore {
   static react: Image = { src: './assets/images/react.svg', alt: 'React' };
   static shadcn: Image = { src: './assets/images/shadcn.svg', alt: 'shadcn' };
   static sqlite: Image = { src: './assets/images/sqlite.svg', alt: 'SQLite' };
+  static tailwind: Image = { src: './assets/images/tailwind.svg', alt: 'Tailwind' };
   static typescript: Image = { src: './assets/images/typescript.svg', alt: 'TypeScript' };
   static vite: Image = { src: './assets/images/vite.svg', alt: 'Vite' };
 }

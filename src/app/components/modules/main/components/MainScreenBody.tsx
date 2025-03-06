@@ -6,7 +6,7 @@ import MainScreenBodyProfessionalExperienceSection from '@/app/components/module
 import MainScreenBodyProjectsSection from '@/app/components/modules/main/components/MainScreenBodyProjectsSection';
 import MainScreenBodyTechStackSection from '@/app/components/modules/main/components/MainScreenBodyTechStackSection';
 
-export const mainScreenBodyMaxWidth: number = 552;
+export const mainScreenBodyMaxWidth: number = 578;
 
 function MainScreenBody() {
   return (
