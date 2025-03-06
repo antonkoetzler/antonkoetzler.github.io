@@ -14,6 +14,7 @@ function MainScreenBodyTechStackSection() {
         <MainScreenBodySectionImage src={ImageStore.node.src} alt={ImageStore.node.alt} />
         <MainScreenBodySectionImage src={ImageStore.bun.src} alt={ImageStore.bun.alt} />
         <MainScreenBodySectionImage src={ImageStore.react.src} alt={ImageStore.react.alt} />
+        <MainScreenBodySectionImage src={ImageStore.tailwind.src} alt={ImageStore.tailwind.alt} />
         <MainScreenBodySectionImage src={ImageStore.shadcn.src} alt={ImageStore.shadcn.alt} />
         <MainScreenBodySectionImage src={ImageStore.electron.src} alt={ImageStore.electron.alt} />
         <MainScreenBodySectionImage src={ImageStore.vite.src} alt={ImageStore.vite.alt} />
@@ -23,6 +24,7 @@ function MainScreenBodyTechStackSection() {
         <MainScreenBodySectionImage src={ImageStore.sqlite.src} alt={ImageStore.sqlite.alt} />
         <MainScreenBodySectionImage src={ImageStore.postgres.src} alt={ImageStore.postgres.alt} />
         <MainScreenBodySectionImage src={ImageStore.docker.src} alt={ImageStore.docker.alt} />
+        <MainScreenBodySectionImage src={ImageStore.bash.src} alt={ImageStore.bash.alt} />
       </MainScreenBodySectionImageListing>
     </MainScreenBodySection>
   );
