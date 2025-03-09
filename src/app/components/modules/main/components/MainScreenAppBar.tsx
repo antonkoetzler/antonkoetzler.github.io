@@ -32,13 +32,13 @@ function MainScreenAppBar() {
       role={'presentation'}
       className='flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background p-2'
     >
-      <Button asChild>
+      <Button asChild variant={'outline'}>
         <a href={'https://github.com/antonkoetzler'}>GitHub</a>
       </Button>
       <p role={'heading'} className="text-[32px] font-semibold">
         {name}
       </p>
-      <Button asChild>
+      <Button asChild variant={'outline'}>
         <a href={t('resumeLink')}>Résumé</a>
       </Button>
     </div>
