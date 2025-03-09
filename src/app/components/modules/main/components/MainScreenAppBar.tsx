@@ -33,7 +33,11 @@ function MainScreenAppBar() {
       className='flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background p-2'
     >
       <Button asChild variant={'outline'}>
-        <a href={'https://github.com/antonkoetzler'}>GitHub</a>
+        <a
+          target={'_blank'}
+          rel={'noopener noreferrer'}
+          href={'https://github.com/antonkoetzler'}
+        >GitHub</a>
       </Button>
       <p role={'heading'} className="text-[32px] font-semibold">
         {name}
