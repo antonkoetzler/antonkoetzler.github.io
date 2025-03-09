@@ -18,5 +18,13 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact2')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact3')}`)).toBeInTheDocument();
+
+    expect(screen.getByText('MyoroAPI')).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsMyoroApiFact1')}`)).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsMyoroApiFact2')}`)).toBeInTheDocument();
+
+    expect(screen.getByText(i18n.t('projectsNvimConfigTitle'))).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsNvimConfigFact1')}`)).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsNvimConfigFact2')}`)).toBeInTheDocument();
   });
 });
