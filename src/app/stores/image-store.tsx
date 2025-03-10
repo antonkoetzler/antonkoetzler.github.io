@@ -8,6 +8,7 @@ class ImageStore {
   static docker: Image = { src: './assets/images/docker.svg', alt: 'Docker' };
   static doutorie: Image = { src: './assets/images/doutorie.svg', alt: 'Doutor-IE' };
   static electron: Image = { src: './assets/images/electron.svg', alt: 'Electron' };
+  static expo: Image = { src: './assets/images/expo.svg', alt: 'Expo' };
   static flutter: Image = { src: './assets/images/flutter.svg', alt: 'Flutter' };
   static hyprland: Image = { src: './assets/images/hyprland.svg', alt: 'Hyprland' };
   static javascript: Image = { src: './assets/images/javascript.png', alt: 'JavaScript' };
@@ -16,7 +17,6 @@ class ImageStore {
   static me: Image = { src: './assets/images/me.jpg', alt: 'Me' };
   static neovim: Image = { src: './assets/images/neovim.svg', alt: 'Neovim' };
   static next: Image = { src: './assets/images/next.svg', alt: 'Next' };
-  static node: Image = { src: './assets/images/node.png', alt: 'Node' };
   static php: Image = { src: './assets/images/php.svg', alt: 'PHP' };
   static postgres: Image = { src: './assets/images/postgres.svg', alt: 'PostgreSQL' };
   static react: Image = { src: './assets/images/react.svg', alt: 'React' };
