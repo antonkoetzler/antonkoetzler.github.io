@@ -12,6 +12,7 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByText('Myoro Flutter Library')).toBeInTheDocument();
     expect(screen.getByAltText(ImageStore.dart.alt)).toHaveAttribute('src', ImageStore.dart.src);
     expect(screen.getByAltText(ImageStore.flutter.alt)).toHaveAttribute('src', ImageStore.flutter.src);
+    expect(screen.getByAltText(ImageStore.sqlite.alt)).toHaveAttribute('src', ImageStore.sqlite.src);
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact1')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact2')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact3')}`)).toBeInTheDocument();
@@ -31,6 +32,8 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByText('MyoroAPI')).toBeInTheDocument();
     expect(screen.getByAltText(ImageStore.php.alt)).toHaveAttribute('src', ImageStore.php.src);
     expect(screen.getByAltText(ImageStore.laravel.alt)).toHaveAttribute('src', ImageStore.laravel.src);
+    expect(screen.getByAltText(ImageStore.postgres.alt)).toHaveAttribute('src', ImageStore.postgres.src);
+    expect(screen.getByAltText(ImageStore.docker.alt)).toHaveAttribute('src', ImageStore.docker.src);
     expect(screen.getByText(`- ${i18n.t('projectsMyoroApiFact1')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroApiFact2')}`)).toBeInTheDocument();
 

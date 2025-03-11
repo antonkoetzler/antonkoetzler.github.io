@@ -15,6 +15,7 @@ function MainScreenBodyProjectsSection() {
           techstackImages={[
             ImageStore.dart,
             ImageStore.flutter,
+            ImageStore.sqlite,
           ]}
           facts={[
             t('projectsMyoroFlutterLibraryFact1'),
@@ -46,6 +47,8 @@ function MainScreenBodyProjectsSection() {
           techstackImages={[
             ImageStore.php,
             ImageStore.laravel,
+            ImageStore.docker,
+            ImageStore.postgres,
           ]}
           techstackImagesGap={8}
           facts={[
