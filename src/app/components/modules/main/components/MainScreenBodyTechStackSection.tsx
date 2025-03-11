@@ -9,12 +9,12 @@ function MainScreenBodyTechStackSection() {
       <MainScreenBodySectionImageListing>
         <MainScreenBodySectionImage src={ImageStore.dart.src} alt={ImageStore.dart.alt} />
         <MainScreenBodySectionImage src={ImageStore.flutter.src} alt={ImageStore.flutter.alt} />
-        <MainScreenBodySectionImage src={ImageStore.javascript.src} alt={ImageStore.javascript.alt} />
         <MainScreenBodySectionImage src={ImageStore.typescript.src} alt={ImageStore.typescript.alt} />
         <MainScreenBodySectionImage src={ImageStore.bun.src} alt={ImageStore.bun.alt} />
         <MainScreenBodySectionImage src={ImageStore.react.src} alt={ImageStore.react.alt} />
         <MainScreenBodySectionImage src={ImageStore.tailwind.src} alt={ImageStore.tailwind.alt} />
         <MainScreenBodySectionImage src={ImageStore.shadcn.src} alt={ImageStore.shadcn.alt} />
+        <MainScreenBodySectionImage src={ImageStore.lynx.src} alt={ImageStore.lynx.alt} />
         <MainScreenBodySectionImage src={ImageStore.electron.src} alt={ImageStore.electron.alt} />
         <MainScreenBodySectionImage src={ImageStore.vite.src} alt={ImageStore.vite.alt} />
         <MainScreenBodySectionImage src={ImageStore.next.src} alt={ImageStore.next.alt} />

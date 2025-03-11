@@ -9,12 +9,12 @@ describe('MainScreenBodyTechStackSection', () => {
     expect(screen.getByText('Tech Stack')).toBeInTheDocument();
     expect(screen.getByAltText(ImageStore.dart.alt)).toHaveAttribute('src', ImageStore.dart.src);
     expect(screen.getByAltText(ImageStore.flutter.alt)).toHaveAttribute('src', ImageStore.flutter.src);
-    expect(screen.getByAltText(ImageStore.javascript.alt)).toHaveAttribute('src', ImageStore.javascript.src);
     expect(screen.getByAltText(ImageStore.typescript.alt)).toHaveAttribute('src', ImageStore.typescript.src);
     expect(screen.getByAltText(ImageStore.bun.alt)).toHaveAttribute('src', ImageStore.bun.src);
     expect(screen.getByAltText(ImageStore.react.alt)).toHaveAttribute('src', ImageStore.react.src);
     expect(screen.getByAltText(ImageStore.tailwind.alt)).toHaveAttribute('src', ImageStore.tailwind.src);
     expect(screen.getByAltText(ImageStore.shadcn.alt)).toHaveAttribute('src', ImageStore.shadcn.src);
+    expect(screen.getByAltText(ImageStore.lynx.alt)).toHaveAttribute('src', ImageStore.lynx.src);
     expect(screen.getByAltText(ImageStore.electron.alt)).toHaveAttribute('src', ImageStore.electron.src);
     expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute('src', ImageStore.vite.src);
     expect(screen.getByAltText(ImageStore.next.alt)).toHaveAttribute('src', ImageStore.next.src);

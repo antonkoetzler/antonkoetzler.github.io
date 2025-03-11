@@ -11,9 +11,9 @@ class ImageStore {
   static expo: Image = { src: './assets/images/expo.svg', alt: 'Expo' };
   static flutter: Image = { src: './assets/images/flutter.svg', alt: 'Flutter' };
   static hyprland: Image = { src: './assets/images/hyprland.svg', alt: 'Hyprland' };
-  static javascript: Image = { src: './assets/images/javascript.png', alt: 'JavaScript' };
   static kitty: Image = { src: './assets/images/kitty.png', alt: 'Kitty' };
   static laravel: Image = { src: './assets/images/laravel.svg', alt: 'Laravel' };
+  static lynx: Image = { src: './assets/images/lynx.svg', alt: 'Lynx' };
   static me: Image = { src: './assets/images/me.jpg', alt: 'Me' };
   static neovim: Image = { src: './assets/images/neovim.svg', alt: 'Neovim' };
   static next: Image = { src: './assets/images/next.svg', alt: 'Next' };
