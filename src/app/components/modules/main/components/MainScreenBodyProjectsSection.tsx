@@ -93,7 +93,7 @@ function Project({
 
   return (
     <div className={'flex flex-col w-full'}>
-      <div className={'flex flex-row justify-between'}>
+      <div className={'flex flex-row items-center justify-between'}>
         <a
           href={href}
           target={'_blank'}
