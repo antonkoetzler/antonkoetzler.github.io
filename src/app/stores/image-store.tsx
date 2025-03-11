@@ -1,4 +1,4 @@
-type Image = { src: string; alt: string };
+export type Image = { src: string; alt: string };
 
 class ImageStore {
   static arch: Image = { src: './assets/images/arch.svg', alt: 'Arch' };
@@ -13,6 +13,7 @@ class ImageStore {
   static hyprland: Image = { src: './assets/images/hyprland.svg', alt: 'Hyprland' };
   static kitty: Image = { src: './assets/images/kitty.png', alt: 'Kitty' };
   static laravel: Image = { src: './assets/images/laravel.svg', alt: 'Laravel' };
+  static lua: Image = { src: './assets/images/lua.svg', alt: 'Lua' };
   static lynx: Image = { src: './assets/images/lynx.svg', alt: 'Lynx' };
   static me: Image = { src: './assets/images/me.jpg', alt: 'Me' };
   static neovim: Image = { src: './assets/images/neovim.svg', alt: 'Neovim' };
