@@ -12,11 +12,11 @@ function MainScreenAppBar() {
 
       // Name displayed in accordance with available width.
       setName(
-        window.innerWidth >= 675
+        window.innerWidth >= 680
           ? 'Anton Louis Koetzler-Faust'
-          : window.innerWidth >= 575
+          : window.innerWidth >= 580
             ? 'Anton Koetzler-Faust'
-            : window.innerWidth >= 375
+            : window.innerWidth >= 380
               ? 'Anton K-F'
               : 'AKF'
       );
@@ -30,7 +30,7 @@ function MainScreenAppBar() {
   return (
     <div
       role={'presentation'}
-      className='flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background p-2'
+      className={'flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background px-4 py-2'}
     >
       <Button asChild variant={'outline'}>
         <a

@@ -32,9 +32,9 @@ describe('MainScreenAppBar', () => {
       expect(screen.getByText(name)).toBeInTheDocument();
       unmount();
     }
-    expectName(675, 'Anton Louis Koetzler-Faust');
-    expectName(575, 'Anton Koetzler-Faust');
-    expectName(375, 'Anton K-F');
-    expectName(374, 'AKF');
+    expectName(680, 'Anton Louis Koetzler-Faust');
+    expectName(580, 'Anton Koetzler-Faust');
+    expectName(380, 'Anton K-F');
+    expectName(379, 'AKF');
   });
 });
