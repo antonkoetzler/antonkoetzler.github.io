@@ -89,35 +89,33 @@ function Project({
   techstackImagesGap,
   facts,
 }: ProjectProps) {
-  const techstackIconSize = 38;
+  const techstackIconSize = 32;
 
   return (
-    <div className={'flex flex-col w-full'}>
-      <div className={'flex flex-row items-center justify-between'}>
-        <a
-          href={href}
-          target={'_blank'}
-          rel={'noopener noreferrer'}
-          className={'text-[20px] font-semibold text-blue-300 visited:text-purple-300'}
-        >{name}</a>
-        <div
-          className={`flex flex-row flex-wrap`}
-          style={{ gap: techstackImagesGap ?? 5 }}
-        >
-          {
-            techstackImages.map((image, index) => (
-              <img
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                title={image.alt}
-                width={techstackIconSize}
-                height={techstackIconSize}
-                className={'object-contain'}
-              />
-            ))
-          }
-        </div>
+    <div className={'flex flex-col w-full gap-2'}>
+      <a
+        href={href}
+        target={'_blank'}
+        rel={'noopener noreferrer'}
+        className={'text-[20px] font-semibold text-blue-300 visited:text-purple-300'}
+      >{name}</a>
+      <div
+        className={`flex flex-row flex-wrap`}
+        style={{ gap: techstackImagesGap ?? 5 }}
+      >
+        {
+          techstackImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              title={image.alt}
+              width={techstackIconSize}
+              height={techstackIconSize}
+              className={'object-contain'}
+            />
+          ))
+        }
       </div>
       <List items={facts} />
     </div>
