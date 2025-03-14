@@ -18,17 +18,6 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact3')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact4')}`)).toBeInTheDocument();
 
-    expect(screen.getByText(i18n.t('projectsPortfolioTitle'))).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.typescript.alt)).toHaveAttribute('src', ImageStore.typescript.src);
-    expect(screen.getByAltText(ImageStore.bun.alt)).toHaveAttribute('src', ImageStore.bun.src);
-    expect(screen.getByAltText(ImageStore.react.alt)).toHaveAttribute('src', ImageStore.react.src);
-    expect(screen.getByAltText(ImageStore.tailwind.alt)).toHaveAttribute('src', ImageStore.tailwind.src);
-    expect(screen.getByAltText(ImageStore.shadcn.alt)).toHaveAttribute('src', ImageStore.shadcn.src);
-    expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute('src', ImageStore.vite.src);
-    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact2')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact3')}`)).toBeInTheDocument();
-
     expect(screen.getByText('MyoroAPI')).toBeInTheDocument();
     expect(screen.getByAltText(ImageStore.php.alt)).toHaveAttribute('src', ImageStore.php.src);
     expect(screen.getByAltText(ImageStore.laravel.alt)).toHaveAttribute('src', ImageStore.laravel.src);
@@ -42,5 +31,16 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByAltText(ImageStore.neovim.alt)).toHaveAttribute('src', ImageStore.neovim.src);
     expect(screen.getByText(`- ${i18n.t('projectsNvimConfigFact1')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsNvimConfigFact2')}`)).toBeInTheDocument();
+
+    expect(screen.getByText(i18n.t('projectsPortfolioTitle'))).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.typescript.alt)).toHaveAttribute('src', ImageStore.typescript.src);
+    expect(screen.getByAltText(ImageStore.bun.alt)).toHaveAttribute('src', ImageStore.bun.src);
+    expect(screen.getByAltText(ImageStore.react.alt)).toHaveAttribute('src', ImageStore.react.src);
+    expect(screen.getByAltText(ImageStore.tailwind.alt)).toHaveAttribute('src', ImageStore.tailwind.src);
+    expect(screen.getByAltText(ImageStore.shadcn.alt)).toHaveAttribute('src', ImageStore.shadcn.src);
+    expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute('src', ImageStore.vite.src);
+    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact2')}`)).toBeInTheDocument();
+    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact3')}`)).toBeInTheDocument();
   });
 });
