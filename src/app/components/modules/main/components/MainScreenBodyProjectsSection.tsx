@@ -25,23 +25,6 @@ function MainScreenBodyProjectsSection() {
           ]}
         />
         <Project
-          name={t('projectsPortfolioTitle')}
-          href={'https://github.com/antonkoetzler/antonkoetzler.github.io'}
-          techstackImages={[
-            ImageStore.typescript,
-            ImageStore.bun,
-            ImageStore.react,
-            ImageStore.tailwind,
-            ImageStore.shadcn,
-            ImageStore.vite,
-          ]}
-          facts={[
-            t('projectsPortfolioFact1'),
-            t('projectsPortfolioFact2'),
-            t('projectsPortfolioFact3'),
-          ]}
-        />
-        <Project
           name={'MyoroAPI'}
           href={'https://github.com/antonkoetzler/myoro_api'}
           techstackImages={[
@@ -67,6 +50,23 @@ function MainScreenBodyProjectsSection() {
           facts={[
             t('projectsNvimConfigFact1'),
             t('projectsNvimConfigFact2'),
+          ]}
+        />
+        <Project
+          name={t('projectsPortfolioTitle')}
+          href={'https://github.com/antonkoetzler/antonkoetzler.github.io'}
+          techstackImages={[
+            ImageStore.typescript,
+            ImageStore.bun,
+            ImageStore.react,
+            ImageStore.tailwind,
+            ImageStore.shadcn,
+            ImageStore.vite,
+          ]}
+          facts={[
+            t('projectsPortfolioFact1'),
+            t('projectsPortfolioFact2'),
+            t('projectsPortfolioFact3'),
           ]}
         />
       </div>
