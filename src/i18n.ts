@@ -24,7 +24,7 @@ i18n
             'BSc in Computer Science from the University of Lethbridge',
           aboutMeFact3: 'Living in Florianópolis, Brazil 🌴',
           aboutMeFact4:
-            'Nascido no Canadá, meio-Canadiano 🍁 e meio-Brasileiro 🏖️',
+            'Born in Canada 🍁 and also half-Brazilian 🏖️',
           aboutMeFact5:
             '"An idiot admires complexity, a genius admires simplicity."',
           // ###############################
@@ -83,7 +83,7 @@ i18n
             'Curso superior em Ciências Informáticas pela Universidade de Lethbridge',
           aboutMeFact3: 'Morando em Florianópolis, Santa Catarina, Brasil 🌴',
           aboutMeFact4:
-            'Nascido no Canadá, meio-Canadiano 🍁 e meio-Brasileiro 🏖️',
+            'Nascido no Canadá 🍁 e também metade Brasileiro 🏖️',
           aboutMeFact5:
             '"Um idiota admira a complexidade, um génio admira a simplicidade"',
           // ###############################
