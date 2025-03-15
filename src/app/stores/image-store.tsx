@@ -15,6 +15,7 @@ class ImageStore {
   static laravel: Image = { src: './assets/images/laravel.svg', alt: 'Laravel' };
   static lua: Image = { src: './assets/images/lua.svg', alt: 'Lua' };
   static lynx: Image = { src: './assets/images/lynx.svg', alt: 'Lynx' };
+  static macos: Image = { src: './assets/images/macos.svg', alt: 'macOS' };
   static me: Image = { src: './assets/images/me.jpg', alt: 'Me' };
   static neovim: Image = { src: './assets/images/neovim.svg', alt: 'Neovim' };
   static next: Image = { src: './assets/images/next.svg', alt: 'Next' };
@@ -26,6 +27,8 @@ class ImageStore {
   static tailwind: Image = { src: './assets/images/tailwind.svg', alt: 'Tailwind' };
   static typescript: Image = { src: './assets/images/typescript.svg', alt: 'TypeScript' };
   static vite: Image = { src: './assets/images/vite.svg', alt: 'Vite' };
+  static vscode: Image = { src: './assets/images/vscode.svg', alt: 'VS Code' };
+  static windows: Image = { src: './assets/images/windows.svg', alt: 'Windows' };
 }
 
 export default ImageStore;
