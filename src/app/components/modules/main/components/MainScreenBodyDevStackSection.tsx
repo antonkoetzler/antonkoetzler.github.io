@@ -9,8 +9,11 @@ function MainScreenBodyDevStackSection() {
       <MainScreenBodySectionImageListing>
         <MainScreenBodySectionImage src={ImageStore.arch.src} alt={ImageStore.arch.alt} />
         <MainScreenBodySectionImage src={ImageStore.hyprland.src} alt={ImageStore.hyprland.alt} />
-        <MainScreenBodySectionImage src={ImageStore.neovim.src} alt={ImageStore.neovim.alt} />
         <MainScreenBodySectionImage src={ImageStore.kitty.src} alt={ImageStore.kitty.alt} />
+        <MainScreenBodySectionImage src={ImageStore.windows.src} alt={ImageStore.windows.alt} />
+        <MainScreenBodySectionImage src={ImageStore.macos.src} alt={ImageStore.macos.alt} />
+        <MainScreenBodySectionImage src={ImageStore.vscode.src} alt={ImageStore.vscode.alt} />
+        <MainScreenBodySectionImage src={ImageStore.neovim.src} alt={ImageStore.neovim.alt} />
       </MainScreenBodySectionImageListing>
     </MainScreenBodySection>
   );
