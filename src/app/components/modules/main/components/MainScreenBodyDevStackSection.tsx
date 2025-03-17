@@ -12,8 +12,8 @@ function MainScreenBodyDevStackSection() {
         <MainScreenBodySectionImage src={ImageStore.kitty.src} alt={ImageStore.kitty.alt} />
         <MainScreenBodySectionImage src={ImageStore.windows.src} alt={ImageStore.windows.alt} size={45} />
         <MainScreenBodySectionImage src={ImageStore.macos.src} alt={ImageStore.macos.alt} />
-        <MainScreenBodySectionImage src={ImageStore.vscode.src} alt={ImageStore.vscode.alt} />
         <MainScreenBodySectionImage src={ImageStore.neovim.src} alt={ImageStore.neovim.alt} />
+        <MainScreenBodySectionImage src={ImageStore.vscode.src} alt={ImageStore.vscode.alt} />
       </MainScreenBodySectionImageListing>
     </MainScreenBodySection>
   );
