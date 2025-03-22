@@ -8,21 +8,14 @@ function MainScreenBodySectionImage({
   size?: number,
 }) {
   return (
-    <a
-      href={src}
-      target={'_blank'}
-      rel={'noopener noreferrer'}
-      className={'flex align-middle'}
-    >
-      <img
-        src={src}
-        alt={alt}
-        title={alt}
-        width={size}
-        height={size}
-        className={'object-contain'}
-      />
-    </a>
+    <img
+      src={src}
+      alt={alt}
+      title={alt}
+      width={size}
+      height={size}
+      className={'object-contain'}
+    />
   );
 }
 

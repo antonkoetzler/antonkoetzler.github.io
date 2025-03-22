@@ -21,6 +21,7 @@ function MainScreenBodyMeImage() {
     <img
       src={ImageStore.me.src}
       alt={ImageStore.me.alt}
+      title={ImageStore.me.alt}
       width={size}
       height={size}
       className={'rounded-sm border-2 border-[var(--foreground)]'}
