@@ -41,6 +41,5 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute('src', ImageStore.vite.src);
     expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact2')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact3')}`)).toBeInTheDocument();
   });
 });

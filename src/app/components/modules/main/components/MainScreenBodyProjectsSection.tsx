@@ -66,7 +66,6 @@ function MainScreenBodyProjectsSection() {
           facts={[
             t('projectsPortfolioFact1'),
             t('projectsPortfolioFact2'),
-            t('projectsPortfolioFact3'),
           ]}
         />
       </div>
