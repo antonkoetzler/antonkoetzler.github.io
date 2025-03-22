@@ -33,6 +33,8 @@ function ContactInformation({
     <div className={'flex flex-row gap-2'}>
       <a
         className={'w-full text-center text-blue-400'}
+        target={'_blank'}
+        rel={'noopener noreferrer'}
         href={onPressFormOfContactAddress}
       >
         {formOfContactAddress}
