@@ -52,11 +52,6 @@ i18n
           projectsMyoroFlutterLibraryFact4:
             'Takes care of: Widgets, common files (abstracts, enums, extensions, helpers, etc), and local SQLite initialization',
 
-          // antonkoetzler.github.io (portfolio)
-          projectsPortfolioTitle: 'My Portfolio',
-          projectsPortfolioFact1: 'This website!',
-          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, and shadcn',
-
           // MyoroAPI
           projectsMyoroApiFact1: 'Implemented with Laravel',
           projectsMyoroApiFact2: 'Parent database for my applications to store shared data such as users',
@@ -65,6 +60,11 @@ i18n
           projectsNvimConfigTitle: 'My Neovim Configuration',
           projectsNvimConfigFact1: 'Modular Neovim configuration fully kitted for my needs',
           projectsNvimConfigFact2: 'Will make you quit using VSCode 😎',
+
+          // antonkoetzler.github.io (portfolio)
+          projectsPortfolioTitle: 'My Portfolio',
+          projectsPortfolioFact1: 'This website!',
+          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, and shadcn',
           // ##############################
         },
       },
@@ -111,12 +111,6 @@ i18n
           projectsMyoroFlutterLibraryFact4:
             'Contém: Widgets, arquivos commons (abstracts, enums, extensions, helpers, etc), and inicialização de um banco de dados em SQLite local',
 
-          // antonkoetzler.github.io (portfolio)
-          projectsPortfolioTitle: 'Meu Portfólio',
-          projectsPortfolioFact1: 'Este site!',
-          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, e shadcn',
-          projectsPortfolioFact3: 'Code coverage limite de 100%, totalmente testado e CI/CD totalmente configurado',
-
           // MyoroAPI
           projectsMyoroApiFact1: 'Implementado com Laravel',
           projectsMyoroApiFact2: 'Banco de dados pai para meus aplicativos armazenarem dados compartilhados, como dados de usuários',
@@ -125,6 +119,11 @@ i18n
           projectsNvimConfigTitle: 'Minha configuração de Neovim',
           projectsNvimConfigFact1: 'Configuração modular Neovim totalmente equipada para minhas necessidades',
           projectsNvimConfigFact2: 'Vai fazer você parar de usar o VSCode 😎',
+
+          // antonkoetzler.github.io (portfolio)
+          projectsPortfolioTitle: 'Meu Portfólio',
+          projectsPortfolioFact1: 'Este site!',
+          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, e shadcn',
           // ##############################
         },
       },
