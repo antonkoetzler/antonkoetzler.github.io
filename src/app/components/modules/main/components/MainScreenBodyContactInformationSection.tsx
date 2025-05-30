@@ -13,10 +13,6 @@ function MainScreenBodyContactInformationSection() {
           formOfContactAddress={email}
           onPressFormOfContactAddress={`mailto:${email}`}
         />
-        <ContactInformation
-          formOfContactAddress={'+55 (48) 98818-9095'}
-          onPressFormOfContactAddress={'https://wa.me/5548988189095'}
-        />
       </div>
     </MainScreenBodySection>
   );
