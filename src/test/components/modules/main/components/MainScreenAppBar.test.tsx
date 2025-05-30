@@ -1,5 +1,4 @@
 import MainScreenAppBar from '@/app/components/modules/main/components/MainScreenAppBar';
-import i18n from '@/i18n';
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
@@ -18,9 +17,9 @@ describe('MainScreenAppBar', () => {
 
     expect(screen.getByRole('heading')).toBeInTheDocument();
 
-    const resumeButton = screen.getByText('Résumé');
-    expect(resumeButton).toBeInTheDocument();
-    expect(resumeButton).toHaveAttribute('href', i18n.t('resumeLink'));
+    const linkedInButton = screen.getByText('LinkedIn');
+    expect(linkedInButton).toBeInTheDocument();
+    expect(linkedInButton).toHaveAttribute('href', 'https://www.linkedin.com/in/anton-koetzler-faust-002025192/');
 
     unmount();
   });
