@@ -1,15 +1,11 @@
 import { Button } from '@/app/components/ui/buttons/Button';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function MainScreenAppBar() {
-  const { t } = useTranslation();
   const [name, setName] = useState('');
 
   useEffect(() => {
     function setup() {
-      console.log('Setup running');
-
       // Name displayed in accordance with available width.
       setName(
         window.innerWidth >= 680
@@ -43,7 +39,11 @@ function MainScreenAppBar() {
         {name}
       </p>
       <Button asChild variant={'outline'}>
-        <a href={t('resumeLink')}>Résumé</a>
+        <a
+          target={'_blank'}
+          rel={'noopener noreferrer'}
+          href={'https://www.linkedin.com/in/anton-koetzler-faust-002025192/'}
+        >LinkedIn</a>
       </Button>
     </div>
   );

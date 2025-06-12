@@ -11,11 +11,6 @@ i18n
     resources: {
       en: {
         translation: {
-          // ########## Résumé ##########
-          resumeLink:
-            'https://drive.google.com/uc?export=download&id=14JPBVKNYNMMUyRwi0fXM-LW-X7w0n4HI',
-          // ############################
-
           // ########## About me ##########
           aboutMeTitle: 'About Me',
           aboutMeFact1:
@@ -70,11 +65,6 @@ i18n
       },
       pt: {
         translation: {
-          // ########## Currículo ##########
-          resumeLink:
-            'https://drive.google.com/uc?export=download&id=1FupfLoFd-2Fbp_vbF6YJ8aC9eKrJv8zS',
-          // ###############################
-
           // ########## Sobre mim ##########
           aboutMeTitle: 'Sobre Mim',
           aboutMeFact1:
