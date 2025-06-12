@@ -1,9 +1,7 @@
 import { Button } from '@/app/components/ui/buttons/Button';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function MainScreenAppBar() {
-  const { t } = useTranslation();
   const [name, setName] = useState('');
 
   useEffect(() => {
