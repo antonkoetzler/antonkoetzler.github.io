@@ -18,9 +18,9 @@ function MainScreenBodyTechStackSection() {
         <MainScreenBodySectionImage src={ImageStore.vite.src} alt={ImageStore.vite.alt} />
         <MainScreenBodySectionImage src={ImageStore.next.src} alt={ImageStore.next.alt} />
         <MainScreenBodySectionImage src={ImageStore.expo.src} alt={ImageStore.expo.alt} />
-        <MainScreenBodySectionImage src={ImageStore.lynx.src} alt={ImageStore.lynx.alt} />
-        <MainScreenBodySectionImage src={ImageStore.php.src} alt={ImageStore.php.alt} />
-        <MainScreenBodySectionImage src={ImageStore.laravel.src} alt={ImageStore.laravel.alt} />
+        <MainScreenBodySectionImage src={ImageStore.go.src} alt={ImageStore.go.alt} />
+        <MainScreenBodySectionImage src={ImageStore.java.src} alt={ImageStore.java.alt} />
+        <MainScreenBodySectionImage src={ImageStore.spring.src} alt={ImageStore.spring.alt} />
         <MainScreenBodySectionImage src={ImageStore.sqlite.src} alt={ImageStore.sqlite.alt} />
         <MainScreenBodySectionImage src={ImageStore.postgres.src} alt={ImageStore.postgres.alt} />
         <MainScreenBodySectionImage src={ImageStore.docker.src} alt={ImageStore.docker.alt} />

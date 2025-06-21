@@ -18,14 +18,6 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact3')}`)).toBeInTheDocument();
     expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact4')}`)).toBeInTheDocument();
 
-    expect(screen.getByText('MyoroAPI')).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.php.alt)).toHaveAttribute('src', ImageStore.php.src);
-    expect(screen.getByAltText(ImageStore.laravel.alt)).toHaveAttribute('src', ImageStore.laravel.src);
-    expect(screen.getByAltText(ImageStore.postgres.alt)).toHaveAttribute('src', ImageStore.postgres.src);
-    expect(screen.getByAltText(ImageStore.docker.alt)).toHaveAttribute('src', ImageStore.docker.src);
-    expect(screen.getByText(`- ${i18n.t('projectsMyoroApiFact1')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsMyoroApiFact2')}`)).toBeInTheDocument();
-
     expect(screen.getByText(i18n.t('projectsNvimConfigTitle'))).toBeInTheDocument();
     expect(screen.getByAltText(ImageStore.lua.alt)).toHaveAttribute('src', ImageStore.lua.src);
     expect(screen.getByAltText(ImageStore.neovim.alt)).toHaveAttribute('src', ImageStore.neovim.src);

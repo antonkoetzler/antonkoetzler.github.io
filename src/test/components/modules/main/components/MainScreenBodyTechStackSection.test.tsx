@@ -18,9 +18,9 @@ describe('MainScreenBodyTechStackSection', () => {
     expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute('src', ImageStore.vite.src);
     expect(screen.getByAltText(ImageStore.next.alt)).toHaveAttribute('src', ImageStore.next.src);
     expect(screen.getByAltText(ImageStore.expo.alt)).toHaveAttribute('src', ImageStore.expo.src);
-    expect(screen.getByAltText(ImageStore.lynx.alt)).toHaveAttribute('src', ImageStore.lynx.src);
-    expect(screen.getByAltText(ImageStore.php.alt)).toHaveAttribute('src', ImageStore.php.src);
-    expect(screen.getByAltText(ImageStore.laravel.alt)).toHaveAttribute('src', ImageStore.laravel.src);
+    expect(screen.getByAltText(ImageStore.go.alt)).toHaveAttribute('src', ImageStore.go.src);
+    expect(screen.getByAltText(ImageStore.java.alt)).toHaveAttribute('src', ImageStore.java.src);
+    expect(screen.getByAltText(ImageStore.spring.alt)).toHaveAttribute('src', ImageStore.spring.src);
     expect(screen.getByAltText(ImageStore.sqlite.alt)).toHaveAttribute('src', ImageStore.sqlite.src);
     expect(screen.getByAltText(ImageStore.postgres.alt)).toHaveAttribute('src', ImageStore.postgres.src);
     expect(screen.getByAltText(ImageStore.docker.alt)).toHaveAttribute('src', ImageStore.docker.src);

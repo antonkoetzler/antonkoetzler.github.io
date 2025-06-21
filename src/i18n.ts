@@ -25,10 +25,18 @@ i18n
           // ###############################
 
           // ########## Professional experience ##########
+          // Title
           professionalExperienceTitle: 'Professional Experience',
-          professionalExperienceDoutorIeJobTitle: 'Junior Flutter developer',
+
+          // Doutor-IE
+          professionalExperienceDoutorIeJobTitle: 'Junior Flutter Developer',
           professionalExperienceDoutorIeStartDate: 'November 2023',
-          professionalExperienceDoutorIeEndDate: 'Present',
+          professionalExperienceDoutorIeEndDate: 'April 2025',
+
+          // Prolog App
+          professionalExperiencePrologAppJobTitle: 'Mid-Level Flutter Developer',
+          professionalExperiencePrologAppStartDate: 'April 2025',
+          professionalExperiencePrologAppEndDate: 'Present',
           // #############################################
 
           // ########## Contact information ##########
@@ -79,10 +87,18 @@ i18n
           // ###############################
 
           // ########## Experiência profissional ##########
+          // Título
           professionalExperienceTitle: 'Experiência Profissional',
-          professionalExperienceDoutorIeJobTitle: '',
+
+          // Doutor-IE
+          professionalExperienceDoutorIeJobTitle: 'Desenvolvedor Flutter Júnior',
           professionalExperienceDoutorIeStartDate: 'Novembro 2023',
-          professionalExperienceDoutorIeEndDate: 'Presente',
+          professionalExperienceDoutorIeEndDate: 'Abril 2025',
+
+          // Prolog App
+          professionalExperiencePrologAppJobTitle: 'Desenvolvedor Flutter Pleno',
+          professionalExperiencePrologAppStartDate: 'Abril 2025',
+          professionalExperiencePrologAppEndDate: 'Presente',
           // ##############################################
 
           // ########## Informações de contato ##########

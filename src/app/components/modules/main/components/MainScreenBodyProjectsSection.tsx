@@ -25,21 +25,6 @@ function MainScreenBodyProjectsSection() {
           ]}
         />
         <Project
-          name={'MyoroAPI'}
-          href={'https://github.com/antonkoetzler/myoro_api'}
-          techstackImages={[
-            ImageStore.php,
-            ImageStore.laravel,
-            ImageStore.docker,
-            ImageStore.postgres,
-          ]}
-          techstackImagesGap={8}
-          facts={[
-            t('projectsMyoroApiFact1'),
-            t('projectsMyoroApiFact2'),
-          ]}
-        />
-        <Project
           name={t('projectsNvimConfigTitle')}
           href={'https://github.com/antonkoetzler/nvim-config'}
           techstackImages={[
