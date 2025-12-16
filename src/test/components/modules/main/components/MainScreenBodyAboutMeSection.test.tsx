@@ -11,5 +11,6 @@ describe('MainScreenBodyAboutMeSection', () => {
     expect(screen.getByText(`- ${i18n.t('aboutMeFact3')}`));
     expect(screen.getByText(`- ${i18n.t('aboutMeFact4')}`));
     expect(screen.getByText(`- ${i18n.t('aboutMeFact5')}`));
+    expect(screen.getByText(`- ${i18n.t('aboutMeFact6')}`));
   });
 });

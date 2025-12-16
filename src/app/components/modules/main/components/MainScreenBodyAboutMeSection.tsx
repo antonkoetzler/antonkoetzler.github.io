@@ -7,24 +7,17 @@ function MainScreenBodyAboutMeSection() {
 
   return (
     <MainScreenBodySection title={t('aboutMeTitle')}>
-      <AboutMe />
+      <List
+        items={[
+          t('aboutMeFact1'),
+          t('aboutMeFact2'),
+          t('aboutMeFact3'),
+          t('aboutMeFact4'),
+          t('aboutMeFact5'),
+          t('aboutMeFact6'),
+        ]}
+      />
     </MainScreenBodySection>
-  );
-}
-
-function AboutMe() {
-  const { t } = useTranslation();
-
-  return (
-    <List
-      items={[
-        t('aboutMeFact1'),
-        t('aboutMeFact2'),
-        t('aboutMeFact3'),
-        t('aboutMeFact4'),
-        t('aboutMeFact5'),
-      ]}
-    />
   );
 }
 

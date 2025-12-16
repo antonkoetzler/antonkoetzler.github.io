@@ -19,7 +19,10 @@ describe('MainScreenAppBar', () => {
 
     const linkedInButton = screen.getByText('LinkedIn');
     expect(linkedInButton).toBeInTheDocument();
-    expect(linkedInButton).toHaveAttribute('href', 'https://www.linkedin.com/in/anton-koetzler-faust-002025192/');
+    expect(linkedInButton).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/anton-koetzler-faust-002025192/'
+    );
 
     unmount();
   });

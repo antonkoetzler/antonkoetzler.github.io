@@ -3,6 +3,7 @@ import MainScreenBodyContactInformationSection from '@/app/components/modules/ma
 import MainScreenBodyDevStackSection from '@/app/components/modules/main/components/MainScreenBodyDevStackSection';
 import MainScreenBodyMeImage from '@/app/components/modules/main/components/MainScreenBodyMeImage';
 import MainScreenBodyProfessionalExperienceSection from '@/app/components/modules/main/components/MainScreenBodyProfessionalExperienceSection';
+import MainScreenBodyLanguagesSection from '@/app/components/modules/main/components/MainScreenBodyLanguagesSection';
 import MainScreenBodyProjectsSection from '@/app/components/modules/main/components/MainScreenBodyProjectsSection';
 import MainScreenBodyTechStackSection from '@/app/components/modules/main/components/MainScreenBodyTechStackSection';
 
@@ -12,7 +13,7 @@ function MainScreenBody() {
   return (
     <div
       role={'main'}
-      className={'flex flex-col p-4 overflow-y-auto w-full items-center'}
+      className={'flex w-full flex-col items-center overflow-y-auto p-4'}
     >
       <div
         className={'flex flex-col items-center gap-5'}
@@ -21,13 +22,15 @@ function MainScreenBody() {
         <MainScreenBodyMeImage />
         <MainScreenBodyAboutMeSection />
         <Divider />
+        <MainScreenBodyContactInformationSection />
+        <Divider />
+        <MainScreenBodyLanguagesSection />
+        <Divider />
         <MainScreenBodyTechStackSection />
         <Divider />
         <MainScreenBodyDevStackSection />
         <Divider />
         <MainScreenBodyProfessionalExperienceSection />
-        <Divider />
-        <MainScreenBodyContactInformationSection />
         <Divider />
         <MainScreenBodyProjectsSection />
       </div>

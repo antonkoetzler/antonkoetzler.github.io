@@ -14,8 +14,9 @@ function CopyTextButton({ text }: { text: string }) {
   return (
     <Button className="h-[25px] p-1" onClick={handleClick}>
       <ClipboardIcon
-        className={`transition-colors duration-300 ${isActive ? 'text-blue-400' : ''
-          }`}
+        className={`transition-colors duration-300 ${
+          isActive ? 'text-blue-400' : ''
+        }`}
       />
     </Button>
   );

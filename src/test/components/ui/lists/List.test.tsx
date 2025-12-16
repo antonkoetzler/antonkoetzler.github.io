@@ -8,6 +8,8 @@ describe('List', () => {
     const { container } = render(<List items={items} />);
     expect(container.firstChild).toHaveClass('list-none');
     expect(container.firstChild?.childNodes.length).toBe(2);
-    items.forEach((item) => expect(screen.getByText(`- ${item}`)).toBeInTheDocument());
+    items.forEach((item) =>
+      expect(screen.getByText(`- ${item}`)).toBeInTheDocument()
+    );
   });
 });

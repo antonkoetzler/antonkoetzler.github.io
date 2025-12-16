@@ -8,12 +8,7 @@ describe('MainScreenBodySectionImage', () => {
     const src = ImageStore.arch.src;
     const alt = ImageStore.arch.alt;
 
-    render(
-      <MainScreenBodySectionImage
-        src={src}
-        alt={alt}
-      />
-    );
+    render(<MainScreenBodySectionImage src={src} alt={alt} />);
     expect(screen.getByAltText(alt)).toBeInTheDocument();
     expect(screen.getByAltText(alt)).toHaveAttribute('src', src);
     expect(screen.getByAltText(alt)).toHaveAttribute('width', '50');

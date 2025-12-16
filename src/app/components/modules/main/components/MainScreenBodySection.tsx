@@ -8,7 +8,7 @@ function MainScreenBodySection({
   children: ReactNode;
 }) {
   return (
-    <div className={'flex w-full flex-col items-center gap-3'}>
+    <div className={'flex w-full flex-col items-center gap-4'}>
       <p className={'text-[28px] font-semibold leading-5'}>{title}</p>
       {children}
     </div>

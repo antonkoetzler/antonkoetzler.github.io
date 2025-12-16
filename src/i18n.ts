@@ -18,9 +18,9 @@ i18n
           aboutMeFact2:
             'BSc in Computer Science from the University of Lethbridge',
           aboutMeFact3: 'Living in Florianópolis, Brazil 🌴',
-          aboutMeFact4:
-            'Born in Canada 🍁 and also half-Brazilian 🏖️',
-          aboutMeFact5:
+          aboutMeFact4: 'Born in Canada 🍁 and also half-Brazilian 🏖️',
+          aboutMeFact5: 'Native English speaker and fluent in Portuguese',
+          aboutMeFact6:
             '"An idiot admires complexity, a genius admires simplicity."',
           // ###############################
 
@@ -29,24 +29,49 @@ i18n
           professionalExperienceTitle: 'Professional Experience',
 
           // Doutor-IE
+          professionalExperienceDoutorIeCompany: 'Doutor-IE',
           professionalExperienceDoutorIeJobTitle: 'Junior Flutter Developer',
           professionalExperienceDoutorIeStartDate: 'November 2023',
           professionalExperienceDoutorIeEndDate: 'April 2025',
 
           // Prolog App
-          professionalExperiencePrologAppJobTitle: 'Mid-Level Flutter Developer',
+          professionalExperiencePrologAppCompany: 'Prolog App',
+          professionalExperiencePrologAppJobTitle:
+            'Mid-Level Flutter Developer',
           professionalExperiencePrologAppStartDate: 'April 2025',
-          professionalExperiencePrologAppEndDate: 'Present',
+          professionalExperiencePrologAppEndDate: 'November 2025',
+
+          // Olly Olly
+          professionalExperienceOllyOllyCompany: 'Olly Olly',
+          professionalExperienceOllyOllyJobTitle: 'Senior Flutter Developer',
+          professionalExperienceOllyOllyStartDate: 'May 2025',
+          professionalExperienceOllyOllyEndDate: 'Present',
           // #############################################
 
           // ########## Contact information ##########
           contactInformationTitle: 'Contact Information',
           // #########################################
 
+          // ########## Tech sections ##########
+          devStackTitle: 'Dev Stack',
+          techStackTitle: 'Tech Stack',
+          languagesTitle: 'Languages',
+          // #################################
+
           // ########## Projects ##########
           projectsTitle: 'Projects',
 
+          // MyoroMatchup
+          projectsMyoroMatchupTitle: 'Myoro Matchup',
+          projectsMyoroMatchupFact1:
+            'App to gather friends to play organized sports',
+          projectsMyoroMatchupFact2:
+            'Manages players, payment tracking, details, and more',
+          projectsMyoroMatchupFact3:
+            'Check it out on the Play Store or App Store',
+
           // MyoroFlutterLibrary
+          projectsMyoroFlutterLibraryTitle: 'Myoro Flutter Library',
           projectsMyoroFlutterLibraryFact1: 'My Flutter launchpad',
           projectsMyoroFlutterLibraryFact2:
             'Handles all of the boilerplate when creating a new Flutter project',
@@ -55,19 +80,20 @@ i18n
           projectsMyoroFlutterLibraryFact4:
             'Takes care of: Widgets, common files (abstracts, enums, extensions, helpers, etc), and local SQLite initialization',
 
-          // MyoroAPI
-          projectsMyoroApiFact1: 'Implemented with Laravel',
-          projectsMyoroApiFact2: 'Parent database for my applications to store shared data such as users',
-
           // nvim-config
           projectsNvimConfigTitle: 'My Neovim Configuration',
-          projectsNvimConfigFact1: 'Modular Neovim configuration fully kitted for my needs',
+          projectsNvimConfigFact1:
+            'Modular Neovim configuration fully kitted for my needs',
           projectsNvimConfigFact2: 'Will make you quit using VSCode 😎',
+
+          // vscode-config
+          projectsVscodeConfigTitle: 'My VSCode Configuration',
+          projectsVscodeConfigFact1:
+            'Also my VSCode configuration if you want to take a look at it',
 
           // antonkoetzler.github.io (portfolio)
           projectsPortfolioTitle: 'My Portfolio',
           projectsPortfolioFact1: 'This website!',
-          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, and shadcn',
           // ##############################
         },
       },
@@ -80,9 +106,9 @@ i18n
           aboutMeFact2:
             'Curso superior em Ciências Informáticas pela Universidade de Lethbridge',
           aboutMeFact3: 'Morando em Florianópolis, Santa Catarina, Brasil 🌴',
-          aboutMeFact4:
-            'Nascido no Canadá 🍁 e também metade Brasileiro 🏖️',
-          aboutMeFact5:
+          aboutMeFact4: 'Nascido no Canadá 🍁 e também metade Brasileiro 🏖️',
+          aboutMeFact5: 'Falante nativo de inglês e fluente em português',
+          aboutMeFact6:
             '"Um idiota admira a complexidade, um génio admira a simplicidade"',
           // ###############################
 
@@ -91,24 +117,50 @@ i18n
           professionalExperienceTitle: 'Experiência Profissional',
 
           // Doutor-IE
-          professionalExperienceDoutorIeJobTitle: 'Desenvolvedor Flutter Júnior',
+          professionalExperienceDoutorIeCompany: 'Doutor-IE',
+          professionalExperienceDoutorIeJobTitle:
+            'Desenvolvedor Flutter Júnior',
           professionalExperienceDoutorIeStartDate: 'Novembro 2023',
           professionalExperienceDoutorIeEndDate: 'Abril 2025',
 
           // Prolog App
-          professionalExperiencePrologAppJobTitle: 'Desenvolvedor Flutter Pleno',
+          professionalExperiencePrologAppCompany: 'Prolog App',
+          professionalExperiencePrologAppJobTitle:
+            'Desenvolvedor Flutter Pleno',
           professionalExperiencePrologAppStartDate: 'Abril 2025',
-          professionalExperiencePrologAppEndDate: 'Presente',
+          professionalExperiencePrologAppEndDate: 'Novembro 2025',
+
+          // Olly Olly
+          professionalExperienceOllyOllyCompany: 'Olly Olly',
+          professionalExperienceOllyOllyJobTitle:
+            'Desenvolvedor Flutter Sênior',
+          professionalExperienceOllyOllyStartDate: 'Maio 2025',
+          professionalExperienceOllyOllyEndDate: 'Presente',
           // ##############################################
 
           // ########## Informações de contato ##########
           contactInformationTitle: 'Informações de Contato',
           // ############################################
 
+          // ########## Seções de tecnologia ##########
+          devStackTitle: 'Stack de Desenvolvimento',
+          techStackTitle: 'Stack Tecnológico',
+          languagesTitle: 'Linguagens',
+          // ###########################################
+
           // ########## Projetos ##########
           projectsTitle: 'Projetos',
 
+          // MyoroMatchup
+          projectsMyoroMatchupTitle: 'Myoro Matchup',
+          projectsMyoroMatchupFact1:
+            'App para reunir amigos para praticar esportes organizados',
+          projectsMyoroMatchupFact2:
+            'Gerencia jogadores, rastreamento de pagamentos, detalhes e mais',
+          projectsMyoroMatchupFact3: 'Confira na Play Store ou App Store',
+
           // MyoroFlutterLibrary
+          projectsMyoroFlutterLibraryTitle: 'Myoro Flutter Library',
           projectsMyoroFlutterLibraryFact1: 'Meu launchpad para Flutter',
           projectsMyoroFlutterLibraryFact2:
             'com todo o boilerplate de criar de um novo projeto em Flutter',
@@ -117,19 +169,20 @@ i18n
           projectsMyoroFlutterLibraryFact4:
             'Contém: Widgets, arquivos commons (abstracts, enums, extensions, helpers, etc), and inicialização de um banco de dados em SQLite local',
 
-          // MyoroAPI
-          projectsMyoroApiFact1: 'Implementado com Laravel',
-          projectsMyoroApiFact2: 'Banco de dados pai para meus aplicativos armazenarem dados compartilhados, como dados de usuários',
-
           // nvim-config
           projectsNvimConfigTitle: 'Minha configuração de Neovim',
-          projectsNvimConfigFact1: 'Configuração modular Neovim totalmente equipada para minhas necessidades',
+          projectsNvimConfigFact1:
+            'Configuração modular Neovim totalmente equipada para minhas necessidades',
           projectsNvimConfigFact2: 'Vai fazer você parar de usar o VSCode 😎',
+
+          // vscode-config
+          projectsVscodeConfigTitle: 'Minha Configuração do VSCode',
+          projectsVscodeConfigFact1:
+            'Também minha configuração do VSCode se quiser dar uma olhada',
 
           // antonkoetzler.github.io (portfolio)
           projectsPortfolioTitle: 'Meu Portfólio',
           projectsPortfolioFact1: 'Este site!',
-          projectsPortfolioFact2: 'Tech stack: Vite, React, Tailwind, e shadcn',
           // ##############################
         },
       },

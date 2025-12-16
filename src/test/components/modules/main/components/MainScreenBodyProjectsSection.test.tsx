@@ -9,29 +9,128 @@ describe('MainScreenBodyProjectsSection', () => {
     render(<MainScreenBodyProjectsSection />);
     expect(screen.getByText(i18n.t('projectsTitle'))).toBeInTheDocument();
 
-    expect(screen.getByText('Myoro Flutter Library')).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.dart.alt)).toHaveAttribute('src', ImageStore.dart.src);
-    expect(screen.getByAltText(ImageStore.flutter.alt)).toHaveAttribute('src', ImageStore.flutter.src);
-    expect(screen.getByAltText(ImageStore.sqlite.alt)).toHaveAttribute('src', ImageStore.sqlite.src);
-    expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact1')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact2')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact3')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact4')}`)).toBeInTheDocument();
+    // Myoro Matchup & Myoro Flutter Library
+    expect(
+      screen.getAllByAltText(ImageStore.dart.alt).length
+    ).toBeGreaterThanOrEqual(2);
+    expect(
+      screen
+        .getAllByAltText(ImageStore.dart.alt)
+        .every((img) => img.getAttribute('src') === ImageStore.dart.src)
+    ).toBe(true);
+    expect(
+      screen.getAllByAltText(ImageStore.flutter.alt).length
+    ).toBeGreaterThanOrEqual(2);
+    expect(
+      screen
+        .getAllByAltText(ImageStore.flutter.alt)
+        .every((img) => img.getAttribute('src') === ImageStore.flutter.src)
+    ).toBe(true);
 
-    expect(screen.getByText(i18n.t('projectsNvimConfigTitle'))).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.lua.alt)).toHaveAttribute('src', ImageStore.lua.src);
-    expect(screen.getByAltText(ImageStore.neovim.alt)).toHaveAttribute('src', ImageStore.neovim.src);
-    expect(screen.getByText(`- ${i18n.t('projectsNvimConfigFact1')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsNvimConfigFact2')}`)).toBeInTheDocument();
+    // Myoro Matchup
+    expect(
+      screen.getByText(i18n.t('projectsMyoroMatchupTitle'))
+    ).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.java.alt)).toHaveAttribute(
+      'src',
+      ImageStore.java.src
+    );
+    expect(screen.getByAltText(ImageStore.spring.alt)).toHaveAttribute(
+      'src',
+      ImageStore.spring.src
+    );
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroMatchupFact1')}`)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroMatchupFact2')}`)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroMatchupFact3')}`)
+    ).toBeInTheDocument();
 
-    expect(screen.getByText(i18n.t('projectsPortfolioTitle'))).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.typescript.alt)).toHaveAttribute('src', ImageStore.typescript.src);
-    expect(screen.getByAltText(ImageStore.bun.alt)).toHaveAttribute('src', ImageStore.bun.src);
-    expect(screen.getByAltText(ImageStore.react.alt)).toHaveAttribute('src', ImageStore.react.src);
-    expect(screen.getByAltText(ImageStore.tailwind.alt)).toHaveAttribute('src', ImageStore.tailwind.src);
-    expect(screen.getByAltText(ImageStore.shadcn.alt)).toHaveAttribute('src', ImageStore.shadcn.src);
-    expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute('src', ImageStore.vite.src);
-    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)).toBeInTheDocument();
-    expect(screen.getByText(`- ${i18n.t('projectsPortfolioFact2')}`)).toBeInTheDocument();
+    // Myoro Flutter Library
+    expect(
+      screen.getByText(i18n.t('projectsMyoroFlutterLibraryTitle'))
+    ).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.sqlite.alt)).toHaveAttribute(
+      'src',
+      ImageStore.sqlite.src
+    );
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact1')}`)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact2')}`)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact3')}`)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(`- ${i18n.t('projectsMyoroFlutterLibraryFact4')}`)
+    ).toBeInTheDocument();
+
+    // nvim-config
+    expect(
+      screen.getByText(i18n.t('projectsNvimConfigTitle'))
+    ).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.lua.alt)).toHaveAttribute(
+      'src',
+      ImageStore.lua.src
+    );
+    expect(screen.getByAltText(ImageStore.neovim.alt)).toHaveAttribute(
+      'src',
+      ImageStore.neovim.src
+    );
+    expect(
+      screen.getByText(`- ${i18n.t('projectsNvimConfigFact1')}`)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(`- ${i18n.t('projectsNvimConfigFact2')}`)
+    ).toBeInTheDocument();
+
+    // vscode-config
+    expect(
+      screen.getByText(i18n.t('projectsVscodeConfigTitle'))
+    ).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.json.alt)).toHaveAttribute(
+      'src',
+      ImageStore.json.src
+    );
+    expect(
+      screen.getByText(`- ${i18n.t('projectsVscodeConfigFact1')}`)
+    ).toBeInTheDocument();
+
+    // antonkoetzler.github.io (portfolio)
+    expect(
+      screen.getByText(i18n.t('projectsPortfolioTitle'))
+    ).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.typescript.alt)).toHaveAttribute(
+      'src',
+      ImageStore.typescript.src
+    );
+    expect(screen.getByAltText(ImageStore.bun.alt)).toHaveAttribute(
+      'src',
+      ImageStore.bun.src
+    );
+    expect(screen.getByAltText(ImageStore.react.alt)).toHaveAttribute(
+      'src',
+      ImageStore.react.src
+    );
+    expect(screen.getByAltText(ImageStore.tailwind.alt)).toHaveAttribute(
+      'src',
+      ImageStore.tailwind.src
+    );
+    expect(screen.getByAltText(ImageStore.shadcn.alt)).toHaveAttribute(
+      'src',
+      ImageStore.shadcn.src
+    );
+    expect(screen.getByAltText(ImageStore.vite.alt)).toHaveAttribute(
+      'src',
+      ImageStore.vite.src
+    );
+    expect(
+      screen.getByText(`- ${i18n.t('projectsPortfolioFact1')}`)
+    ).toBeInTheDocument();
   });
 });

@@ -6,7 +6,7 @@ function MainScreenBodySectionImageListing({
   children: ReactNode;
 }) {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-4'>
+    <div className="flex flex-row flex-wrap justify-center gap-4">
       {children}
     </div>
   );

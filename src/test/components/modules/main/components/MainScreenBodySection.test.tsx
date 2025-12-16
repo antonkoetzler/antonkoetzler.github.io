@@ -7,7 +7,9 @@ describe('MainScreenBodySection', () => {
     const title = 'Title';
     const content = 'Content';
 
-    render(<MainScreenBodySection title={title}>{content}</MainScreenBodySection>);
+    render(
+      <MainScreenBodySection title={title}>{content}</MainScreenBodySection>
+    );
     expect(screen.getByText(title)).toBeInTheDocument();
     expect(screen.getByText(content)).toBeInTheDocument();
   });

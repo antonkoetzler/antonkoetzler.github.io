@@ -13,7 +13,9 @@ describe('MainScreenBodySectionImageListing', () => {
         <img src={ImageStore.arch.src} alt={ImageStore.arch.alt} />
       </MainScreenBodySectionImageListing>
     );
-    expect(container.firstChild).toHaveClass('flex flex-row flex-wrap justify-center gap-4');
+    expect(container.firstChild).toHaveClass(
+      'flex flex-row flex-wrap justify-center gap-4'
+    );
     expect(screen.getByAltText(alt)).toHaveAttribute('src', src);
   });
 });

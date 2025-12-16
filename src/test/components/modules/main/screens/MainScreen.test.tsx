@@ -6,8 +6,17 @@ import { I18nextProvider } from 'react-i18next';
 
 describe('MainScreen', () => {
   it('renders correctly', () => {
-    const { container } = render(<I18nextProvider i18n={i18n}><MainScreen /></I18nextProvider>);
-    expect(container.firstChild).toHaveClass('h-screen', 'w-screen', 'flex', 'flex-col');
+    const { container } = render(
+      <I18nextProvider i18n={i18n}>
+        <MainScreen />
+      </I18nextProvider>
+    );
+    expect(container.firstChild).toHaveClass(
+      'h-screen',
+      'w-screen',
+      'flex',
+      'flex-col'
+    );
     expect(container.firstChild?.childNodes.length).toBe(2);
   });
 });

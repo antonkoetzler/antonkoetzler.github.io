@@ -26,14 +26,18 @@ function MainScreenAppBar() {
   return (
     <div
       role={'presentation'}
-      className={'flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background px-4 py-2'}
+      className={
+        'flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background px-4 py-2'
+      }
     >
       <Button asChild variant={'outline'}>
         <a
           target={'_blank'}
           rel={'noopener noreferrer'}
           href={'https://github.com/antonkoetzler'}
-        >GitHub</a>
+        >
+          GitHub
+        </a>
       </Button>
       <p role={'heading'} className="text-[32px] font-semibold">
         {name}
@@ -43,7 +47,9 @@ function MainScreenAppBar() {
           target={'_blank'}
           rel={'noopener noreferrer'}
           href={'https://www.linkedin.com/in/anton-koetzler-faust-002025192/'}
-        >LinkedIn</a>
+        >
+          LinkedIn
+        </a>
       </Button>
     </div>
   );

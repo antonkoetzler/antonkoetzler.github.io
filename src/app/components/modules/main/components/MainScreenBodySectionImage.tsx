@@ -3,9 +3,9 @@ function MainScreenBodySectionImage({
   alt,
   size = 50,
 }: {
-  src: string,
-  alt: string,
-  size?: number,
+  src: string;
+  alt: string;
+  size?: number;
 }) {
   return (
     <img

@@ -10,7 +10,15 @@ function MainScreenBodyProfessionalExperienceSection() {
     <MainScreenBodySection title={t('professionalExperienceTitle')}>
       <div className={'flex flex-col items-start gap-3'}>
         <Job
-          company={'Prolog App'}
+          company={t('professionalExperienceOllyOllyCompany')}
+          companyLogoSrc={ImageStore.ollyolly.src}
+          companyLogoAlt={ImageStore.ollyolly.alt}
+          jobTitle={t('professionalExperienceOllyOllyJobTitle')}
+          startDate={t('professionalExperienceOllyOllyStartDate')}
+          endDate={t('professionalExperienceOllyOllyEndDate')}
+        />
+        <Job
+          company={t('professionalExperiencePrologAppCompany')}
           companyLogoSrc={ImageStore.prolog.src}
           companyLogoAlt={ImageStore.prolog.alt}
           jobTitle={t('professionalExperiencePrologAppJobTitle')}
@@ -18,7 +26,7 @@ function MainScreenBodyProfessionalExperienceSection() {
           endDate={t('professionalExperiencePrologAppEndDate')}
         />
         <Job
-          company={'Doutor-IE'}
+          company={t('professionalExperienceDoutorIeCompany')}
           companyLogoSrc={ImageStore.doutorie.src}
           companyLogoAlt={ImageStore.doutorie.alt}
           jobTitle={t('professionalExperienceDoutorIeJobTitle')}
@@ -38,17 +46,17 @@ function Job({
   startDate,
   endDate,
 }: {
-  company: string,
-  companyLogoSrc: string,
-  companyLogoAlt: string,
-  jobTitle: string,
-  startDate: string,
-  endDate: string,
+  company: string;
+  companyLogoSrc: string;
+  companyLogoAlt: string;
+  jobTitle: string;
+  startDate: string;
+  endDate: string;
 }) {
   const companyLogoSrcSize = 60;
 
   return (
-    <div className={'flex flex-row gap-3 items-center'}>
+    <div className={'flex flex-row items-center gap-3'}>
       <MainScreenBodySectionImage
         src={companyLogoSrc}
         alt={companyLogoAlt}
@@ -57,7 +65,9 @@ function Job({
       <div className={'flex flex-col'}>
         <p className={'text-[20px] font-semibold'}>{company}</p>
         <p className={'font-italic text-[18px]'}>{jobTitle}</p>
-        <p className={'text-[16px]'}>{startDate} - {endDate}</p>
+        <p className={'text-[16px]'}>
+          {startDate} - {endDate}
+        </p>
       </div>
     </div>
   );

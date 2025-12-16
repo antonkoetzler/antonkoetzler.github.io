@@ -24,43 +24,56 @@ describe('MainScreenBody', () => {
     render(<MainScreenBody />);
 
     /**
-      * @see {@link MainScreenBody}
-      */
+     * @see {@link MainScreenBody}
+     */
     expect(screen.getByRole('main')).toBeInTheDocument();
 
-    // Dividers.
-    expect(screen.getAllByRole('separator')).toHaveLength(5);
+    /**
+     * Dividers.
+     */
+    expect(screen.getAllByRole('separator')).toHaveLength(6);
 
     /**
-      * @see {@link MainScreenBodyMeImage}
-      */
+     * @see {@link MainScreenBodyMeImage}
+     */
     expect(screen.getByAltText('Me')).toBeInTheDocument();
 
-
     /**
-      * @see {@link MainScreenBodyAboutMeSection}
-      */
+     * @see {@link MainScreenBodyAboutMeSection}
+     */
     expect(screen.getByText(`- ${i18n.t('aboutMeFact1')}`));
-
-    /**
-     * @see {@link MainScreenBodyTechStackSection}
-     */
-    expect(screen.getByText('Tech Stack')).toBeInTheDocument();
-
-    /**
-     * @see {@link MainScreenBodyDevStackSection}
-     */
-    expect(screen.getByAltText(ImageStore.arch.alt)).toHaveAttribute('src', ImageStore.arch.src);
-
-    /**
-     * @see {@link MainScreenBodyProfessionalExperienceSection}
-     */
-    expect(screen.getByText(i18n.t('professionalExperienceTitle'))).toBeInTheDocument();
 
     /**
      * @see {@link MainScreenBodyContactInformationSection}
      */
-    expect(screen.getByText(i18n.t('contactInformationTitle'))).toBeInTheDocument();
+    expect(
+      screen.getByText(i18n.t('contactInformationTitle'))
+    ).toBeInTheDocument();
+
+    /**
+     * @see {@link MainScreenBodyLanguagesSection}
+     */
+    expect(screen.getByText(i18n.t('languagesTitle'))).toBeInTheDocument();
+
+    /**
+     * @see {@link MainScreenBodyTechStackSection}
+     */
+    expect(screen.getByText(i18n.t('techStackTitle'))).toBeInTheDocument();
+
+    /**
+     * @see {@link MainScreenBodyDevStackSection}
+     */
+    expect(screen.getByAltText(ImageStore.arch.alt)).toHaveAttribute(
+      'src',
+      ImageStore.arch.src
+    );
+
+    /**
+     * @see {@link MainScreenBodyProfessionalExperienceSection}
+     */
+    expect(
+      screen.getByText(i18n.t('professionalExperienceTitle'))
+    ).toBeInTheDocument();
 
     /**
      * @see {@link MainScreenBodyProjectsSection}

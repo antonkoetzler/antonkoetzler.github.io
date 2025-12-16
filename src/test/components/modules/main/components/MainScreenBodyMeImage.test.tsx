@@ -19,14 +19,26 @@ describe('MainScreenBodyMeImage', () => {
     // Assert the width attribute of the image
     expect(container.firstChild).toHaveAttribute('src', ImageStore.me.src);
     expect(container.firstChild).toHaveAttribute('alt', ImageStore.me.alt);
-    expect(container.firstChild).toHaveAttribute('width', defaultSize.toString());
-    expect(container.firstChild).toHaveAttribute('height', defaultSize.toString());
+    expect(container.firstChild).toHaveAttribute(
+      'width',
+      defaultSize.toString()
+    );
+    expect(container.firstChild).toHaveAttribute(
+      'height',
+      defaultSize.toString()
+    );
 
     window.innerWidth = defaultSize + 10;
     const newImageSize = window.innerWidth - 10;
     window.dispatchEvent(new Event('resize'));
 
-    expect(container.firstChild).toHaveAttribute('width', newImageSize.toString());
-    expect(container.firstChild).toHaveAttribute('height', newImageSize.toString());
+    expect(container.firstChild).toHaveAttribute(
+      'width',
+      newImageSize.toString()
+    );
+    expect(container.firstChild).toHaveAttribute(
+      'height',
+      newImageSize.toString()
+    );
   });
 });

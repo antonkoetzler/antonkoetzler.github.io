@@ -3,7 +3,7 @@ import MainScreenBody from '@/app/components/modules/main/components/MainScreenB
 
 function MainScreen() {
   return (
-    <div className='h-screen w-screen flex flex-col'>
+    <div className="flex h-screen w-screen flex-col">
       <MainScreenAppBar />
       <MainScreenBody />
     </div>
