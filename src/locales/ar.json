@@ -1,0 +1,47 @@
+{
+  "aboutMeTitle": "نبذة عني",
+  "aboutMeFact1": "مهندس برمجيات واجهة أمامية متخصص في Flutter و React",
+  "aboutMeFact2": "بكالوريوس في علوم الحاسوب من جامعة ليثبريدج",
+  "aboutMeFact3": "أعيش في فلوريانوبوليس، البرازيل 🌴",
+  "aboutMeFact4": "ولدت في كندا 🍁 وأيضاً نصف برازيلي 🏖️",
+  "aboutMeFact5": "متحدث أصلي للإنجليزية وطليق في البرتغالية",
+  "aboutMeFact6": "\"الأحمق يعجب بالتعقيد، العبقري يعجب بالبساطة.\"",
+  "professionalExperienceTitle": "الخبرة المهنية",
+  "professionalExperienceDoutorIeCompany": "Doutor-IE",
+  "professionalExperienceDoutorIeJobTitle": "مطور Flutter مبتدئ",
+  "professionalExperienceDoutorIeStartDate": "نوفمبر 2023",
+  "professionalExperienceDoutorIeEndDate": "أبريل 2025",
+  "professionalExperiencePrologAppCompany": "Prolog App",
+  "professionalExperiencePrologAppJobTitle": "مطور Flutter متوسط المستوى",
+  "professionalExperiencePrologAppStartDate": "أبريل 2025",
+  "professionalExperiencePrologAppEndDate": "نوفمبر 2025",
+  "professionalExperienceOllyOllyCompany": "Olly Olly",
+  "professionalExperienceOllyOllyJobTitle": "مطور Fullstack كبير",
+  "professionalExperienceOllyOllyStartDate": "مايو 2025",
+  "professionalExperienceOllyOllyEndDate": "حالياً",
+  "contactInformationTitle": "معلومات الاتصال",
+  "devStackTitle": "أدوات التطوير",
+  "techStackTitle": "الأدوات التقنية",
+  "languagesTitle": "اللغات",
+  "projectsTitle": "المشاريع",
+  "projectsMyoroMatchupTitle": "Myoro Matchup",
+  "projectsMyoroMatchupFact1": "تطبيق لجمع الأصدقاء لممارسة الرياضات المنظمة",
+  "projectsMyoroMatchupFact2": "يدير اللاعبين، تتبع المدفوعات، التفاصيل والمزيد",
+  "projectsMyoroMatchupFact3": "تحقق منه على متجر Play أو App Store",
+  "projectsMyoroFlutterLibraryTitle": "Myoro Flutter Library",
+  "projectsMyoroFlutterLibraryFact1": "منصة إطلاقي لـ Flutter",
+  "projectsMyoroFlutterLibraryFact2": "يتعامل مع جميع القوالب عند إنشاء مشروع Flutter جديد",
+  "projectsMyoroFlutterLibraryFact3": "مخطط تصميم متضمن مع الألوان والطباعة والودجات",
+  "projectsMyoroFlutterLibraryFact4": "يتولى: الودجات، الملفات المشتركة (abstracts, enums, extensions, helpers, etc) وتهيئة SQLite المحلية",
+  "projectsNvimConfigTitle": "إعدادات Neovim الخاصة بي",
+  "projectsNvimConfigFact1": "إعدادات Neovim معيارية مجهزة بالكامل لاحتياجاتي",
+  "projectsNvimConfigFact2": "سيجعلك تتوقف عن استخدام VSCode 😎",
+  "projectsVscodeConfigTitle": "إعدادات VSCode الخاصة بي",
+  "projectsVscodeConfigFact1": "أيضاً إعدادات VSCode الخاصة بي إذا أردت إلقاء نظرة",
+  "projectsPortfolioTitle": "معرض أعمالي",
+  "projectsPortfolioFact1": "هذا الموقع!",
+  "notionTitle": "صفحاتي في Notion",
+  "antonsFlutterBibleNotionPage": "كتاب Flutter لأنتون",
+  "myoroNotionPage": "Myoro",
+  "2xkoNotionPage": "2XKO"
+}

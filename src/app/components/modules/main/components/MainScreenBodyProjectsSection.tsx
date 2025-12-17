@@ -42,14 +42,14 @@ function MainScreenBodyProjectsSection() {
         <Project
           name={t('projectsNvimConfigTitle')}
           href={'https://github.com/antonkoetzler/nvim-config'}
-          techstackImages={[ImageStore.lua, ImageStore.neovim]}
+          techstackImages={[ImageStore.neovim, ImageStore.lua]}
           techstackImagesGap={10}
           facts={[t('projectsNvimConfigFact1'), t('projectsNvimConfigFact2')]}
         />
         <Project
           name={t('projectsVscodeConfigTitle')}
           href={'https://github.com/antonkoetzler/vscode-config'}
-          techstackImages={[ImageStore.json]}
+          techstackImages={[ImageStore.vscode, ImageStore.json]}
           facts={[t('projectsVscodeConfigFact1')]}
         />
         <Project

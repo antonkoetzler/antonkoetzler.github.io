@@ -74,13 +74,13 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(
       screen.getByText(i18n.t('projectsNvimConfigTitle'))
     ).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.lua.alt)).toHaveAttribute(
-      'src',
-      ImageStore.lua.src
-    );
     expect(screen.getByAltText(ImageStore.neovim.alt)).toHaveAttribute(
       'src',
       ImageStore.neovim.src
+    );
+    expect(screen.getByAltText(ImageStore.lua.alt)).toHaveAttribute(
+      'src',
+      ImageStore.lua.src
     );
     expect(
       screen.getByText(`- ${i18n.t('projectsNvimConfigFact1')}`)
@@ -93,6 +93,10 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(
       screen.getByText(i18n.t('projectsVscodeConfigTitle'))
     ).toBeInTheDocument();
+    expect(screen.getByAltText(ImageStore.vscode.alt)).toHaveAttribute(
+      'src',
+      ImageStore.vscode.src
+    );
     expect(screen.getByAltText(ImageStore.json.alt)).toHaveAttribute(
       'src',
       ImageStore.json.src

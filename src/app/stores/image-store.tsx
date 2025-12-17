@@ -54,6 +54,7 @@ class ImageStore {
     alt: 'TypeScript',
   };
   static vite: Image = { src: 'assets/images/vite.svg', alt: 'Vite' };
+  static vscode: Image = { src: 'assets/images/vscode.svg', alt: 'VSCode' };
   static wezterm: Image = { src: 'assets/images/wezterm.png', alt: 'Wezterm' };
   static windows11: Image = {
     src: 'assets/images/windows11.svg',

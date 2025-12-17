@@ -31,7 +31,7 @@ describe('MainScreenBody', () => {
     /**
      * Dividers.
      */
-    expect(screen.getAllByRole('separator')).toHaveLength(6);
+    expect(screen.getAllByRole('separator')).toHaveLength(7);
 
     /**
      * @see {@link MainScreenBodyMeImage}
@@ -49,6 +49,11 @@ describe('MainScreenBody', () => {
     expect(
       screen.getByText(i18n.t('contactInformationTitle'))
     ).toBeInTheDocument();
+
+    /**
+     * @see {@link MainScreenBodyNotionSection}
+     */
+    expect(screen.getByText(i18n.t('notionTitle'))).toBeInTheDocument();
 
     /**
      * @see {@link MainScreenBodyLanguagesSection}
