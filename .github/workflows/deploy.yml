@@ -16,21 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: pages
           fetch-depth: 0
+          token: ${{ secrets.token || secrets.GITHUB_TOKEN }}
 
       - name: Initialize git
         run: |
-          git init
           git config --global user.email "antonkoetzler-faust@hotmail.com"
           git config --global user.name "Anton Koetzler-Faust"
-          git remote get-url origin || git remote add origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
-          git remote set-url origin https://${{secrets.token}}@github.com/antonkoetzler/antonkoetzler.github.io
-
-      - name: Merge main into pages
-        run: |
-          git config pull.rebase false
-          git pull origin main --no-edit
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
@@ -42,8 +34,9 @@ jobs:
           rm -rf docs
           mv dist docs
 
-      - name: Deploy
+      - name: Deploy to pages branch
         run: |
+          git checkout -B pages origin/main
           git add -A
-          git commit --amend -m 'Deploy'
+          git commit -m 'Deploy' || exit 0
           git push --force origin pages
