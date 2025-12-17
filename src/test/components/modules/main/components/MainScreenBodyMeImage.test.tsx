@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 
 describe('MainScreenBodyMeImage', () => {
   it('renders correctly', () => {
-    const defaultSize = mainScreenBodyMaxWidth - 160;
+    const defaultSize = mainScreenBodyMaxWidth - 200;
 
     // Use [defaultSize] in [updateSize].
     window.innerWidth = defaultSize + 11;

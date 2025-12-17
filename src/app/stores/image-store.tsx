@@ -26,7 +26,7 @@ class ImageStore {
   static json: Image = { src: 'assets/images/json.svg', alt: 'JSON' };
   static lua: Image = { src: 'assets/images/lua.svg', alt: 'Lua' };
   static macos: Image = { src: 'assets/images/macos.svg', alt: 'macOS' };
-  static me: Image = { src: 'assets/images/me.jpg', alt: 'Me' };
+  static me: Image = { src: 'assets/images/me.png', alt: 'Me' };
   static neovim: Image = { src: 'assets/images/neovim.svg', alt: 'Neovim' };
   static next: Image = { src: 'assets/images/next.svg', alt: 'Next' };
   static notion: Image = { src: 'assets/images/notion.svg', alt: 'Notion' };

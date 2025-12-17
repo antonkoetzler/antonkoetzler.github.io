@@ -3,7 +3,7 @@ import ImageStore from '@/app/stores/image-store';
 import { useEffect, useState } from 'react';
 
 function MainScreenBodyMeImage() {
-  const defaultSize = mainScreenBodyMaxWidth - 160;
+  const defaultSize = mainScreenBodyMaxWidth - 200;
   const [size, setSize] = useState(defaultSize);
 
   useEffect(() => {
