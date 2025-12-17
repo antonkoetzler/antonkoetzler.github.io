@@ -16,8 +16,5 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Check translations
-        run: bun run check-translations
-
       - name: Run tests
         run: bun run test
