@@ -36,9 +36,9 @@ describe('MainScreenBodyDevStackSection', () => {
       'src',
       ImageStore.neovim.src
     );
-    expect(screen.getByAltText(ImageStore.notion.alt)).toHaveAttribute(
+    expect(screen.getByAltText(ImageStore.affine.alt)).toHaveAttribute(
       'src',
-      ImageStore.notion.src
+      ImageStore.affine.src
     );
   });
 });

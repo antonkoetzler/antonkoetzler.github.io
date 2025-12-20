@@ -40,8 +40,8 @@ function MainScreenBodyDevStackSection() {
           alt={ImageStore.neovim.alt}
         />
         <MainScreenBodySectionImage
-          src={ImageStore.notion.src}
-          alt={ImageStore.notion.alt}
+          src={ImageStore.affine.src}
+          alt={ImageStore.affine.alt}
         />
       </MainScreenBodySectionImageListing>
     </MainScreenBodySection>

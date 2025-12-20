@@ -1,6 +1,7 @@
 export type Image = { src: string; alt: string };
 
 class ImageStore {
+  static affine: Image = { src: 'assets/images/affine.svg', alt: 'AFFiNE' };
   static arch: Image = { src: 'assets/images/arch.svg', alt: 'Arch' };
   static bash: Image = { src: 'assets/images/bash.svg', alt: 'Bash' };
   static bun: Image = { src: 'assets/images/bun.svg', alt: 'Bun' };
@@ -29,7 +30,6 @@ class ImageStore {
   static me: Image = { src: 'assets/images/me.png', alt: 'Me' };
   static neovim: Image = { src: 'assets/images/neovim.svg', alt: 'Neovim' };
   static next: Image = { src: 'assets/images/next.svg', alt: 'Next' };
-  static notion: Image = { src: 'assets/images/notion.svg', alt: 'Notion' };
   static ollyolly: Image = {
     src: 'assets/images/ollyolly.svg',
     alt: 'Olly Olly',

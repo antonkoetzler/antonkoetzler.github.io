@@ -13,7 +13,7 @@ function MainScreenBodyAffineSection() {
             target={'_blank'}
             rel={'noopener noreferrer'}
             href={
-              'https://tough-shoemaker-cbd.notion.site/Myoro-2b5d7dcd552480df9b9aef40d0682c05'
+              'https://app.affine.pro/workspace/02defb85-8959-4667-9969-24a0f8b87a1d/CM4zyaYyuwv9W9jUozjXU'
             }
           >
             {t('myoroAffinePage')}
@@ -24,7 +24,7 @@ function MainScreenBodyAffineSection() {
             target={'_blank'}
             rel={'noopener noreferrer'}
             href={
-              'https://tough-shoemaker-cbd.notion.site/Anton-s-Flutter-Bible-2b5d7dcd55248087bf5cd89888eca59e'
+              'https://app.affine.pro/workspace/02defb85-8959-4667-9969-24a0f8b87a1d/Gd4J3n9gdqZyzosc2kvjd'
             }
           >
             {t('antonsFlutterBibleAffinePage')}
@@ -35,7 +35,7 @@ function MainScreenBodyAffineSection() {
             target={'_blank'}
             rel={'noopener noreferrer'}
             href={
-              'https://tough-shoemaker-cbd.notion.site/2XKO-2b5d7dcd5524801c8a02f137885b8ea1'
+              'https://app.affine.pro/workspace/02defb85-8959-4667-9969-24a0f8b87a1d/Sj-XvLpHZSWrWR1qm4Za0'
             }
           >
             {t('2xkoAffinePage')}
