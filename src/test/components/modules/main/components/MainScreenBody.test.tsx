@@ -51,9 +51,9 @@ describe('MainScreenBody', () => {
     ).toBeInTheDocument();
 
     /**
-     * @see {@link MainScreenBodyNotionSection}
+     * @see {@link MainScreenBodyAffineSection}
      */
-    expect(screen.getByText(i18n.t('notionTitle'))).toBeInTheDocument();
+    expect(screen.getByText(i18n.t('affineTitle'))).toBeInTheDocument();
 
     /**
      * @see {@link MainScreenBodyLanguagesSection}

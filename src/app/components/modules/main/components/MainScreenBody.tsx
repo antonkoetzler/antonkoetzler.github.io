@@ -6,7 +6,7 @@ import MainScreenBodyProfessionalExperienceSection from '@/app/components/module
 import MainScreenBodyLanguagesSection from '@/app/components/modules/main/components/MainScreenBodyLanguagesSection';
 import MainScreenBodyProjectsSection from '@/app/components/modules/main/components/MainScreenBodyProjectsSection';
 import MainScreenBodyTechStackSection from '@/app/components/modules/main/components/MainScreenBodyTechStackSection';
-import MainScreenBodyNotionSection from '@/app/components/modules/main/components/MainScreenBodyNotionSection';
+import MainScreenBodyAffineSection from '@/app/components/modules/main/components/MainScreenBodyAffineSection';
 
 export const mainScreenBodyMaxWidth: number = 578;
 
@@ -25,7 +25,7 @@ function MainScreenBody() {
         <Divider />
         <MainScreenBodyContactInformationSection />
         <Divider />
-        <MainScreenBodyNotionSection />
+        <MainScreenBodyAffineSection />
         <Divider />
         <MainScreenBodyLanguagesSection />
         <Divider />
