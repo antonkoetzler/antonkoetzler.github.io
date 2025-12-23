@@ -16,7 +16,6 @@ class ImageStore {
     src: 'assets/images/electron.svg',
     alt: 'Electron',
   };
-  static elysia: Image = { src: 'assets/images/elysia.svg', alt: 'Elysia' };
   static expo: Image = { src: 'assets/images/expo.svg', alt: 'Expo' };
   static flutter: Image = { src: 'assets/images/flutter.svg', alt: 'Flutter' };
   static hyprland: Image = {
@@ -43,6 +42,10 @@ class ImageStore {
   static shadcn: Image = { src: 'assets/images/shadcn.svg', alt: 'shadcn' };
   static spring: Image = { src: 'assets/images/spring.svg', alt: 'Spring' };
   static sqlite: Image = { src: 'assets/images/sqlite.svg', alt: 'SQLite' };
+  static supabase: Image = {
+    src: 'assets/images/supabase.svg',
+    alt: 'Supabase',
+  };
   static tailwind: Image = {
     src: 'assets/images/tailwind.svg',
     alt: 'Tailwind',

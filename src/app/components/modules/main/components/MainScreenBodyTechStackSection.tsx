@@ -55,8 +55,8 @@ function MainScreenBodyTechStackSection() {
           alt={ImageStore.zustand.alt}
         />
         <MainScreenBodySectionImage
-          src={ImageStore.elysia.src}
-          alt={ImageStore.elysia.alt}
+          src={ImageStore.supabase.src}
+          alt={ImageStore.supabase.alt}
         />
         <MainScreenBodySectionImage
           src={ImageStore.trpc.src}

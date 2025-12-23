@@ -52,9 +52,9 @@ describe('MainScreenBodyTechStackSection', () => {
       'src',
       ImageStore.zustand.src
     );
-    expect(screen.getByAltText(ImageStore.elysia.alt)).toHaveAttribute(
+    expect(screen.getByAltText(ImageStore.supabase.alt)).toHaveAttribute(
       'src',
-      ImageStore.elysia.src
+      ImageStore.supabase.src
     );
     expect(screen.getByAltText(ImageStore.trpc.alt)).toHaveAttribute(
       'src',
