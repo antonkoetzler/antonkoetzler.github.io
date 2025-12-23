@@ -30,7 +30,7 @@ function MainScreenAppBar() {
         'flex w-full flex-row items-center justify-between border-b-2 border-[color:var(--foreground)] bg-background px-4 py-2'
       }
     >
-      <Button asChild variant={'outline'}>
+      <Button variant={'outline'}>
         <a
           target={'_blank'}
           rel={'noopener noreferrer'}
@@ -42,7 +42,7 @@ function MainScreenAppBar() {
       <p role={'heading'} className="text-[32px] font-semibold">
         {name}
       </p>
-      <Button asChild variant={'outline'}>
+      <Button variant={'outline'}>
         <a
           target={'_blank'}
           rel={'noopener noreferrer'}

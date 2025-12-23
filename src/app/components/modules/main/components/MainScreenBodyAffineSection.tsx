@@ -8,7 +8,7 @@ function MainScreenBodyAffineSection() {
   return (
     <MainScreenBodySection title={t('affineTitle')}>
       <div className={'flex flex-row gap-4'}>
-        <Button asChild variant={'outline'}>
+        <Button variant={'outline'}>
           <a
             target={'_blank'}
             rel={'noopener noreferrer'}
@@ -19,7 +19,7 @@ function MainScreenBodyAffineSection() {
             {t('myoroAffinePage')}
           </a>
         </Button>
-        <Button asChild variant={'outline'}>
+        <Button variant={'outline'}>
           <a
             target={'_blank'}
             rel={'noopener noreferrer'}
@@ -30,7 +30,7 @@ function MainScreenBodyAffineSection() {
             {t('antonsFlutterBibleAffinePage')}
           </a>
         </Button>
-        <Button asChild variant={'outline'}>
+        <Button variant={'outline'}>
           <a
             target={'_blank'}
             rel={'noopener noreferrer'}
