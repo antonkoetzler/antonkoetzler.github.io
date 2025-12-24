@@ -36,10 +36,6 @@ jobs:
 
       - name: Deploy to pages branch
         run: |
-          # git checkout -B pages origin/main
-          # git add -A
-          # git commit -m 'Deploy' || exit 0
-          # git push --force origin pages
           git fetch
           git checkout pages
           git merge origin/main
