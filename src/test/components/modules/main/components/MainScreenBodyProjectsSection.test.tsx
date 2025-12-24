@@ -31,13 +31,13 @@ describe('MainScreenBodyProjectsSection', () => {
     expect(
       screen.getByText(i18n.t('projectsMyoroMatchupTitle'))
     ).toBeInTheDocument();
-    expect(screen.getByAltText(ImageStore.java.alt)).toHaveAttribute(
+    expect(screen.getByAltText(ImageStore.postgres.alt)).toHaveAttribute(
       'src',
-      ImageStore.java.src
+      ImageStore.postgres.src
     );
-    expect(screen.getByAltText(ImageStore.spring.alt)).toHaveAttribute(
+    expect(screen.getByAltText(ImageStore.supabase.alt)).toHaveAttribute(
       'src',
-      ImageStore.spring.src
+      ImageStore.supabase.src
     );
     expect(
       screen.getByText(`- ${i18n.t('projectsMyoroMatchupFact1')}`)

@@ -15,8 +15,8 @@ function MainScreenBodyProjectsSection() {
           techstackImages={[
             ImageStore.dart,
             ImageStore.flutter,
-            ImageStore.java,
-            ImageStore.spring,
+            ImageStore.postgres,
+            ImageStore.supabase,
           ]}
           facts={[
             t('projectsMyoroMatchupFact1'),
