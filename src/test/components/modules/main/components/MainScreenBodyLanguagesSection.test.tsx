@@ -16,10 +16,6 @@ describe('MainScreenBodyLanguagesSection', () => {
       'src',
       ImageStore.typescript.src
     );
-    expect(screen.getByAltText(ImageStore.java.alt)).toHaveAttribute(
-      'src',
-      ImageStore.java.src
-    );
     expect(screen.getByAltText(ImageStore.bash.alt)).toHaveAttribute(
       'src',
       ImageStore.bash.src

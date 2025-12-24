@@ -19,10 +19,6 @@ function MainScreenBodyLanguagesSection() {
           alt={ImageStore.typescript.alt}
         />
         <MainScreenBodySectionImage
-          src={ImageStore.java.src}
-          alt={ImageStore.java.alt}
-        />
-        <MainScreenBodySectionImage
           src={ImageStore.bash.src}
           alt={ImageStore.bash.alt}
         />

@@ -60,6 +60,10 @@ describe('MainScreenBodyTechStackSection', () => {
       'src',
       ImageStore.trpc.src
     );
+    expect(screen.getByAltText(ImageStore.prisma.alt)).toHaveAttribute(
+      'src',
+      ImageStore.prisma.src
+    );
     expect(screen.getByAltText(ImageStore.bun.alt)).toHaveAttribute(
       'src',
       ImageStore.bun.src
@@ -75,10 +79,6 @@ describe('MainScreenBodyTechStackSection', () => {
     expect(screen.getByAltText(ImageStore.sqlite.alt)).toHaveAttribute(
       'src',
       ImageStore.sqlite.src
-    );
-    expect(screen.getByAltText(ImageStore.spring.alt)).toHaveAttribute(
-      'src',
-      ImageStore.spring.src
     );
   });
 });

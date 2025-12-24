@@ -63,6 +63,10 @@ function MainScreenBodyTechStackSection() {
           alt={ImageStore.trpc.alt}
         />
         <MainScreenBodySectionImage
+          src={ImageStore.prisma.src}
+          alt={ImageStore.prisma.alt}
+        />
+        <MainScreenBodySectionImage
           src={ImageStore.bun.src}
           alt={ImageStore.bun.alt}
         />
@@ -77,10 +81,6 @@ function MainScreenBodyTechStackSection() {
         <MainScreenBodySectionImage
           src={ImageStore.sqlite.src}
           alt={ImageStore.sqlite.alt}
-        />
-        <MainScreenBodySectionImage
-          src={ImageStore.spring.src}
-          alt={ImageStore.spring.alt}
         />
       </MainScreenBodySectionImageListing>
     </MainScreenBodySection>

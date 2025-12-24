@@ -22,7 +22,6 @@ class ImageStore {
     src: 'assets/images/hyprland.svg',
     alt: 'Hyprland',
   };
-  static java: Image = { src: 'assets/images/java.svg', alt: 'Java' };
   static json: Image = { src: 'assets/images/json.svg', alt: 'JSON' };
   static lua: Image = { src: 'assets/images/lua.svg', alt: 'Lua' };
   static macos: Image = { src: 'assets/images/macos.svg', alt: 'macOS' };
@@ -37,10 +36,10 @@ class ImageStore {
     src: 'assets/images/postgres.svg',
     alt: 'PostgreSQL',
   };
+  static prisma: Image = { src: 'assets/images/prisma.svg', alt: 'Prisma' };
   static prolog: Image = { src: 'assets/images/prolog.png', alt: 'Prolog App' };
   static react: Image = { src: 'assets/images/react.svg', alt: 'React' };
   static shadcn: Image = { src: 'assets/images/shadcn.svg', alt: 'shadcn' };
-  static spring: Image = { src: 'assets/images/spring.svg', alt: 'Spring' };
   static sqlite: Image = { src: 'assets/images/sqlite.svg', alt: 'SQLite' };
   static supabase: Image = {
     src: 'assets/images/supabase.svg',
