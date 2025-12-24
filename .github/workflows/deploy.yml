@@ -36,8 +36,4 @@ jobs:
 
       - name: Deploy to pages branch
         run: |
-          git reset --hard origin/main
-          git fetch
-          git checkout pages
-          git merge origin/main
-          git push
+          git push --force origin origin/main:pages
