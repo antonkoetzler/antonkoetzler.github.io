@@ -11,7 +11,7 @@ function MainScreenBodyProjectsSection() {
       <div className={'flex flex-col items-start gap-3'}>
         <Project
           name={t('projectsMyoroMatchupTitle')}
-          href={'https://github.com/antonkoetzler/myoro_matchup'}
+          href={'https://github.com/antonkoetzler/MyoroMatchup'}
           techstackImages={[
             ImageStore.dart,
             ImageStore.flutter,
