@@ -19,6 +19,10 @@ function MainScreenBodyLanguagesSection() {
           alt={ImageStore.typescript.alt}
         />
         <MainScreenBodySectionImage
+          src={ImageStore.python.src}
+          alt={ImageStore.python.alt}
+        />
+        <MainScreenBodySectionImage
           src={ImageStore.bash.src}
           alt={ImageStore.bash.alt}
         />

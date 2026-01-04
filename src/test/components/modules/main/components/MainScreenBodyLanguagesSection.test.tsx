@@ -16,6 +16,10 @@ describe('MainScreenBodyLanguagesSection', () => {
       'src',
       ImageStore.typescript.src
     );
+    expect(screen.getByAltText(ImageStore.python.alt)).toHaveAttribute(
+      'src',
+      ImageStore.python.src
+    );
     expect(screen.getByAltText(ImageStore.bash.alt)).toHaveAttribute(
       'src',
       ImageStore.bash.src

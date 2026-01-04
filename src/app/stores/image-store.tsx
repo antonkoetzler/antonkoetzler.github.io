@@ -38,6 +38,7 @@ class ImageStore {
   };
   static prisma: Image = { src: 'assets/images/prisma.svg', alt: 'Prisma' };
   static prolog: Image = { src: 'assets/images/prolog.png', alt: 'Prolog App' };
+  static python: Image = { src: 'assets/images/python.svg', alt: 'Python' };
   static react: Image = { src: 'assets/images/react.svg', alt: 'React' };
   static shadcn: Image = { src: 'assets/images/shadcn.svg', alt: 'shadcn' };
   static sqlite: Image = { src: 'assets/images/sqlite.svg', alt: 'SQLite' };
